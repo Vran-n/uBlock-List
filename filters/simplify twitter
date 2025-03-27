@@ -22,6 +22,10 @@ x.com##[class="css-175oi2r r-42265s r-u8s1d r-1qd7xl"]:has([aria-label="More"])
 x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has([data-testid="UserCell"])
 x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has([href^="/i/communities/"])
 x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has([href^="/search?"])
+! coversation content
+! removes "Discover more" and all tweets succedding them
+x.com##[aria-label="Timeline: Conversation"] .css-175oi2r:has-text("Discover more"),
+x.com##[aria-label="Timeline: Conversation"] .css-175oi2r:has-text("Discover more") ~ .css-175oi2r
 
 ! the buttons above the home timeline
 ! removes the "For you" button
