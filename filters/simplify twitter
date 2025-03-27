@@ -2,9 +2,8 @@
 ! Last modified: %timestamp%
 ! Description: |
 !   This gets rid of the clutter on Twitter
-!   Feel free to comment anything out for bring back a feature
-! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
-! Homepage: https://github.com/uBlockOrigin/uAssets
+! License: https://raw.githubusercontent.com/Vran-n/uBlock-List/refs/heads/main/filters/simplify%20twitter
+! Homepage: https://github.com/Vran-n/uBlock-List
 
 ! everything on the side except search and footer
 x.com##[data-testid="sidebarColumn"] [class="css-175oi2r r-vacyoi r-ttdzmv"] > :not([class="css-175oi2r r-1awozwy r-aqfbo4 r-kemksi r-18u37iz r-1h3ijdo r-6gpygo r-15ysp7h r-1xcajam r-ipm5af r-136ojw6 r-1hycxz"], [class="css-175oi2r r-1h3ijdo"], [class="css-175oi2r r-1kqtdi0 r-1867qdf r-1phboty r-1ifxtd0 r-1udh08x r-1niwhzg r-1yadl64"])
