@@ -23,7 +23,7 @@ x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has(
 x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has([href^="/i/communities/"])
 x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has([href^="/search?"])
 ! coversation content
-! removes "Discover more" and all tweets succedding them
+! removes "Discover more" and all tweets succeeding them
 x.com##[aria-label="Timeline: Conversation"] .css-175oi2r:has-text("Discover more"),
 x.com##[aria-label="Timeline: Conversation"] .css-175oi2r:has-text("Discover more") ~ .css-175oi2r
 
