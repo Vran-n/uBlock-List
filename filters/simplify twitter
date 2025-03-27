@@ -45,12 +45,13 @@ x.com##[class="css-175oi2r r-1777fci r-1wzrnnt"]:contains(Profile Summary)
 x.com##[class="css-175oi2r r-18u37iz r-1h0z5md r-13awgt0"]:has([href$="/analytics"])
 x.com##.r-1471scf.r-1wbh5a2.r-18u37iz.r-1d09ksm.css-175oi2r > div:nth-of-type(1n + 2)
 
-
 ! "Who to follow" in the your profile timeline and others
 x.com##[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-1ny4l3l"]:contains(Who to follow)
 x.com##[data-testid="UserCell"]:nth-ancestor(5):not([aria-label="Timeline: Likes"], [aria-label="Timeline: Reposts"], [aria-label="Timeline: Quotes"], [aria-label="Timeline: Search timeline"], [aria-label="Timeline: Following"], [aria-label="Timeline: Followers"], [aria-label="Timeline: Verified followers"]).css-175oi2r div.css-175oi2r > .r-1ny4l3l.r-1adg3ll.css-175oi2r > .css-175oi2r > .r-1ny4l3l.r-6416eg.r-o7ynqc.r-1loqt21.r-3pj75a.r-1mmae3n.css-175oi2r
 x.com##[href^="/i/connect_people?"]
 x.com##[class="css-175oi2r r-l00any r-109y4c4 r-gu4em3"]
+! removes "Promote"
+x.com##[href$="/quick_promote_web/targeting"]
 
 ! i forgot what this one does lmao
 x.com##div[class="css-175oi2r r-12kyg2d r-6dt33c r-1kw4oii r-1i36cah r-eafdt9 r-1b8bd59 r-6czh2s"]
