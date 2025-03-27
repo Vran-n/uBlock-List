@@ -2,20 +2,17 @@
 ! Last modified: %timestamp%
 ! Description: |
 !   This gets rid of the clutter on Twitter
-! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
-! Homepage: https://github.com/Vran-n/uBlock-List
+!   Feel free to comment anything out for bring back a feature
+! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
+! Homepage: https://github.com/uBlockOrigin/uAssets
 
-! trending hashtags and follows on the side
-x.com##[aria-label="Who to follow"]:nth-ancestor(2)
-x.com##[aria-label="Timeline: Trending now"]:nth-ancestor(2)
-! ads on the side
-x.com##[data-testid$="Upsell"]
-x.com##[data-testid$="upsell"]
+! everything on the side except search and footer
+x.com##[data-testid="sidebarColumn"] [class="css-175oi2r r-vacyoi r-ttdzmv"] > :not([class="css-175oi2r r-1awozwy r-aqfbo4 r-kemksi r-18u37iz r-1h3ijdo r-6gpygo r-15ysp7h r-1xcajam r-ipm5af r-136ojw6 r-1hycxz"], [class="css-175oi2r r-1h3ijdo"], [class="css-175oi2r r-1kqtdi0 r-1867qdf r-1phboty r-1ifxtd0 r-1udh08x r-1niwhzg r-1yadl64"])
 
 ! explore timeline content
 ! removes all tweets
 x.com##[aria-label="Timeline: Explore"].css-175oi2r div.css-175oi2r:has([data-testid="tweet"])
-x.com##[aria-label="Timeline: Explore"].css-175oi2r div.css-175oi2r:contains(Posts For You)
+x.com##[aria-label="Timeline: Explore"].css-175oi2r div.css-175oi2r:has-text(Posts For You)
 x.com##[class="css-175oi2r r-42265s r-u8s1d r-1qd7xl"]:has([aria-label="More"])
 ! search timeline content
 ! removes all follow suggestions and communities
@@ -23,7 +20,7 @@ x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has(
 x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has([href^="/i/communities/"])
 x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has([href^="/search?"])
 ! coversation content
-! removes "Discover more" and all tweets succeeding them
+! removes "Discover more" and all tweets succedding them
 x.com##[aria-label="Timeline: Conversation"] .css-175oi2r:has-text("Discover more"),
 x.com##[aria-label="Timeline: Conversation"] .css-175oi2r:has-text("Discover more") ~ .css-175oi2r
 
@@ -34,27 +31,28 @@ x.com##[aria-label="Home timeline"]:has([href="/home"]) > .r-1g40b8q.r-1gn8etr.r
 ! > .r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3pj75a.r-s8bhmr.r-1777fci.r-1h3ijdo.r-16y2uox.r-eqz5dr.r-6koalj.r-1awozwy.css-175oi2r
 
 ! grok
-x.com##[data-testid="GrokDrawerHeader"]:nth-ancestor(1)
+x.com##[data-testid="GrokDrawerHeader"]:upward(1)
 x.com##[aria-label="Grok actions"]
 x.com##[aria-label="Enhance your post with Grok"]
 x.com##[aria-label="Profile Summary"]
 ! hover card
-x.com##[class="css-175oi2r r-1777fci r-1wzrnnt"]:contains(Profile Summary)
+x.com##[class="css-175oi2r r-1777fci r-1wzrnnt"]:has-text(Profile Summary)
 
 ! views
 x.com##[class="css-175oi2r r-18u37iz r-1h0z5md r-13awgt0"]:has([href$="/analytics"])
 x.com##.r-1471scf.r-1wbh5a2.r-18u37iz.r-1d09ksm.css-175oi2r > div:nth-of-type(1n + 2)
 
 ! "Who to follow" in the your profile timeline and others
-x.com##[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-1ny4l3l"]:contains(Who to follow)
-x.com##[data-testid="UserCell"]:nth-ancestor(5):not([aria-label="Timeline: Likes"], [aria-label="Timeline: Reposts"], [aria-label="Timeline: Quotes"], [aria-label="Timeline: Search timeline"], [aria-label="Timeline: Following"], [aria-label="Timeline: Followers"], [aria-label="Timeline: Verified followers"]).css-175oi2r div.css-175oi2r > .r-1ny4l3l.r-1adg3ll.css-175oi2r > .css-175oi2r > .r-1ny4l3l.r-6416eg.r-o7ynqc.r-1loqt21.r-3pj75a.r-1mmae3n.css-175oi2r
+x.com##[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-1ny4l3l"]:has-text(Who to follow)
+x.com##[data-testid="UserCell"]:upward(5):not([aria-label="Timeline: Likes"], [aria-label="Timeline: Reposts"], [aria-label="Timeline: Quotes"], [aria-label="Timeline: Search timeline"], [aria-label="Timeline: Following"], [aria-label="Timeline: Followers"], [aria-label="Timeline: Verified followers"]).css-175oi2r div.css-175oi2r > .r-1ny4l3l.r-1adg3ll.css-175oi2r > .css-175oi2r > .r-1ny4l3l.r-6416eg.r-o7ynqc.r-1loqt21.r-3pj75a.r-1mmae3n.css-175oi2r
 x.com##[href^="/i/connect_people?"]
 x.com##[class="css-175oi2r r-l00any r-109y4c4 r-gu4em3"]
-! removes "Promote"
+! removes "promote"
 x.com##[href$="/quick_promote_web/targeting"]
 
 ! i forgot what this one does lmao
-x.com##div[class="css-175oi2r r-12kyg2d r-6dt33c r-1kw4oii r-1i36cah r-eafdt9 r-1b8bd59 r-6czh2s"]
+! i'll uncomment this when i finally remember
+!x.com##div[class="css-175oi2r r-12kyg2d r-6dt33c r-1kw4oii r-1i36cah r-eafdt9 r-1b8bd59 r-6czh2s"]
 
 ! blue notification
 x.com##[aria-label="undefined unread items"]
@@ -88,10 +86,11 @@ x.com##[data-testid="highlightUpsell"]
 x.com##[data-testid="ProfessionalButton_Switch_To_Professional"]
 
 ! i forgot this one too
-x.com##.r-1ny4l3l.r-1adg3ll.css-175oi2
+! same with this one
+!x.com##.r-1ny4l3l.r-1adg3ll.css-175oi2
 
 ! three dots in the account button
 x.com##[data-testid="SideNav_AccountSwitcher_Button"] > .r-16y2uox.r-obd0qt.css-175oi2r
 
 ! removes 'Not followed by anyone you’re following'
-x.com##[class="css-175oi2r r-1s2bzr4"]:contains(Not followed by anyone you’re following)
+x.com##[class="css-175oi2r r-1s2bzr4"]:has-text(Not followed by anyone you’re following)
