@@ -3,8 +3,8 @@
 ! Description: |
 !   This gets rid of the clutter on Twitter
 !   Feel free to comment anything out for bring back a feature
-! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
-! Homepage: https://github.com/uBlockOrigin/uAssets
+! License: https://github.com/Vran-n/uBlock-List/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
 
 ! trending hashtags and follows on the side
 x.com##[aria-label="Who to follow"]:nth-ancestor(2)
