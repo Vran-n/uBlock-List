@@ -1,0 +1,111 @@
+! Title: Simplify Twitter: Kept trending hashtags edition
+! Last modified: %timestamp%
+! Description: |
+!   This gets rid of the clutter on Twitter
+! License: https://raw.githubusercontent.com/Vran-n/uBlock-List/refs/heads/main/filters/simplify%20twitter
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+! Changelog:
+! 3/27/2025: "Promote" button
+! 3/28/2025: "Get verified" button and pretty much rewrote the entire thing. Should be way more efficient now
+! 3/28/2025: tweaked sidebar, again
+! (cont.): Reduntant quote post in post analytics, "Promote" in post analytics and timeline:conversation, Fixed retweets stats being hidden in post analytics
+! (cont.): Fixed disappearing users in the Post engagements, Got rid of "View post engagements" inside posts, Removed the ugly lines below the now gone post engagements and adjusted its position
+! (cont.): Compact comment space and adjust it too, Reply, Post and Post all buttons appear when you actually start typing
+
+! everything in the sidebar except search, footer and relevant people
+! i might have the slightest idea why this works. just trust the process
+x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :not(.r-1h3ijdo, :has([aria-label="Search"]), :has([aria-label="Footer"]), :has([data-testid="searchFiltersAdvancedSearch"]), :has([aria-label="Relevant people"]), :has([aria-label="Timeline: Trending now"]) ):not(:has-text(Search filters))
+
+! timeline:explore content
+! removes all tweets
+x.com##[aria-label="Timeline: Explore"] > * > *:has-text(Posts For You)
+x.com##[aria-label="Timeline: Explore"] [data-testid="tweet"]:upward(3)
+x.com##[aria-label="Timeline: Explore"] [href^="/i/connect_people?"]
+! timeline:search content
+! removes all follow suggestions and communities
+x.com##[aria-label="Timeline: Search timeline"] > * > *:has([data-testid="tweet"]):upward(1) > :not([data-testid="tweet"]:upward(3))
+! timeline: posts content
+! removes "Who to follow", "Promote" and "Get verified"
+x.com##[aria-label$=" posts"] > * > :not([data-testid="tweet"]:upward(1)):is([data-testid="cellInnerDiv"])
+x.com##[data-testid="UserName"] [href="/i/premium_sign_up"]:upward(4)
+! all of "Promote"
+x.com##:has([aria-label="Timeline: Conversation"], [aria-label$="posts"]) [href$="/quick_promote_web/targeting"]
+x.com##[aria-labelledby="modal-header"] [href$="/quick_promote_web/intro"]:upward(2)
+! timeline:coversation content
+! removes "Discover more" and all tweets succedding them
+x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more")
+x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more") ~ *
+! post engagements
+x.com##[aria-label="Timeline: Conversation"] [href$="/quotes"]:upward(1)
+
+! the buttons above the home timeline
+! removes the "For you" button
+! if you dont want the arrow appearing on hover bugging you, remove :upward(1)
+x.com##[aria-label="Home timeline"] [href="/home"]:has-text(For you):upward(1)
+
+! grok
+x.com##[data-testid="GrokDrawerHeader"]
+x.com##[aria-label="Grok actions"]
+x.com##[aria-label="Enhance your post with Grok"]
+x.com##[aria-label="Profile Summary"]
+! hover card
+x.com##[data-testid="HoverCard"] > * > * > div:has-text(Profile Summary)
+
+! blue notification
+x.com##[aria-label="undefined unread items"]
+
+! views
+x.com##[data-testid="tweet"] [href$="/analytics"]:upward(1)
+x.com##[data-testid="tweet"] > * > * > * > * > * > * > * > [dir="ltr"]:nth-of-type(n+2)
+
+! side buttons
+x.com##[aria-label="Primary"] :is([href="/i/grok"], [href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"])
+! twitter/x icon
+x.com##[role="banner"] [aria-label="X"]:upward(2)
+
+! inside more/dropdown
+x.com##[data-testid="Dropdown"]:upward(3) :is([href="/i/monetization"], [href="/jobs"], [href^="https://ads.x.com/"], [data-testid="highlightUpsell"])
+
+! settings
+x.com##[aria-label="Section navigation"] :is([href^="/i/account_analytics?"], [href="/settings/monetization"], [href^="/i/premium_sign_up?"])
+
+! messages drawer
+x.com##[data-testid="DMDrawer"]:upward(3)
+
+! edit profile
+x.com##[aria-labelledby="modal-header"] :is([data-testid="ProfessionalButton_Edit_Professional_Profile"])
+
+! three dots in the account button
+x.com##[data-testid="SideNav_AccountSwitcher_Button"] > * > svg:upward(1)
+
+! 'Not followed by anyone you’re following'
+x.com##[aria-label="Home timeline"] * > * > * > * > * :has-text(Not followed by anyone you’re following)
+
+! reduntant quote post in analytics (timeline:coversation)
+x.com##:has([aria-label="Timeline: Conversation"]) [aria-labelledby="modal-header"] > * > * > * > * :has-text(Quote)
+
+! gets rid of the ugly lines below the now gone post engagements
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-2sztyj)
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-qklmqi)
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-h3s6tt)
+x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-1igl3o0 r-rull8r r-qklmqi"]
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(3):has([class="css-175oi2r r-12kyg2d"]) [role="group"]:upward(1) > div:style(top: -8px !important;)
+
+! compacts the comment space and moves it too
+x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] > * > * > *:remove-class(r-1mmae3n)
+x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] > * > * > * > * > *:style(top: -7px !important;)
+x.com##[aria-label="Timeline: Conversation"] [data-testid="progressBar-bar"]:upward(1):style(top: -7px !important;)
+
+! post, post all, and reply buttons appear when you actually start typing
+x.com##[aria-label="Home timeline"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
+x.com##[aria-labelledby="modal-header"] [data-testid="tweetButton"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
+x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
+
+! i forgot what this one does lmao
+! i'll uncomment this when i finally remember
+!x.com##div[class="css-175oi2r r-12kyg2d r-6dt33c r-1kw4oii r-1i36cah r-eafdt9 r-1b8bd59 r-6czh2s"]
+
+! i forgot this one too
+! same with this one
+!x.com##.r-1ny4l3l.r-1adg3ll.css-175oi2
