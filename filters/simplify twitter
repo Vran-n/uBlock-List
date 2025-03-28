@@ -14,7 +14,7 @@
 ! 3/28/2025: tweaked sidebar, again
 ! (cont.): Reduntant quote post in post analytics, "Promote" in post analytics and timeline:conversation, Fixed retweets stats being hidden in post analytics
 ! (cont.): Fixed disappearing users in the Post engagements, Got rid of "View post engagements" inside posts, Removed the ugly lines below the now gone post engagements and adjusted its position
-! (cont.): Compact comment space and adjust it too, Reply, Post and Post all buttons appear when you actually start typing
+! (cont.): Compact comment space and adjust it too, Reply, Post and Post all buttons appear when you actually start typing, Post button height is shorter
 
 ! everything in the sidebar except search, footer and relevant people
 ! i might have the slightest idea why this works. just trust the process
@@ -104,6 +104,9 @@ x.com##[aria-label="Timeline: Conversation"] [data-testid="progressBar-bar"]:upw
 x.com##[aria-label="Home timeline"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
 x.com##[aria-labelledby="modal-header"] [data-testid="tweetButton"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
 x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
+
+! post button height is shorter
+x.com##[role="banner"] [aria-label="Post"]:style(min-height: 30px !important;)
 
 ! i forgot what this one does lmao
 ! i'll uncomment this when i finally remember
