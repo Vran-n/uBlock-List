@@ -11,7 +11,7 @@
 ! 3/28/2025: tweaked sidebar, again
 ! (cont.): Reduntant quote post in post analytics, "Promote" in post analytics and timeline:conversation, Fixed retweets stats being hidden in post analytics
 ! (cont.): Fixed disappearing users in the Post engagements, Got rid of "View post engagements" inside posts, Removed the ugly lines below the now gone post engagements and adjusted its position
-! (cont.): Compact comment space and adjust it too, Reply, Post and Post all buttons appear when you actually start typing, Post button disappears when you're on the home page
+! (cont.): Compact comment space and adjust it too, Reply, Post and Post all buttons appear when you actually start typing
 
 ! everything in the sidebar except search, footer and relevant people
 ! i might have the slightest idea why this works. just trust the process
@@ -101,9 +101,6 @@ x.com##[aria-label="Timeline: Conversation"] [data-testid="progressBar-bar"]:upw
 x.com##[aria-label="Home timeline"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
 x.com##[aria-labelledby="modal-header"] [data-testid="tweetButton"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
 x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
-
-! the post button on the side disappears when you're on the home page
-x.com##:is([aria-label="Timeline: Your Home Timeline"]):upward([id="react-root"]) [aria-label="Post"]:upward(1) { display: none !important; }
 
 ! i forgot what this one does lmao
 ! i'll uncomment this when i finally remember
