@@ -2,8 +2,11 @@
 ! Last modified: %timestamp%
 ! Description: |
 !   This gets rid of the clutter on Twitter
-! License: https://raw.githubusercontent.com/Vran-n/uBlock-List/refs/heads/main/filters/simplify%20twitter%20with%20trending%20hashtags
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
 ! Homepage: https://github.com/Vran-n/uBlock-List
+
+!!! NEW VERSION !!!
+! I have made a new version of this list with the trending hastags
 
 ! Changelog:
 ! 3/27/2025: "Promote" button
