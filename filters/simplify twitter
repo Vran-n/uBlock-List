@@ -5,91 +5,79 @@
 ! License: https://raw.githubusercontent.com/Vran-n/uBlock-List/refs/heads/main/filters/simplify%20twitter
 ! Homepage: https://github.com/Vran-n/uBlock-List
 
-! everything on the side except search and footer
-x.com##[data-testid="sidebarColumn"] [class="css-175oi2r r-vacyoi r-ttdzmv"] > :not([class="css-175oi2r r-1awozwy r-aqfbo4 r-kemksi r-18u37iz r-1h3ijdo r-6gpygo r-15ysp7h r-1xcajam r-ipm5af r-136ojw6 r-1hycxz"], [class="css-175oi2r r-1h3ijdo"], [class="css-175oi2r r-1kqtdi0 r-1867qdf r-1phboty r-1ifxtd0 r-1udh08x r-1niwhzg r-1yadl64"])
+! Changelog:
+! 3/27/2025: "Promote" button
+! 3/28/2025: "Get verified" button and pretty much rewrote the entire thing. Should be way more efficient now
 
-! explore timeline content
+! everything in the sidebar except search, footer and relevant people
+! to be honest, i have no idea why this works. it just it does
+x.com##[data-testid="sidebarColumn"] [aria-label="Footer"]:upward(2) > :not(.r-1h3ijdo.css-175oi2r, :has-text(Search filters)):not([data-testid="searchFiltersAdvancedSearch"]:upward(1)):not([aria-label="Relevant people"]:upward(1)):not([aria-label="Footer"]:upward(1)) > :not([aria-label="Search"]:upward(1)):upward(1)
+
+! timeline:explore content
 ! removes all tweets
-x.com##[aria-label="Timeline: Explore"].css-175oi2r div.css-175oi2r:has([data-testid="tweet"])
-x.com##[aria-label="Timeline: Explore"].css-175oi2r div.css-175oi2r:has-text(Posts For You)
-x.com##[class="css-175oi2r r-42265s r-u8s1d r-1qd7xl"]:has([aria-label="More"])
-! search timeline content
+x.com##[aria-label="Timeline: Explore"] > * > *:has-text(Posts For You)
+x.com##[aria-label="Timeline: Explore"] [data-testid="tweet"]:upward(3)
+x.com##[aria-label="Timeline: Explore"] [href^="/i/connect_people?"]
+! timeline:search content
 ! removes all follow suggestions and communities
-x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has([data-testid="UserCell"])
-x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has([href^="/i/communities/"])
-x.com##[aria-label="Timeline: Search timeline"].css-175oi2r div.css-175oi2r:has([href^="/search?"])
-! coversation content
+x.com##[aria-label="Timeline: Search timeline"] > * > *:has([data-testid="tweet"]):upward(1) > :not([data-testid="tweet"]:upward(3))
+! timeline:coversation content
 ! removes "Discover more" and all tweets succedding them
-x.com##[aria-label="Timeline: Conversation"] .css-175oi2r:has-text("Discover more"),
-x.com##[aria-label="Timeline: Conversation"] .css-175oi2r:has-text("Discover more") ~ .css-175oi2r
+x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more")
+x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more") ~ div
+! timeline: posts content
+! removes "Who to follow", "Promote" and "Get verified"
+x.com##[aria-label$="posts"] > div > :not([data-testid="tweet"]:upward(3))
+x.com##[aria-label$="posts"] [href$="/quick_promote_web/targeting"]
+x.com##[data-testid="UserName"] [href="/i/premium_sign_up"]:upward(4)
 
 ! the buttons above the home timeline
 ! removes the "For you" button
-! copy the comment at the bottom for a temporary fix on the arrows (this will cause the tabs to be uncentered though)
-x.com##[aria-label="Home timeline"]:has([href="/home"]) > .r-1g40b8q.r-1gn8etr.r-gtdqiz.r-aqfbo4.css-175oi2r > .r-5zmot.r-1e5uvyk.css-175oi2r > .css-175oi2r > .r-qklmqi.r-rull8r.r-1igl3o0.r-18u37iz.r-1awozwy.css-175oi2r > .r-1ny4l3l.r-1pi2tsx.r-16y2uox.r-18u37iz.r-1ro0kt6.r-1awozwy.css-175oi2r > .r-1pi2tsx.r-1wbh5a2.r-16y2uox.r-1adg3ll.css-175oi2r > .r-lltvgl.r-10m9thr.r-2eszeu.r-mfh4gg.r-buy8e9.r-1pi2tsx.r-tzz3ar.r-1wbh5a2.r-16y2uox.r-18u37iz.css-175oi2r > .r-16y2uox.r-cpa5s6.r-14tvyh0.css-175oi2r:nth-of-type(1)
-! > .r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-3pj75a.r-s8bhmr.r-1777fci.r-1h3ijdo.r-16y2uox.r-eqz5dr.r-6koalj.r-1awozwy.css-175oi2r
+! if you dont want the arrow appearing on hover bugging you, remove :upward(1)
+x.com##[aria-label="Home timeline"] [href="/home"]:has-text(For you):upward(1)
 
 ! grok
-x.com##[data-testid="GrokDrawerHeader"]:upward(1)
+x.com##[data-testid="GrokDrawerHeader"]
 x.com##[aria-label="Grok actions"]
 x.com##[aria-label="Enhance your post with Grok"]
 x.com##[aria-label="Profile Summary"]
 ! hover card
-x.com##[class="css-175oi2r r-1777fci r-1wzrnnt"]:has-text(Profile Summary)
+x.com##[data-testid="HoverCard"] > * > * > div:has-text(Profile Summary)
+
+! blue notification
+x.com##[aria-label="undefined unread items"]
 
 ! views
-x.com##[class="css-175oi2r r-18u37iz r-1h0z5md r-13awgt0"]:has([href$="/analytics"])
-x.com##.r-1471scf.r-1wbh5a2.r-18u37iz.r-1d09ksm.css-175oi2r > div:nth-of-type(1n + 2)
+x.com##[data-testid="tweet"] [href$="/analytics"]:upward(1)
+x.com##[data-testid="tweet"] > * > * > * > * > * > * > * > [dir="ltr"]:nth-of-type(n+2)
 
-! "Who to follow" in the your profile timeline and others
-x.com##[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-1ny4l3l"]:has-text(Who to follow)
-x.com##[data-testid="UserCell"]:upward(5):not([aria-label="Timeline: Likes"], [aria-label="Timeline: Reposts"], [aria-label="Timeline: Quotes"], [aria-label="Timeline: Search timeline"], [aria-label="Timeline: Following"], [aria-label="Timeline: Followers"], [aria-label="Timeline: Verified followers"]).css-175oi2r div.css-175oi2r > .r-1ny4l3l.r-1adg3ll.css-175oi2r > .css-175oi2r > .r-1ny4l3l.r-6416eg.r-o7ynqc.r-1loqt21.r-3pj75a.r-1mmae3n.css-175oi2r
-x.com##[href^="/i/connect_people?"]
-x.com##[class="css-175oi2r r-l00any r-109y4c4 r-gu4em3"]
-! removes "promote"
-x.com##[href$="/quick_promote_web/targeting"]
+! side buttons
+x.com##[aria-label="Primary"] :is([href="/i/grok"], [href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"])
+! twitter/x icon
+x.com##[role="banner"] [aria-label="X"]:upward(2)
+
+! inside more/dropdown
+x.com##[data-testid="Dropdown"]:upward(3) :is([href="/i/monetization"], [href="/jobs"], [href^="https://ads.x.com/"], [data-testid="highlightUpsell"])
+
+! settings
+x.com##[aria-label="Section navigation"] :is([href^="/i/account_analytics?"], [href="/settings/monetization"], [href^="/i/premium_sign_up?"])
+
+! messages drawer
+x.com##[data-testid="DMDrawer"]:upward(3)
+
+! edit profile
+x.com##[aria-labelledby="modal-header"] :is([data-testid="ProfessionalButton_Edit_Professional_Profile"])
+
+! three dots in the account button
+x.com##[data-testid="SideNav_AccountSwitcher_Button"] > * > svg:upward(1)
+
+! 'Not followed by anyone you’re following'
+x.com##[aria-label="Home timeline"] * > * > * > * > * :has-text(Not followed by anyone you’re following)
 
 ! i forgot what this one does lmao
 ! i'll uncomment this when i finally remember
 !x.com##div[class="css-175oi2r r-12kyg2d r-6dt33c r-1kw4oii r-1i36cah r-eafdt9 r-1b8bd59 r-6czh2s"]
 
-! blue notification
-x.com##[aria-label="undefined unread items"]
-
-! side buttons
-x.com##[href="/i/grok"]
-x.com##[href="/i/premium_sign_up"]
-x.com##[href="/i/verified-orgs-signup"]
-x.com##[href="/i/account_analytics"]
-! twitter/x icon
-x.com##[class="css-175oi2r r-dnmrzs r-1559e4e"] > [class="css-175oi2r r-1awozwy r-1pz39u2 r-1loqt21 r-6koalj r-16y2uox r-1777fci r-4wgw6l"]:has([href="/home"])
-
-! inside more
-x.com##[href="/i/monetization"]
-x.com##[href="/jobs"]
-x.com##[href^="https://ads.x.com/"]
-
-! settings
-x.com##[href^="/i/account_analytics?"]
-x.com##[href="/settings/monetization"]
-x.com##[href^="/i/account_analytics?"]
-x.com##[href^="/i/premium_sign_up?"]
-
-! messages drawer
-x.com##[data-testid="DMDrawer"]
-
-! dropdown
-x.com##[data-testid="highlightUpsell"]
-
-! edit profile
-x.com##[data-testid="ProfessionalButton_Switch_To_Professional"]
-
 ! i forgot this one too
 ! same with this one
-!x.com##.r-1ny4l3l.r-1adg3ll.css-175oi2
-
-! three dots in the account button
-x.com##[data-testid="SideNav_AccountSwitcher_Button"] > .r-16y2uox.r-obd0qt.css-175oi2r
-
-! removes 'Not followed by anyone you’re following'
-x.com##[class="css-175oi2r r-1s2bzr4"]:has-text(Not followed by anyone you’re following)
+!x.com##.r-1ny4l3l.r-1adg3ll.css-175oi
