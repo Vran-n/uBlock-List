@@ -9,8 +9,10 @@
 ! 3/27/2025: "Promote" button
 ! 3/28/2025: "Get verified" button and pretty much rewrote the entire thing. Should be way more efficient now
 ! 3/28/2025: tweaked sidebar, again
+! 3/28/2025: Reduntant quote post in post analytics, "Promote" in post analytics and timeline:conversation, and fixed retweets stats being hidden in post analytics 
 
 ! everything in the sidebar except search, footer and relevant people
+! i might have the slightest idea why this works. just trust the process
 x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :not(.r-1h3ijdo, :has([aria-label="Search"]), :has([aria-label="Footer"]), :has([data-testid="searchFiltersAdvancedSearch"]), :has([aria-label="Relevant people"])):not(:has-text(Search filters))
 
 ! timeline:explore content
@@ -27,9 +29,11 @@ x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more")
 x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more") ~ *
 ! timeline: posts content
 ! removes "Who to follow", "Promote" and "Get verified"
-x.com##[aria-label$="posts"] > * > :not([data-testid="tweet"]:upward(3))
-x.com##[aria-label$="posts"] [href$="/quick_promote_web/targeting"]
+x.com##[aria-label$="posts"] > * > :not([data-testid="tweet"]:upward(1)):is([data-testid="cellInnerDiv"])
 x.com##[data-testid="UserName"] [href="/i/premium_sign_up"]:upward(4)
+! all of "Promote"
+x.com##:has([aria-label="Timeline: Conversation"], [aria-label$="posts"]) [href$="/quick_promote_web/targeting"]
+x.com##[aria-labelledby="modal-header"] [href$="/quick_promote_web/intro"]:upward(2)
 
 ! the buttons above the home timeline
 ! removes the "For you" button
@@ -74,10 +78,13 @@ x.com##[data-testid="SideNav_AccountSwitcher_Button"] > * > svg:upward(1)
 ! 'Not followed by anyone you’re following'
 x.com##[aria-label="Home timeline"] * > * > * > * > * :has-text(Not followed by anyone you’re following)
 
+! reduntant quote post in analytics (timeline:coversation)
+x.com##:has([aria-label="Timeline: Conversation"]) [aria-labelledby="modal-header"] > * > * > * > * :has-text(Quote)
+
 ! i forgot what this one does lmao
 ! i'll uncomment this when i finally remember
 !x.com##div[class="css-175oi2r r-12kyg2d r-6dt33c r-1kw4oii r-1i36cah r-eafdt9 r-1b8bd59 r-6czh2s"]
 
 ! i forgot this one too
 ! same with this one
-!x.com##.r-1ny4l3l.r-1adg3ll.css-175oi
+!x.com##.r-1ny4l3l.r-1adg3ll.css-175oi2
