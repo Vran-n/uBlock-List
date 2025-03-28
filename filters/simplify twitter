@@ -24,10 +24,10 @@ x.com##[aria-label="Timeline: Search timeline"] > * > *:has([data-testid="tweet"
 ! timeline:coversation content
 ! removes "Discover more" and all tweets succedding them
 x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more")
-x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more") ~ div
+x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more") ~ *
 ! timeline: posts content
 ! removes "Who to follow", "Promote" and "Get verified"
-x.com##[aria-label$="posts"] > div > :not([data-testid="tweet"]:upward(3))
+x.com##[aria-label$="posts"] > * > :not([data-testid="tweet"]:upward(3))
 x.com##[aria-label$="posts"] [href$="/quick_promote_web/targeting"]
 x.com##[data-testid="UserName"] [href="/i/premium_sign_up"]:upward(4)
 
