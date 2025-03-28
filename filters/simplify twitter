@@ -11,7 +11,6 @@
 ! 3/28/2025: tweaked sidebar, again
 
 ! everything in the sidebar except search, footer and relevant people
-! to be honest, i have no idea why this works. it just it does
 x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :not(.r-1h3ijdo, :has([aria-label="Search"]), :has([aria-label="Footer"]), :has([data-testid="searchFiltersAdvancedSearch"]), :has([aria-label="Relevant people"])):not(:has-text(Search filters))
 
 ! timeline:explore content
