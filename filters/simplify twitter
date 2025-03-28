@@ -9,7 +9,9 @@
 ! 3/27/2025: "Promote" button
 ! 3/28/2025: "Get verified" button and pretty much rewrote the entire thing. Should be way more efficient now
 ! 3/28/2025: tweaked sidebar, again
-! 3/28/2025: Reduntant quote post in post analytics, "Promote" in post analytics and timeline:conversation, and fixed retweets stats being hidden in post analytics 
+! (cont.): Reduntant quote post in post analytics, "Promote" in post analytics and timeline:conversation, Fixed retweets stats being hidden in post analytics
+! (cont.): Fixed disappearing users in the Post engagements, Got rid of "View post engagements" inside posts, Removed the ugly lines below the now gone post engagements and adjusted its position
+! (cont.): Compact comment space and adjust it too, Reply, Post and Post all buttons appear when you actually start typing, Post button disappears when you're on the home page
 
 ! everything in the sidebar except search, footer and relevant people
 ! i might have the slightest idea why this works. just trust the process
@@ -23,17 +25,19 @@ x.com##[aria-label="Timeline: Explore"] [href^="/i/connect_people?"]
 ! timeline:search content
 ! removes all follow suggestions and communities
 x.com##[aria-label="Timeline: Search timeline"] > * > *:has([data-testid="tweet"]):upward(1) > :not([data-testid="tweet"]:upward(3))
-! timeline:coversation content
-! removes "Discover more" and all tweets succedding them
-x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more")
-x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more") ~ *
 ! timeline: posts content
 ! removes "Who to follow", "Promote" and "Get verified"
-x.com##[aria-label$="posts"] > * > :not([data-testid="tweet"]:upward(1)):is([data-testid="cellInnerDiv"])
+x.com##[aria-label$=" posts"] > * > :not([data-testid="tweet"]:upward(1)):is([data-testid="cellInnerDiv"])
 x.com##[data-testid="UserName"] [href="/i/premium_sign_up"]:upward(4)
 ! all of "Promote"
 x.com##:has([aria-label="Timeline: Conversation"], [aria-label$="posts"]) [href$="/quick_promote_web/targeting"]
 x.com##[aria-labelledby="modal-header"] [href$="/quick_promote_web/intro"]:upward(2)
+! timeline:coversation content
+! removes "Discover more" and all tweets succedding them
+x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more")
+x.com##[aria-label="Timeline: Conversation"] > * > :has-text("Discover more") ~ *
+! post engagements
+x.com##[aria-label="Timeline: Conversation"] [href$="/quotes"]:upward(1)
 
 ! the buttons above the home timeline
 ! removes the "For you" button
@@ -80,6 +84,26 @@ x.com##[aria-label="Home timeline"] * > * > * > * > * :has-text(Not followed by 
 
 ! reduntant quote post in analytics (timeline:coversation)
 x.com##:has([aria-label="Timeline: Conversation"]) [aria-labelledby="modal-header"] > * > * > * > * :has-text(Quote)
+
+! gets rid of the ugly lines below the now gone post engagements
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-2sztyj)
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-qklmqi)
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-h3s6tt)
+x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-1igl3o0 r-rull8r r-qklmqi"]
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(3):has([class="css-175oi2r r-12kyg2d"]) [role="group"]:upward(1) > div:style(top: -8px !important;)
+
+! compacts the comment space and moves it too
+x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] > * > * > *:remove-class(r-1mmae3n)
+x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] > * > * > * > * > *:style(top: -7px !important;)
+x.com##[aria-label="Timeline: Conversation"] [data-testid="progressBar-bar"]:upward(1):style(top: -7px !important;)
+
+! post, post all, and reply buttons appear when you actually start typing
+x.com##[aria-label="Home timeline"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
+x.com##[aria-labelledby="modal-header"] [data-testid="tweetButton"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
+x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important; }
+
+! the post button on the side disappears when you're on the home page
+x.com##:is([aria-label="Timeline: Your Home Timeline"]):upward([id="react-root"]) [aria-label="Post"]:upward(1) { display: none !important; }
 
 ! i forgot what this one does lmao
 ! i'll uncomment this when i finally remember
