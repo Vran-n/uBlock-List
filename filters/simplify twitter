@@ -8,10 +8,11 @@
 ! Changelog:
 ! 3/27/2025: "Promote" button
 ! 3/28/2025: "Get verified" button and pretty much rewrote the entire thing. Should be way more efficient now
+! 3/28/2025: tweaked sidebar, again
 
 ! everything in the sidebar except search, footer and relevant people
 ! to be honest, i have no idea why this works. it just it does
-x.com##[data-testid="sidebarColumn"] [aria-label="Footer"]:upward(2) > :not(.r-1h3ijdo.css-175oi2r, :has-text(Search filters)):not([data-testid="searchFiltersAdvancedSearch"]:upward(1)):not([aria-label="Relevant people"]:upward(1)):not([aria-label="Footer"]:upward(1)) > :not([aria-label="Search"]:upward(1)):upward(1)
+x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :not(.r-1h3ijdo, :has([aria-label="Search"]), :has([aria-label="Footer"]), :has([data-testid="searchFiltersAdvancedSearch"]), :has([aria-label="Relevant people"])):not(:has-text(Search filters))
 
 ! timeline:explore content
 ! removes all tweets
