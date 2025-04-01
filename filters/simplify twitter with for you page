@@ -20,7 +20,7 @@
 
 
 ! everything in the sidebar except search, footer and relevant people
-x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :not(.r-1h3ijdo, :has([aria-label="Search"]), :has([aria-label="Footer"]), :has([data-testid="searchFiltersAdvancedSearch"]), :has([aria-label="Relevant people"]), :has([aria-label="Timeline: Trending now"]) ):not(:has-text(Search filters))
+x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :not(.r-1h3ijdo, :has([aria-label="Search"]), :has([aria-label="Footer"]), :has([data-testid="searchFiltersAdvancedSearch"]), :has([aria-label="Relevant people"])):not(:first-child)
 
 !---------------------  ---------------------  ---------------------  ---------------------!
 
