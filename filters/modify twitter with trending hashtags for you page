@@ -172,8 +172,8 @@ x.com##[data-testid="dmComposerAttachments"]>:nth-of-type(1) img:upward(3):style
 
 ! removed ugly border lines
 x.com##[data-testid="tweet"] .r-1kqtdi0:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"], [data-testid="card.wrapper"]) :style(border-color: rgb(0,0,0) !important)
-x.com##[data-testid="tweet"] .r-18bvks7:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"]) :style(border-color: rgb(21,32,43) !important)
-x.com##[data-testid="tweet"] .r-1ets6dv:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"]) :style(border-color: rgb(255,255,255) !important)
+x.com##[data-testid="tweet"] .r-18bvks7:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"], [data-testid="card.wrapper"]) :style(border-color: rgb(21,32,43) !important)
+x.com##[data-testid="tweet"] .r-1ets6dv:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"], [data-testid="card.wrapper"]) :style(border-color: rgb(255,255,255) !important)
 
 ! square user icons
 ! i know this seema lot, but trust me, i made sure to use the least amount of nodes
