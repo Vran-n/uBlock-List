@@ -1,1 +1,95 @@
+! Title: Modify Twitter
+! Last modified: %timestamp%
+! Description: |
+!   Changes how the site looks
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
 
+
+
+! Format: MM/DD/YYYY
+! Changelog:
+! 4/1/2025: Border radius for text and videos are smaller including messages and, when posting images
+! (cont.): Removed border lines (quoted tweets, community notes and links to other sites are exempted)
+! (cont.): User icons are now rounded squares except your profile
+! (cont.): (Change) Post button is a little taller
+! (cont.): (Fixed) Post engagement line on different themes
+! (cont.): Compact "your likes are private"
+! (cont.): Smaller handles, hashtags and dates
+! (cont.): Reduced margin in profile and profile toolbar
+! (cont.): Made the username and check- larger in profile plus removed extras
+
+
+
+! gets rid of the ugly lines below the now gone post engagements
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-2sztyj)
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-qklmqi)
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-h3s6tt)
+x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-1igl3o0 r-rull8r r-qklmqi"]
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(3):has([class="css-175oi2r r-12kyg2d"]) [role="group"]:upward(1) > div:style(top: -8px !important)
+! fix for the other themes
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-5kkj8d)
+x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-j5o65s r-rull8r r-qklmqi"]
+x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-1ila09b r-rull8r r-qklmqi"]
+! move the comment
+x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] > * > * > *:remove-class(r-1mmae3n)
+x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] > * > * > * > * > *:style(top: -7px !important)
+x.com##[aria-label="Timeline: Conversation"] [data-testid="progressBar-bar"]:upward(1):style(top: -7px !important)
+
+! post button height is shorter
+x.com##[role="banner"] [aria-label="Post"]:style(min-height: 34px !important)
+
+! border radius are smaller
+! text and videos 
+x.com##[data-testid="tweet"] :is(.r-1867qdf):style(border-radius: 6px !important)
+! inside messages
+x.com##[data-testid="DmScrollerContainer"] [role="presentation"]:style(border-radius: 12px !important)
+x.com##[data-testid="messageEntry"]:has(.r-2dysd3) [role="presentation"]:style(border-bottom-right-radius: 3px !important)
+x.com##[data-testid="messageEntry"]:has(.r-faml9v) [role="presentation"]:style(border-bottom-left-radius: 3px !important)
+x.com##[data-testid="messageEntry"] [data-testid="DMCompositeMessage"] :not([role="presentation"]):is(.r-1fuqb1j):style(border-radius: 6px !important)
+! replying/posting
+x.com##[aria-label="Media"]:style(border-radius: 6px !important)
+! replying/posting gifs including messages
+x.com##[data-testid="attachments"] [role="group"]:style(border-radius: 6px !important)
+x.com##[data-testid="dmComposerAttachments"]>:nth-of-type(1) img:upward(3):style(border-radius: 6px !important)
+
+! removed ugly border lines
+x.com##[data-testid="tweet"] .r-1kqtdi0:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"], [data-testid="card.wrapper"]) :style(border-color: rgb(0,0,0) !important)
+x.com##[data-testid="tweet"] .r-18bvks7:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"], [data-testid="card.wrapper"]) :style(border-color: rgb(21,32,43) !important)
+x.com##[data-testid="tweet"] .r-1ets6dv:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"], [data-testid="card.wrapper"]) :style(border-color: rgb(255,255,255) !important)
+
+! square user icons
+! i know this seema lot, but trust me, i made sure to use the least amount of nodes
+x.com##[data-testid^="UserAvatar-Container-"]:not([href$="/photo"]:upward(1)):upward(3) :is([aria-label="Account menu"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid^="UserAvatar-Container-"] [role="link"], [data-testid="Tweet-User-Avatar"] [data-testid^="UserAvatar-Container-"] [href^="/"], [data-testid="DM_Conversation_Avatar"] [role="presentation"], [data-testid="UserAvatar-Container-unknown"] [role="presentation"], [role="listbox"] [data-testid="TypeaheadUser"] [role="presentation"], [aria-labelledby="modal-header"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid="hoverCardParent"] [data-testid="UserCell"] [role="presentation"]):upward(1):style(border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important)
+! part 2
+x.com##[data-testid^="UserAvatar-Container-"]:not([href$="/photo"]:upward(1)):upward(3) :is([aria-label="Account menu"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid^="UserAvatar-Container-"] [role="link"], [data-testid="Tweet-User-Avatar"] [data-testid^="UserAvatar-Container-"] [href^="/"], [data-testid="DM_Conversation_Avatar"] [role="presentation"], [data-testid="UserAvatar-Container-unknown"] [role="presentation"], [role="listbox"] [data-testid="TypeaheadUser"] [role="presentation"], [aria-labelledby="modal-header"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid="hoverCardParent"] [data-testid="UserCell"] [role="presentation"])>*:nth-of-type(3):style(border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important)
+
+! shorter "Your likes are private."
+x.com##[aria-label="Home timeline"] [role="status"] [data-testid="icon"]:upward(2):style(padding-top: 4px !important; padding-bottom: 4px !important; margin: 8px !important; border-radius: 999px !important)
+
+! smaller text
+! hashtags
+x.com##[data-testid="tweet"] [data-testid="tweetText"] > *:has-text(#):style(font-size: 12px !important)
+! date
+x.com##[data-testid="tweet"] time:upward(2):style(font-size: 12px !important)
+! handle
+x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"]:upward(1)[data-testid="User-Name"] [href^="/"]:has-text(@)>*:style(font-size: 12px !important)
+x.com##[aria-label="Relevant people"] [role="list"] [href^="/"] [dir="ltr"]:has-text(@):style(font-size: 12px !important)
+x.com##[aria-label="Home timeline"] [data-testid="UserCell"] [href^="/"] [dir="ltr"]:has-text(@):style(font-size: 12px !important)
+x.com##[aria-label="Section details"] [data-testid="DmScrollerContainer"] [data-testid="UserAvatar-Container-unknown"]:upward(1)>div:nth-of-type(2)>*>*:nth-of-type(2) [dir="ltr"]:style(font-size: 12px !important)
+x.com##[data-testid="tweet"] [data-testid="User-Name"]>*:nth-of-type(2) .r-a023e6:style(font-size: 12px !important)
+
+! bigger username in profile
+x.com##[href$="/header_photo"]:upward(1)[data-testid="UserName"] [dir="ltr"]>*>*:nth-of-type(1):upward(2):style(font-size: 30px !important)
+! bigger check and removed extras
+x.com##[href$="/header_photo"]:upward(1)[data-testid="UserName"] [dir="ltr"]>*>*:nth-of-type(1):upward(2) svg:style(max-width: 999px !important; max-height: 999px !important)
+x.com##[href$="/header_photo"]:upward(1)[data-testid="UserName"] [dir="ltr"]>*>*:nth-of-type(2)>*>*>*:nth-of-type(1)~*
+
+! reduced margin in profile
+x.com##[href$="/header_photo"]~*:nth-of-type(1):style(margin-bottom: 4px !important)
+! reduced height in profile toolbar + adjusted shit
+x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]:style(height: 36px !important)
+x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]:watch-attr(class):remove-class(r-1awozwy)
+x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]>*>*:style(padding-bottom: 10px !important)
+x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]>*>*:style(padding-top: 10px !important)
+x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]>*>*>div:style(height: 5px !important)
