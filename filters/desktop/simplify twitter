@@ -53,6 +53,8 @@ x.com##[aria-labelledby="modal-header"] [style^="gap"]:upward(8):remove-class(r-
 x.com##[href$="/header_photo"]:upward(1)>div>:last-child:not([aria-label="Followers you know"]:upward(4)):not([role="link"]:upward(2))
 ! exhibits strange behavior rarely
 x.com##[aria-label="Section details"]:not([aria-label="Followers you know"]:upward(1)) [data-testid="DmScrollerContainer"] [data-testid="UserAvatar-Container-unknown"]:upward(1)>div:nth-of-type(5)
+! messages
+x.com##[aria-label="Section details"] [data-testid="DmScrollerContainer"] > * > * > * > [role="separator"]
 
 ! grok
 x.com##[data-testid="GrokDrawerHeader"]
@@ -99,11 +101,7 @@ x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div
 ! "You aren’t verified yet" in profile 
 x.com##[aria-label="Home timeline"] :is([href$="/premium_sign_up"]):upward(4)
 
-! compact messages
-x.com##[aria-label="Section details"] [data-testid="DmScrollerContainer"] > * > * > * > [role="separator"]
-x.com##[data-testid="DmScrollerContainer"]>*>*:nth-of-type(1)>*:style(padding-bottom: 10px !important; padding-top: 10px; !important)
-! compact "new messages"
-x.com##[aria-label="Section details"] [href="/messages/compose"]:style(min-height: 34px !important)
+
 
 ! i forgot what this one does lmao
 ! i'll uncomment this when i finally remember
