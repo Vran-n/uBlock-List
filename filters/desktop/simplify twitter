@@ -95,8 +95,6 @@ x.com##[aria-label="Timeline: Conversation"] [href$="/join-birdwatch"]:upward(1)
 x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div:upward(2)>*
 x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] span:nth-of-type(2)
 x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div:upward(2):style(padding-bottom: 6px !important; padding-top: 6px !important; border-top-width: 0px !important)
-! toolbar in post tweet only appears if you interact with it
-x.com##[aria-label="Home timeline"]>*>*:not([aria-label="Timeline: Conversation"]) [data-testid="toolBar"]:upward(3)[class="css-175oi2r r-1awozwy r-18u37iz r-1wtj0ep"]:not([data-testid="toolBar"]):upward(1) > * { display: none !important}
 
 ! "You aren’t verified yet" in profile 
 x.com##[aria-label="Home timeline"] :is([href$="/premium_sign_up"]):upward(4)
