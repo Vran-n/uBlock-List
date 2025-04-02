@@ -21,6 +21,11 @@
 
 
 
+! compact messages
+x.com##[data-testid="DmScrollerContainer"]>*>*:nth-of-type(1)>*:style(padding-bottom: 10px !important; padding-top: 10px; !important)
+! "new messages"
+x.com##[aria-label="Section details"] [href="/messages/compose"]:style(min-height: 34px !important)
+
 ! toolbar in post tweet only appears if you interact with it
 x.com##[aria-label="Home timeline"]>*>*:not([aria-label="Timeline: Conversation"]) [data-testid="toolBar"]:upward(3)[class="css-175oi2r r-1awozwy r-18u37iz r-1wtj0ep"]:not([data-testid="toolBar"]):upward(1) > * { display: none !important}
 
