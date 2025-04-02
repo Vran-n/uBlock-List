@@ -20,6 +20,10 @@
 ! (cont.): Made the username and check- larger in profile plus removed extras
 
 
+
+! toolbar in post tweet only appears if you interact with it
+x.com##[aria-label="Home timeline"]>*>*:not([aria-label="Timeline: Conversation"]) [data-testid="toolBar"]:upward(3)[class="css-175oi2r r-1awozwy r-18u37iz r-1wtj0ep"]:not([data-testid="toolBar"]):upward(1) > * { display: none !important}
+
 ! post, post all, and reply buttons appear when you actually start typing
 x.com##[aria-label="Home timeline"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important }
 x.com##[aria-labelledby="modal-header"] [data-testid="tweetButton"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important }
