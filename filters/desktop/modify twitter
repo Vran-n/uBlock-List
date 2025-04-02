@@ -20,6 +20,10 @@
 ! (cont.): Made the username and check- larger in profile plus removed extras
 
 
+! post, post all, and reply buttons appear when you actually start typing
+x.com##[aria-label="Home timeline"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important }
+x.com##[aria-labelledby="modal-header"] [data-testid="tweetButton"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important }
+x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important }
 
 ! gets rid of the ugly lines below the now gone post engagements
 x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-2sztyj)
