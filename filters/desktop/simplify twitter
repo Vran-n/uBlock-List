@@ -54,11 +54,6 @@ x.com##[href$="/header_photo"]:upward(1)>div>:last-child:not([aria-label="Follow
 ! exhibits strange behavior rarely
 x.com##[aria-label="Section details"]:not([aria-label="Followers you know"]:upward(1)) [data-testid="DmScrollerContainer"] [data-testid="UserAvatar-Container-unknown"]:upward(1)>div:nth-of-type(5)
 
-! post, post all, and reply buttons appear when you actually start typing
-x.com##[aria-label="Home timeline"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important }
-x.com##[aria-labelledby="modal-header"] [data-testid="tweetButton"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important }
-x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] [data-testid="tweetButtonInline"].r-icoktb.r-6416eg.r-o7ynqc { display: none !important }
-
 ! grok
 x.com##[data-testid="GrokDrawerHeader"]
 x.com##[aria-label="Grok actions"]
