@@ -39,3 +39,6 @@ Improves the sites look. Changes include:
 - Smaller handles, hashtags and dates in almost everywhere
 - Reduced the margin in your Timeline: profile and profile toolbar
 - Usernames including the checkmark are now bigger in profile
+### Addons for this filter:
+#### No names on the side
+- Removes the names of the navigation buttons and reduces its width
