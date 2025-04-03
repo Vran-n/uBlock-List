@@ -32,7 +32,7 @@ Improves the sites look. Changes include:
 - Post and "New message" buttons are shorter
 - Post and reply buttons will only start to appear when you start typing
 - Gets rid of the lines inside the post and moves up the reply section
-- Border radii is smaller in text, videos, gifs, and messages
+- Border radii is smaller in text, videos, gifs, reply's, and messages
 - Border lines have been removed in text, videos, and gifs
 - User icons are now square-ish
 - Made the "Your likes are private" more compact
