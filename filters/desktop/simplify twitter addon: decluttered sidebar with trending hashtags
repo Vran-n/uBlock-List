@@ -1,0 +1,9 @@
+! Title: Simplify Twitter Addon: Decluttered Sidebar with Trending Hashtags
+! Last modified: %timestamp%
+! Description: |
+!   Removes stuff in the side bar but keeps the trending hashtags
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+! everything in the sidebar except search, footer and relevant people
+x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :not(.r-1h3ijdo, :has([aria-label="Search"]), :has([aria-label="Footer"]), :has([data-testid="searchFiltersAdvancedSearch"]), :has([aria-label="Relevant people"]), :has([aria-label="Timeline: Trending now"]) ):not(:has-text(Search filters))
