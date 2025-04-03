@@ -19,5 +19,13 @@ This will remove all of the unnecessary content in here such as:
 - 3 dots in the account switch button
 - Community notes reminder at the very bottom of the post and "Do you find this helpful?"
 - "You aren’t verified yet" in profile (this appears occasionally)
+### Addons for this filter:
+#### Decluttered Sidebar
+- Removes everything in the sidebar except search, footer and relevant people
+#### Decluttered Sidebar with Trending Hashtags
+- Same as the one before it except it keeps the trending hashtags
+#### No "For you" in the toolbar
+- Removes the "For you" in the toolbar
 ## Modify Twitter
-Changes the sites look to make it look nicer
+Improves the sites look. Changes include:
+- sdf
