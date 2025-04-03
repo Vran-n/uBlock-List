@@ -13,6 +13,7 @@
 ! (cont.): The lines in-between tweets have their opacity reduced including comment chains
 ! (cont.): User icons have now been updated to rounded squares in search and quotes
 ! (cont.): "This Post is unavailable" is shorter and no longer has borders
+! (cont.): Your reply's in messages have smaller border radii
 
 
 
@@ -60,6 +61,9 @@ x.com##[aria-label="Media"]:style(border-radius: 6px !important)
 ! replying/posting gifs including messages
 x.com##[data-testid="attachments"] [role="group"]:style(border-radius: 6px !important)
 x.com##[data-testid="dmComposerAttachments"]>:nth-of-type(1) img:upward(3):style(border-radius: 6px !important)
+! reply in messages
+x.com##[data-testid="messageEntry"] [role="presentation"]:upward(1)>:nth-of-type(1)>:nth-of-type(2):has([data-testid="tweetText"])>*:style(border-radius: 12px !important)
+x.com##[data-testid="messageEntry"] [role="presentation"]:upward(1)>:nth-of-type(1)>:nth-of-type(2):not(:has([data-testid="tweetText"]))>*:style(border-radius: 6px !important)
 
 ! removed ugly border lines
 x.com##[data-testid="tweet"] .r-1kqtdi0:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"], [data-testid="card.wrapper"]) :style(border-color: rgb(0,0,0) !important)
