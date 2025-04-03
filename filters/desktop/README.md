@@ -34,11 +34,14 @@ Improves the sites look. Changes include:
 - Gets rid of the lines inside the post and moves up the reply section
 - Border radii is smaller in text, videos, gifs, and messages
 - Border lines have been removed in text, videos, and gifs
-- User icons square-ish
+- User icons are now square-ish
 - Made the "Your likes are private" more compact
 - Smaller handles, hashtags and dates in almost everywhere
 - Reduced the margin in your Timeline: profile and profile toolbar
 - Usernames including the checkmark are now bigger in profile
+- The follow button in the relevant people section is shorter
+- The lines in-between tweets have their opacity reduced including comment chains
+- "This Post is unavailable" is shorter and no longer has borders
 ### Addons for this filter:
 #### No names on the side
 - Removes the names of the navigation buttons and reduces its width
