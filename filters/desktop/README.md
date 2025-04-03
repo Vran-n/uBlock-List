@@ -1,5 +1,5 @@
 # TWITTER CATEGORY
-Note: As of April ???, 2025. I've decided to remove the declutter section of "Modify Twitter" to make it easier for myself to update these versions. **If you use any of them, you'd wanna install the filter "Simplify Twitter" as well**
+Note: As of April 3, 2025. I've decided to remove the declutter section of "Modify Twitter" to make it easier for myself to update these versions. **If you use any of them, you'd wanna install the filter "Simplify Twitter" as well**
 ## Simplify Twitter
 This will remove all of the unnecessary content in here such as:
 - All the tweets in "Timeline: explore"
