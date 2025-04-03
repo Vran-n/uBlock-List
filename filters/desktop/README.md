@@ -29,5 +29,13 @@ This will remove all of the unnecessary content in here such as:
 ## Modify Twitter
 Improves the sites look. Changes include:
 - Reduced extra space in the messages
-- "New message" is shorter
+- Post and "New message" buttons are shorter
 - Post and reply buttons will only start to appear when you start typing
+- Gets rid of the lines inside the post and moves up the reply section
+- Border radii is smaller in text, videos, gifs, and messages
+- Border lines have been removed in text, videos, and gifs
+- User icons square-ish
+- Made the "Your likes are private" more compact
+- Smaller handles, hashtags and dates in almost everywhere
+- Reduced the margin in your Timeline: profile and profile toolbar
+- Usernames including the checkmark are now bigger in profile
