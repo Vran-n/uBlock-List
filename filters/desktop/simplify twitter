@@ -9,13 +9,7 @@
 
 ! Format: MM/DD/YYYY
 ! Changelog:
-! 4/1/2025: (Fixed) Only tweets in the Timeline:home content, Removed the subscribe button inside posts
-! (cont.): (Fixed) Community notes and removed the reminder below
-! (cont.): Post analytics size is no longer static, Reduced the reliance on :has-text() (supports more languages)
-! (cont.): (Fixed) the bugged arrow on the toolbar when hovering on it
-! (cont.): Removed "Not followed by anyone you’re following" in messages and made it more compact include new messages
-! (cont.): "You aren’t verified yet" in profile (reappears from time to time)
-! (cont.): (Fixed) Emojis Hover Card
+! 4/3/2025: (Fixed) Hover card of reacts in messages
 
 
 
