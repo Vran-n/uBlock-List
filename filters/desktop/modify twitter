@@ -9,7 +9,7 @@
 
 ! Format: MM/DD/YYYY
 ! Changelog:
-! 4/3/2025: Smaller follow button in the relevant people section
+! 4/3/2025: Smaller follow button in the relevant people and "Who to follow" section
 ! (cont.): The lines in-between tweets have their opacity reduced including comment chains
 ! (cont.): User icons have now been updated to rounded squares in search and quotes
 ! (cont.): "This Post is unavailable" is shorter and no longer has borders
@@ -121,5 +121,5 @@ x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-16cnny
 x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-cliqr8:style(border-color: rgb(21, 32, 43) !important)
 x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-jxzhtn:style(border-color: rgb(255, 255,255) !important)
 
-! smaller follow button in relevant people
-x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :has([aria-label="Relevant people"]) [type="button"]:style(min-height: 24px !important)
+! smaller follow button in relevant people and "Who to follow"
+x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :has([aria-label="Relevant people"], [aria-label="Who to follow"]) [type="button"]:style(min-height: 24px !important)
