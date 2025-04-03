@@ -28,4 +28,6 @@ This will remove all of the unnecessary content in here such as:
 - Removes the "For you" in the toolbar
 ## Modify Twitter
 Improves the sites look. Changes include:
-- sdf
+- Reduced extra space in the messages
+- "New message" is shorter
+- Post and reply buttons will only start to appear when you start typing
