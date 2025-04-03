@@ -9,15 +9,10 @@
 
 ! Format: MM/DD/YYYY
 ! Changelog:
-! 4/1/2025: Border radius for text and videos are smaller including messages and, when posting images
-! (cont.): Removed border lines (quoted tweets, community notes and links to other sites are exempted)
-! (cont.): User icons are now rounded squares except your profile
-! (cont.): (Change) Post button is a little taller
-! (cont.): (Fixed) Post engagement line on different themes
-! (cont.): Compact "your likes are private"
-! (cont.): Smaller handles, hashtags and dates
-! (cont.): Reduced margin in profile and profile toolbar
-! (cont.): Made the username and check- larger in profile plus removed extras
+! 4/3/2025: Smaller follow button in the relevant people section
+! (cont.): The lines in-between tweets have their opacity reduced including comment chains
+! (cont.): User icons have now been updated to rounded squares in search and quotes
+! (cont.): "This Post is unavailable" is shorter and no longer has borders
 
 
 
@@ -73,10 +68,9 @@ x.com##[data-testid="tweet"] .r-1ets6dv:not(:has([data-testid="tweetText"]), :is
 
 ! square user icons
 ! i know this seema lot, but trust me, i made sure to use the least amount of nodes
-x.com##[data-testid^="UserAvatar-Container-"]:not([href$="/photo"]:upward(1)):upward(3) :is([aria-label="Account menu"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid^="UserAvatar-Container-"] [role="link"], [data-testid="Tweet-User-Avatar"] [data-testid^="UserAvatar-Container-"] [href^="/"], [data-testid="DM_Conversation_Avatar"] [role="presentation"], [data-testid="UserAvatar-Container-unknown"] [role="presentation"], [role="listbox"] [data-testid="TypeaheadUser"] [role="presentation"], [aria-labelledby="modal-header"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid="hoverCardParent"] [data-testid="UserCell"] [role="presentation"]):upward(1):style(border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important)
+x.com##[data-testid^="UserAvatar-Container-"]:not([href$="/photo"]:upward(1)):upward(3) :is([aria-label="Account menu"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid^="UserAvatar-Container-"] [role="link"], [data-testid="Tweet-User-Avatar"] [data-testid^="UserAvatar-Container-"] [href^="/"], [data-testid="DM_Conversation_Avatar"] [role="presentation"], [data-testid="UserAvatar-Container-unknown"] [role="presentation"], [role="listbox"] [data-testid="TypeaheadUser"] [role="presentation"], [aria-labelledby="modal-header"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid="hoverCardParent"] [data-testid="UserCell"] [role="presentation"], [aria-label="Trending"] [role="presentation"], [role="link"] [role="presentation"]):upward(1):style(border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important)
 ! part 2
-x.com##[data-testid^="UserAvatar-Container-"]:not([href$="/photo"]:upward(1)):upward(3) :is([aria-label="Account menu"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid^="UserAvatar-Container-"] [role="link"], [data-testid="Tweet-User-Avatar"] [data-testid^="UserAvatar-Container-"] [href^="/"], [data-testid="DM_Conversation_Avatar"] [role="presentation"], [data-testid="UserAvatar-Container-unknown"] [role="presentation"], [role="listbox"] [data-testid="TypeaheadUser"] [role="presentation"], [aria-labelledby="modal-header"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid="hoverCardParent"] [data-testid="UserCell"] [role="presentation"])>*:nth-of-type(3):style(border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important)
-
+x.com##[data-testid^="UserAvatar-Container-"]:not([href$="/photo"]:upward(1)):upward(3) :is([aria-label="Account menu"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid^="UserAvatar-Container-"] [role="link"], [data-testid="Tweet-User-Avatar"] [data-testid^="UserAvatar-Container-"] [href^="/"], [data-testid="DM_Conversation_Avatar"] [role="presentation"], [data-testid="UserAvatar-Container-unknown"] [role="presentation"], [role="listbox"] [data-testid="TypeaheadUser"] [role="presentation"], [aria-labelledby="modal-header"] [data-testid^="UserAvatar-Container-"] [role="presentation"], [data-testid="hoverCardParent"] [data-testid="UserCell"] [role="presentation"], [aria-label="Trending"] [role="presentation"], [role="link"] [role="presentation"])>*:nth-of-type(3):style(border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important)
 ! shorter "Your likes are private."
 x.com##[aria-label="Home timeline"] [role="status"] [data-testid="icon"]:upward(2):style(padding-top: 4px !important; padding-bottom: 4px !important; margin: 8px !important; border-radius: 999px !important)
 
@@ -105,3 +99,23 @@ x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"]
 x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]:watch-attr(class):remove-class(r-1awozwy)
 x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]>*>*:style(padding-bottom: 10px !important; padding-top: 10px !important)
 x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]>*>*>div:style(height: 5px !important)
+
+! reduce line "opacity" (do this for other themes too)
+x.com##[aria-label^="Timeline: "] .r-gu4em3:style(background-color: rgb(25, 25, 25) !important)
+x.com##[aria-label^="Timeline: "] .r-kuekak:style(background-color: rgb(30, 44, 59) !important)
+! comment chain line
+x.com##[aria-label^="Timeline: "] .r-1bnu78o:style(background-color: rgb(22, 22, 22) !important; width: 3px !important)
+x.com##[aria-label^="Timeline: "] .r-157er04:style(background-color: rgb(32, 47, 63) !important; width: 3px !important)
+x.com##[aria-label^="Timeline: "] .r-1bimlpy:style(background-color: rgb(239, 239, 239) !important; width: 3px !important)
+
+! 'This Post is unavailable' shorter
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(1)
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*:style(padding-top: 6px !important; padding-bottom: 6px !important)
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>*:style(padding-top: 6px !important; padding-bottom: 6px !important)
+! border
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-16cnnyw:style(border-color: rgb(0, 0, 0) !important)
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-cliqr8:style(border-color: rgb(21, 32, 43) !important)
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-jxzhtn:style(border-color: rgb(255, 255,255) !important)
+
+! smaller follow button in relevant people
+x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :has([aria-label="Relevant people"]) [type="button"]:style(min-height: 24px !important)
