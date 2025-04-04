@@ -8,6 +8,6 @@
 x.com##[data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(3)
 
 ! buttom buttons
-x.com##[aria-label="Primary"] [href="/i/grok"])
+x.com##[aria-label="Primary"] [href="/i/grok"]
 ! side buttons
 x.com##[role="dialog"] :is([href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"], [href="/i/monetization"], [href^="https://ads.x.com/"])
