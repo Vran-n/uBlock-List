@@ -21,7 +21,7 @@ This will remove all of the unnecessary content in here such as:
 - "You aren’t verified yet" in profile (this appears occasionally)
 ### Addons for this filter:
 #### Decluttered Sidebar
-- Removes everything in the sidebar except search, footer and relevant people
+- Removes everything in the sidebar except search, search filters, footer and relevant people
 #### Decluttered Sidebar with Trending Hashtags
 - Same as the one before it except it keeps the trending hashtags
 #### No "For you" in the toolbar
