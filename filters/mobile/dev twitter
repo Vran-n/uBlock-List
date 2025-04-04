@@ -1,0 +1,8 @@
+! Title: DEV TWITTER
+! Last modified: %timestamp%
+! Description: 
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+
+x.com##[data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(3)
