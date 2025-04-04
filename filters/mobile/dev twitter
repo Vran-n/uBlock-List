@@ -4,5 +4,8 @@
 ! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
 ! Homepage: https://github.com/Vran-n/uBlock-List
 
-
+! premium button
 x.com##[data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(3)
+
+! side buttons
+x.com##[aria-label="Primary"] :is([href="/i/grok"], [href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"])
