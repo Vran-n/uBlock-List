@@ -11,3 +11,6 @@ x.com##[data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(3)
 x.com##[aria-label="Primary"] [href="/i/grok"]
 ! side buttons
 x.com##[role="dialog"] :is([href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"], [href="/i/monetization"], [href^="https://ads.x.com/"])
+
+! twitter/x icon
+x.com##[role="banner"] [aria-label="X"]:upward(2)
