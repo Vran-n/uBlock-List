@@ -20,6 +20,8 @@ This is where I store my own custom lists for uBlockOrigin
 # QnA
 ### Will you be updating this periodically?
 Yes.
+### How would I know you've updated the filters?
+You can occasionally check this repository **or** wait for uBlockOrigin to auto update
 ### Are there any plans for simplying or modifying other sites?
 No plans for now.
 ### Will these filters work in other ad blockers?
