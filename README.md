@@ -3,7 +3,7 @@
 This is where I store my own custom lists for uBlockOrigin
 ### How to use:
 1. Go to the filters folder
-2. Pick any of the two folders according to what device you're using
+2. Pick any of the two folders according to what device you're using (DON'T USE THE MOBILE FILTERS YET)
 3. Choose the filter you want to use
 4. Click the "Raw" button to your right
    - ![Screenshot 2025-04-11 110617](https://github.com/user-attachments/assets/ffb78816-ab81-4530-bfa3-cdc26a9d9818)
