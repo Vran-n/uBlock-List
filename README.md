@@ -17,3 +17,12 @@ This is where I store my own custom lists for uBlockOrigin
    - ![Screenshot 2025-04-11 111531](https://github.com/user-attachments/assets/3f37ac34-3bda-488a-8252-f52593f5c8f1)
 9. Paste your address
 10. Hit apply
+# QnA
+### Will you be updating this periodically?
+Yes.
+### Are there any plans for simplying or modifying other sites?
+No plans for now.
+### Will these filters work in other ad blockers?
+There are some exceptions such as AdGuard (though some features wont work), but I **strongly** recommend using this for only uBlockOrigin
+### Are you porting this to AdGuard?
+Yes, but I'm unsure when.
