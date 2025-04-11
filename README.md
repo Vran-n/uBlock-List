@@ -30,3 +30,5 @@ No plans for now.
 There are some exceptions such as AdGuard (though some features wont work), but I **strongly** recommend using this for only uBlockOrigin
 ### Are you porting this to AdGuard?
 Yes, but I'm unsure when.
+### Why did you do all of this?
+idk honestly. just kinda did it
