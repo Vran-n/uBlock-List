@@ -26,6 +26,8 @@ This will remove all of the unnecessary content in here such as:
 - Same as the one before it except it keeps the trending hashtags
 #### No "For you" in the toolbar
 - Removes the "For you" in the toolbar
+#### No Views
+- Removes the views analytics
 ## Modify Twitter
 Improves the sites look. Changes include:
 - Reduced extra space in the messages
