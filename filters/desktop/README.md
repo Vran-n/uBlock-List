@@ -20,7 +20,7 @@ This will remove all of the unnecessary content in here such as:
 - Community notes reminder at the very bottom of the post and "Do you find this helpful?"
 - "You aren’t verified yet" in profile (this appears occasionally)
 ### Addons for this filter:
-#### Decluttered Sidebar
+#### [Decluttered Sidebar](simplify%20twitter%20addon%3A%20decluttered%20sidebar)
 - Removes everything in the sidebar except search, search filters, footer and relevant people
 #### Decluttered Sidebar with Trending Hashtags
 - Same as the one before it except it keeps the trending hashtags
