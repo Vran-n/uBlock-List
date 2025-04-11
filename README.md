@@ -21,7 +21,9 @@ This is where I store my own custom lists for uBlockOrigin
 ### Will you be updating this periodically?
 Yes.
 ### How would I know you've updated the filters?
-You can occasionally check this repository **or** wait for uBlockOrigin to auto update
+You can occasionally check this repository **or** see how recent the last update was in your filter list
+### How do I update the filters?
+Either wait for the auto update to kick in **or** force the update yourself by clicking the tiny clock icon in your filter list beside it
 ### Are there any plans for simplying or modifying other sites?
 No plans for now.
 ### Will these filters work in other ad blockers?
