@@ -9,7 +9,7 @@
 
 ! Format: MM/DD/YYYY
 ! Changelog:
-! 4/3/2025: (Fixed) Hover card of reacts in messages
+! 4/11/2025: (Moved) Views has been transfered into an addon
 
 
 
@@ -60,10 +60,6 @@ x.com##[data-testid="HoverCard"]:not(:has([aria-label="Smileys & people"]), :has
 
 ! blue notification
 x.com##[aria-label="undefined unread items"]
-
-! views
-x.com##[data-testid="tweet"] [href$="/analytics"]:upward(1)
-x.com##[data-testid="tweet"] > * > * > * > * > * > * > * > [dir="ltr"]:nth-of-type(n+2)
 
 ! side buttons
 x.com##[aria-label="Primary"] :is([href="/i/grok"], [href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"])
