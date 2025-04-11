@@ -24,8 +24,8 @@ Yes.
 You can occasionally check this repository **or** see how recent the last update was in your filter list
 ### How do I update the filters?
 Either wait for the auto update to kick in **or** force the update yourself by clicking the tiny clock icon in your filter list beside it
-### HELP!!! one of the features are not working
-Ok, that wasnt really a question but, it's either the some part of the site has changed **or** you're not using uBlockOrigin **or** I've decided to split it into its own addon. In this case, please refer to the change log
+### HELP!!! One of the features are not working!
+Ok, that wasnt really a question but, it's either the some part of the site has changed and you just have to wait for an update **or** you're not using uBlockOrigin **or** I've decided to split it into its own addon, which in this case, please refer to the change log.
 ### Are there any plans for simplying or modifying other sites?
 No plans for now.
 ### Will these filters work in other ad blockers?
