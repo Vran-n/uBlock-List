@@ -21,7 +21,11 @@ This is where I store my own custom lists for uBlockOrigin
 ### Will you be updating this periodically?
 Yes.
 ### How would I know you've updated the filters?
-You can occasionally check this repository
+**Follow these in order:**
+   - ![Screenshot 2025-04-22 152301](https://github.com/user-attachments/assets/093f6b69-1b72-430f-84b2-c73b18afe4ec)
+   - ![Screenshot 2025-04-22 152420](https://github.com/user-attachments/assets/382ab02e-7d6e-4347-b93b-99457098d093)
+
+**OR** You can occasionally check this repository
 ### How do I update the filters?
 Either wait for the auto update to kick in **or** force the update yourself by clicking the tiny clock icon in your filter list beside it
 ### HELP!!! One of the features are not working!
