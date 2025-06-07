@@ -1,7 +1,7 @@
 ---
 name: FEATURE REQUEST
 about: Suggest an idea for the filters
-title: "[NEW FEATURE]"
+title: "[NEW FEATURE] "
 labels: enhancement
 assignees: ''
 
