@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> Please report any bugs or missing features immediately as I'm not going to be able to check all of them
+> Please report any bugs or issues immediately as I'm not going to be able to check all of them
 
 # uBlockOrigin-List
 > [!NOTE]
