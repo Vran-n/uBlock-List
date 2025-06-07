@@ -11,7 +11,6 @@ This will remove all of the unnecessary content in here such as:
 - "Not followed by anyone you’re following"
 - ALL of grok (including the profile summary you'd see inside the hover card)
 - Blue notification on new posts
-- Views
 - Jobs, Premium, Verified Orgs, Grok, Monetization, and Ads button (including the ones inside your settings)
 - X icon
 - Messages drawer
