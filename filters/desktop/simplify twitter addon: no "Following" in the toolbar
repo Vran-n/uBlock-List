@@ -1,0 +1,11 @@
+! Title: Simplify Twitter Addon: No "Following" in the toolbar
+! Last modified: %timestamp%
+! Description: |
+!   Removes the "Following" in the toolbar
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+! the buttons above the home timeline
+! removes the "Following" button
+x.com##[aria-label="Home timeline"] [href="/home"]:upward(1):nth-of-type(2)>*
+x.com##[aria-label="Home timeline"] [href="/home"]:upward(1):nth-of-type(2).r-16y2uox:remove-class(r-16y2uox)
