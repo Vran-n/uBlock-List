@@ -15,7 +15,7 @@ This will remove all of the unnecessary content in here such as:
 - Jobs, Premium, Verified Orgs, Grok, Monetization, and Ads button (including the ones inside your settings)
 - X icon
 - Messages drawer
-- Professional Profile in edit your profile
+- "Professional Profile" in edit your profile
 - 3 dots in the account switch button
 - Community notes reminder at the very bottom of the post and "Do you find this helpful?"
 - "You aren’t verified yet" in profile (this appears occasionally)
