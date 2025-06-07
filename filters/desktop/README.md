@@ -25,6 +25,8 @@ This will remove all of the unnecessary content in here such as:
 - Same as the one before it except it keeps the trending hashtags
 #### [No "For you" in the toolbar](simplify%20twitter%20addon%3A%20no%20"For%20you"%20in%20the%20toolbar)
 - Removes the "For you" in the toolbar
+#### [No "Following" in the toolbar](simplify%20twitter%20addon%3A%20no%20"Following"%20in%20the%20toolbar)
+- Removes the "Following" in the toolbar
 #### [No Views](simplify%20twitter%20addon%3A%20no%20views)
 - Removes the views analytics
 ## [Modify Twitter](modify%20twitter)
