@@ -55,23 +55,21 @@ x.com##[data-testid="GrokDrawerHeader"]
 x.com##[aria-label="Grok actions"]
 x.com##[aria-label="Enhance your post with Grok"]
 x.com##[aria-label="Profile Summary"]
-! hover card
-x.com##[data-testid="HoverCard"]:not(:has([aria-label="Smileys & people"]), :has([data-testid^="DM_Reaction_UserCell"])) > * > * > :last-child
 
+! dont do for mobile: hover card
 ! dont do for mobile: blue notification (actually dont know abt this one)
 ! dont do for mobile: side buttons (it doesnt even have them)
 ! dont do for mobile: inside more/dropdown
 
-! settings
-x.com##[aria-label="Section navigation"] :is([href^="/i/account_analytics?"], [href="/settings/monetization"], [href^="/i/premium_sign_up?"])
+! settings*
+x.com##[role="tablist"] :is([href="/settings/monetization"], [href^="/i/premium_sign_up"])
 
 ! dont do for mobile: messages drawer (it doesnt even have them)
 
-! edit profile
-x.com##[aria-labelledby="modal-header"] :is([data-testid="ProfessionalButton_Edit_Professional_Profile"])
+! edit profile*
+x.com##[href="/settings/professional_profile"]
 
-! three dots in the account button
-x.com##[data-testid="SideNav_AccountSwitcher_Button"] > * > svg:upward(1)
+! dont do for mobile: three dots in the account button
 
 ! community notes reminder at the very bottom of post
 x.com##[aria-label="Timeline: Conversation"] [href$="/join-birdwatch"]:upward(1)
