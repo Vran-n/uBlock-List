@@ -1,0 +1,85 @@
+! Title: Simplify Twitter
+! Last modified: %timestamp%
+! Description: |
+!   This gets rid of the clutter on Twitter for mobile
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+
+
+! premium button and twitter/x icon
+x.com##:has([aria-label="Timeline: Your Home Timeline"]) [data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(5)>:first-child ~ *
+
+! buttom buttons
+x.com##[aria-label="Primary"] [href="/i/grok"]
+! side buttons
+x.com##[role="dialog"] :is([href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"], [href="/i/monetization"], [href^="https://ads.x.com/"])
+
+! timeline:explore content
+! removes all tweets (cant find a good solution that works universally for removing 'Posts For You'. sorry ;-;)
+x.com##[aria-label="Timeline: Explore"] > * > *:has-text(Posts For You)
+x.com##[aria-label="Timeline: Explore"] [data-testid="tweet"]:upward(3)
+x.com##[aria-label="Timeline: Explore"] [href^="/i/connect_people?"]
+! timeline:search content
+! removes all follow suggestions and communities
+x.com##[aria-label="Timeline: Search timeline"] > * > *:has([data-testid="tweet"]):upward(1) > :not([data-testid="tweet"]:upward(3))
+! timeline: posts content
+! removes "Who to follow", "Promote" and "Get verified"
+x.com##[aria-label$=" posts"] > * > :not([data-testid="tweet"]:upward(1)):is([data-testid="cellInnerDiv"])
+x.com##[data-testid="UserName"] [href="/i/premium_sign_up"]:upward(4)
+! "Promote"
+x.com##[aria-labelledby="modal-header"] [href$="/quick_promote_web/intro"]:upward(2)
+! with subscribe
+x.com##[data-testid="cellInnerDiv"] :is([href$="/quick_promote_web/targeting"], [aria-label^="Subscribe"])
+! timeline:coversation content
+! removes "Discover more" and all tweets succedding them
+x.com##[aria-label="Timeline: Conversation"] h2:upward(4)
+x.com##[aria-label="Timeline: Conversation"] h2:upward(4) ~ *
+! post engagements
+x.com##[aria-label="Timeline: Conversation"] [href$="/quotes"]:upward(1)
+! timeline:home content
+! keeps only the tweets
+x.com##[aria-label="Timeline: Your Home Timeline"]>*>:not(:has([data-testid="tweet"]))
+
+! dont do for mobile: reduntant quote post in analytics (timeline:coversation)
+
+! post analytics "Promote"
+x.com##[href$="/quick_promote_web/intro"]:upward(3) [data-testid="promotionInfoWrapper"]
+
+! 'Not followed by anyone you’re following'
+x.com##[href$="/header_photo"]:upward(1)>div>:last-child:not([aria-label="Followers you know"]:upward(4)):not([role="link"]:upward(2))
+! exhibits strange behavior rarely   <---- Fuck you past me for not describing this
+x.com##[data-testid="DmActivityContainer"]:not([aria-label="Followers you know"]:upward(1)) [data-testid="DmScrollerContainer"] [data-testid="UserAvatar-Container-unknown"]:upward(1)>div:nth-of-type(5)
+! messages
+x.com##[data-testid="DmActivityContainer"] [data-testid="DmScrollerContainer"] > * > * > * > [role="separator"]
+
+! grok
+x.com##[data-testid="GrokDrawerHeader"]
+x.com##[aria-label="Grok actions"]
+x.com##[aria-label="Enhance your post with Grok"]
+x.com##[aria-label="Profile Summary"]
+
+! dont do for mobile: hover card
+! dont do for mobile: blue notification (actually dont know abt this one)
+! dont do for mobile: side buttons (it doesnt even have them)
+! dont do for mobile: inside more/dropdown
+
+! settings
+x.com##[role="tablist"] :is([href="/settings/monetization"], [href^="/i/premium_sign_up"])
+
+! dont do for mobile: messages drawer (it doesnt even have them)
+
+! edit profile
+x.com##[href="/settings/professional_profile"]
+
+! dont do for mobile: three dots in the account button
+
+! community notes reminder at the very bottom of post
+x.com##[aria-label="Timeline: Conversation"] [href$="/join-birdwatch"]:upward(1)
+! "Do you find this helpful?" in community notes (redundant)
+x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div:upward(2)>*
+x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] span:nth-of-type(2)
+x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div:upward(2):style(padding-bottom: 6px !important; padding-top: 6px !important; border-top-width: 0px !important)
+
+! "You aren’t verified yet" in profile 
+x.com##[aria-label="Home timeline"]:not(:has([href$="/header_photo"])) :is([href$="/premium_sign_up"]):upward(4)
