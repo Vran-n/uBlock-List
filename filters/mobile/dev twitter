@@ -5,7 +5,7 @@
 ! Homepage: https://github.com/Vran-n/uBlock-List
 
 ! premium button and twitter/x icon
-x.com##[data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(5)>:first-child ~ *
+x.com##:has([aria-label="Timeline: Your Home Timeline"]) [data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(5)>:first-child ~ *
 
 ! buttom buttons
 x.com##[aria-label="Primary"] [href="/i/grok"]
@@ -52,7 +52,7 @@ x.com##[data-testid="ScrollSnap-SwipeableList"] [href="/home"]:upward(1):nth-of-
 x.com##[data-testid="ScrollSnap-SwipeableList"] [href="/home"]:upward(1):nth-of-type(2).r-16y2uox:remove-class(r-16y2uox)
 
 ! centers the profile icon in your home timeline
-x.com##[aria-label^="Profile menu"]:upward(2):remove-class(r-16y2uox)
-x.com##[aria-label^="Profile menu"]:upward(2):remove-class(r-1t2qqvi)
-x.com##[aria-label^="Profile menu"]:upward(2):remove-class(r-2j7rtt)
-x.com##[aria-label^="Profile menu"] > * > *:style(width: 40px !important; height: 40px !important;)
+x.com##:has([aria-label="Timeline: Your Home Timeline"]) [aria-label^="Profile menu"]:upward(2):remove-class(r-16y2uox)
+x.com##:has([aria-label="Timeline: Your Home Timeline"]) [aria-label^="Profile menu"]:upward(2):remove-class(r-1t2qqvi)
+x.com##:has([aria-label="Timeline: Your Home Timeline"]) [aria-label^="Profile menu"]:upward(2):remove-class(r-2j7rtt)
+x.com##:has([aria-label="Timeline: Your Home Timeline"]) [aria-label^="Profile menu"] > * > *:style(width: 40px !important; height: 40px !important;)
