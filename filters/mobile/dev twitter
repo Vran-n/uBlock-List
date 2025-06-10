@@ -14,3 +14,7 @@ x.com##[role="dialog"] :is([href="/i/premium_sign_up"], [href="/i/verified-orgs-
 
 ! twitter/x icon
 x.com##[role="banner"] [aria-label="X"]:upward(2)
+
+! removes the "Following" button
+x.com##[aria-label="Home timeline"] [href="/home"]:upward(1):nth-of-type(2)>*
+x.com##[aria-label="Home timeline"] [href="/home"]:upward(1):nth-of-type(2).r-16y2uox:remove-class(r-16y2uox)
