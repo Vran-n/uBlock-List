@@ -38,6 +38,10 @@ x.com##[aria-label="Timeline: Conversation"] [href$="/quotes"]:upward(1)
 ! keeps only the tweets
 x.com##[aria-label="Timeline: Your Home Timeline"]>*>:not(:has([data-testid="tweet"]))
 
+! post analytics "Promote"
+x.com##[href$="/quick_promote_web/intro"]:upward(3) [data-testid="promotionInfoWrapper"]
+
+
 
 
 
