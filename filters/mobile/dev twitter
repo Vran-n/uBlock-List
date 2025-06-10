@@ -46,9 +46,9 @@ x.com##[href$="/quick_promote_web/intro"]:upward(3) [data-testid="promotionInfoW
 ! 'Not followed by anyone you’re following'
 x.com##[href$="/header_photo"]:upward(1)>div>:last-child:not([aria-label="Followers you know"]:upward(4)):not([role="link"]:upward(2))
 ! exhibits strange behavior rarely   <---- Fuck you past me for not describing this
-x.com##[aria-label="Section details"]:not([aria-label="Followers you know"]:upward(1)) [data-testid="DmScrollerContainer"] [data-testid="UserAvatar-Container-unknown"]:upward(1)>div:nth-of-type(5)
+x.com##[data-testid="DmActivityContainer"]:not([aria-label="Followers you know"]:upward(1)) [data-testid="DmScrollerContainer"] [data-testid="UserAvatar-Container-unknown"]:upward(1)>div:nth-of-type(5)
 ! messages
-x.com##[aria-label="Section details"] [data-testid="DmScrollerContainer"] > * > * > * > [role="separator"]
+x.com##[data-testid="DmActivityContainer"] [data-testid="DmScrollerContainer"] > * > * > * > [role="separator"]
 
 
 
