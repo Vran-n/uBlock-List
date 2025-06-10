@@ -1,0 +1,9 @@
+! Title: Simplify Twitter Addon: No retweet count
+! Last modified: %timestamp%
+! Description: |
+!   Removes the retweet count and reveals itself upon clicking
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+! retweet count
+x.com##[data-testid="tweet"] [data-testid="retweet"]>*>*:nth-of-type(2)
