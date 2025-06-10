@@ -4,6 +4,9 @@
 # TWITTER CATEGORY
 Note: As of April 3, 2025. I've decided to remove the declutter section of "Modify Twitter" to make it easier for myself to update these versions.
 
+<details open>
+<summary>Simplify your twitter experience</summary>
+
 ## [Simplify Twitter](simplify%20twitter)
 This will remove all of the unnecessary content in here such as:
 - All the tweets in "Timeline: explore"
@@ -42,7 +45,11 @@ This will remove all of the unnecessary content in here such as:
 #### [No reply count](simplify%20twitter%20addon%3A%20no%20reply%20count)
 - Removes the reply count in tweets
 
+</details>
 
+<details open>
+<summary>Modify your twitter experience</summary>
+  
 ## [Modify Twitter](modify%20twitter)
 Improves the sites look. Changes include:
 - Reduced extra space in the messages
@@ -62,3 +69,4 @@ Improves the sites look. Changes include:
 ### Addons for this filter:
 #### [No names on the side](modify%20twitter%20addon%3A%20no%20names%20on%20the%20side)
 - Removes the names of the navigation buttons and reduces its width
+</details>
