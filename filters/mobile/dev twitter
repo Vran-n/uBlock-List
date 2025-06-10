@@ -60,6 +60,29 @@ x.com##[data-testid="HoverCard"]:not(:has([aria-label="Smileys & people"]), :has
 
 ! dont do for mobile: blue notification (actually dont know abt this one)
 ! dont do for mobile: side buttons (it doesnt even have them)
+! dont do for mobile: inside more/dropdown
+
+! settings
+x.com##[aria-label="Section navigation"] :is([href^="/i/account_analytics?"], [href="/settings/monetization"], [href^="/i/premium_sign_up?"])
+
+! messages drawer
+x.com##[data-testid="DMDrawer"]:upward(3)
+
+! edit profile
+x.com##[aria-labelledby="modal-header"] :is([data-testid="ProfessionalButton_Edit_Professional_Profile"])
+
+! three dots in the account button
+x.com##[data-testid="SideNav_AccountSwitcher_Button"] > * > svg:upward(1)
+
+! community notes reminder at the very bottom of post
+x.com##[aria-label="Timeline: Conversation"] [href$="/join-birdwatch"]:upward(1)
+! "Do you find this helpful?" in community notes (redundant)
+x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div:upward(2)>*
+x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] span:nth-of-type(2)
+x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div:upward(2):style(padding-bottom: 6px !important; padding-top: 6px !important; border-top-width: 0px !important)
+
+! "You aren’t verified yet" in profile 
+x.com##[aria-label="Home timeline"]:not(:has([href$="/header_photo"])) :is([href$="/premium_sign_up"]):upward(4)
 
 
 
