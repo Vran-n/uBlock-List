@@ -65,8 +65,7 @@ x.com##[data-testid="HoverCard"]:not(:has([aria-label="Smileys & people"]), :has
 ! settings
 x.com##[aria-label="Section navigation"] :is([href^="/i/account_analytics?"], [href="/settings/monetization"], [href^="/i/premium_sign_up?"])
 
-! messages drawer
-x.com##[data-testid="DMDrawer"]:upward(3)
+! dont do for mobile: messages drawer (it doesnt even have them)
 
 ! edit profile
 x.com##[aria-labelledby="modal-header"] :is([data-testid="ProfessionalButton_Edit_Professional_Profile"])
