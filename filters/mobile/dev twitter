@@ -59,9 +59,8 @@ x.com##[aria-label="Profile Summary"]
 x.com##[data-testid="HoverCard"]:not(:has([aria-label="Smileys & people"]), :has([data-testid^="DM_Reaction_UserCell"])) > * > * > :last-child
 
 ! dont do for mobile: blue notification (actually dont know abt this one)
+! dont do for mobile: side buttons (it doesnt even have them)
 
-! side buttons
-x.com##[aria-label="Primary"] :is([href="/i/grok"], [href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"])
 
 
 
