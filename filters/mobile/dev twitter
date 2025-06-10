@@ -4,17 +4,48 @@
 ! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
 ! Homepage: https://github.com/Vran-n/uBlock-List
 
-! premium button
-!x.com##[data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(4)
+! premium button and twitter/x icon
 x.com##[data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(5)>:first-child ~ *
-! twitter/x icon
-!x.com##[data-testid="TopNavBar"] svg:upward(1)
 
 ! buttom buttons
 x.com##[aria-label="Primary"] [href="/i/grok"]
 ! side buttons
 x.com##[role="dialog"] :is([href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"], [href="/i/monetization"], [href^="https://ads.x.com/"])
 
+! timeline:explore content
+! removes all tweets (cant find a good solution that works universally for removing 'Posts For You'. sorry ;-;)
+x.com##[aria-label="Timeline: Explore"] > * > *:has-text(Posts For You)
+x.com##[aria-label="Timeline: Explore"] [data-testid="tweet"]:upward(3)
+x.com##[aria-label="Timeline: Explore"] [href^="/i/connect_people?"]
+! timeline:search content
+! removes all follow suggestions and communities
+x.com##[aria-label="Timeline: Search timeline"] > * > *:has([data-testid="tweet"]):upward(1) > :not([data-testid="tweet"]:upward(3))
+! timeline: posts content
+! removes "Who to follow", "Promote" and "Get verified"
+x.com##[aria-label$=" posts"] > * > :not([data-testid="tweet"]:upward(1)):is([data-testid="cellInnerDiv"])
+x.com##[data-testid="UserName"] [href="/i/premium_sign_up"]:upward(4)
+! "Promote"
+x.com##[aria-labelledby="modal-header"] [href$="/quick_promote_web/intro"]:upward(2)
+! with subscribe
+x.com##[data-testid="cellInnerDiv"] :is([href$="/quick_promote_web/targeting"], [aria-label^="Subscribe"])
+! timeline:coversation content
+! removes "Discover more" and all tweets succedding them
+x.com##[aria-label="Timeline: Conversation"] h2:upward(4)
+x.com##[aria-label="Timeline: Conversation"] h2:upward(4) ~ *
+! post engagements
+x.com##[aria-label="Timeline: Conversation"] [href$="/quotes"]:upward(1)
+! timeline:home content
+! keeps only the tweets
+x.com##[aria-label="Timeline: Your Home Timeline"]>*>:not(:has([data-testid="tweet"]))
+
+
+
+
+
+
+
+
+! ADDONS ADDONS ADDONS ADDONS ADDONS ADDONS ADDONS
 ! remember to use "data-testid="ScrollSnap-SwipeableList""
 ! removes the "Following" button
 x.com##[data-testid="ScrollSnap-SwipeableList"] [href="/home"]:upward(1):nth-of-type(2)>*
