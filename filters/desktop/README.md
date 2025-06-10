@@ -1,4 +1,4 @@
-> [!NOTE]
+> [!IMPORTANT]
 > You can use all of these filters at once. I've made them complement each other. <br/>Desktop filters also work for tablets
 
 # TWITTER CATEGORY
