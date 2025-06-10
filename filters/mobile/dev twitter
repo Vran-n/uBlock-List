@@ -50,7 +50,18 @@ x.com##[data-testid="DmActivityContainer"]:not([aria-label="Followers you know"]
 ! messages
 x.com##[data-testid="DmActivityContainer"] [data-testid="DmScrollerContainer"] > * > * > * > [role="separator"]
 
+! grok
+x.com##[data-testid="GrokDrawerHeader"]
+x.com##[aria-label="Grok actions"]
+x.com##[aria-label="Enhance your post with Grok"]
+x.com##[aria-label="Profile Summary"]
+! hover card
+x.com##[data-testid="HoverCard"]:not(:has([aria-label="Smileys & people"]), :has([data-testid^="DM_Reaction_UserCell"])) > * > * > :last-child
 
+! dont do for mobile: blue notification (actually dont know abt this one)
+
+! side buttons
+x.com##[aria-label="Primary"] :is([href="/i/grok"], [href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"])
 
 
 
