@@ -61,12 +61,12 @@ x.com##[aria-label="Profile Summary"]
 ! dont do for mobile: side buttons (it doesnt even have them)
 ! dont do for mobile: inside more/dropdown
 
-! settings*
+! settings
 x.com##[role="tablist"] :is([href="/settings/monetization"], [href^="/i/premium_sign_up"])
 
 ! dont do for mobile: messages drawer (it doesnt even have them)
 
-! edit profile*
+! edit profile
 x.com##[href="/settings/professional_profile"]
 
 ! dont do for mobile: three dots in the account button
