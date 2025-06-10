@@ -1,0 +1,9 @@
+! Title: Simplify Twitter Addon: No reply count
+! Last modified: %timestamp%
+! Description: |
+!   Removes the reply count
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+! reply count
+x.com##[data-testid="tweet"] [data-testid="reply"]>*>*:nth-of-type(2)
