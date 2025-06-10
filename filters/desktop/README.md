@@ -33,6 +33,16 @@ This will remove all of the unnecessary content in here such as:
 - Removes the "Following" in the toolbar
 #### [No Views](simplify%20twitter%20addon%3A%20no%20views)
 - Removes the views analytics in tweets
+#### [No bookmark count](simplify%20twitter%20addon%3A%20no%20bookmark%20count)
+- Removes the bookmark count in tweets and reveals itself upon clicking 
+#### [No like count](simplify%20twitter%20addon%3A%20no%20like%20count)
+- Removes the like count in tweets and reveals itself upon clicking 
+#### [No retweet count](simplify%20twitter%20addon%3A%20no%20retweet%20count)
+- Removes the retweet count in tweets and reveals itself upon clicking 
+#### [No reply count](simplify%20twitter%20addon%3A%20no%20reply%20count)
+- Removes the reply count in tweets
+
+
 ## [Modify Twitter](modify%20twitter)
 Improves the sites look. Changes include:
 - Reduced extra space in the messages
