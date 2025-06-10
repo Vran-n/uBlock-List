@@ -5,15 +5,15 @@
 ! Homepage: https://github.com/Vran-n/uBlock-List
 
 ! premium button
-x.com##[data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(4)
+!x.com##[data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(4)
+x.com##[data-testid="TopNavBar"] [href$="/premium_sign_up"]:upward(5)>:first-child ~ *
+! twitter/x icon
+!x.com##[data-testid="TopNavBar"] svg:upward(1)
 
 ! buttom buttons
 x.com##[aria-label="Primary"] [href="/i/grok"]
 ! side buttons
 x.com##[role="dialog"] :is([href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"], [href="/i/monetization"], [href^="https://ads.x.com/"])
-
-! twitter/x icon
-x.com##[data-testid="TopNavBar"] svg:upward(1)
 
 ! remember to use "data-testid="ScrollSnap-SwipeableList""
 ! removes the "Following" button
