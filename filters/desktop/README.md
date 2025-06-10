@@ -1,8 +1,10 @@
 > [!NOTE]
+> You can use all of these filters at once. I've made them complement each other.
 > Desktop filters also work for tablets
 
 # TWITTER CATEGORY
-Note: As of April 3, 2025. I've decided to remove the declutter section of "Modify Twitter" to make it easier for myself to update these versions. **If you use any of them, you'd wanna install the filter "Simplify Twitter" as well**
+Note: As of April 3, 2025. I've decided to remove the declutter section of "Modify Twitter" to make it easier for myself to update these versions.
+
 ## [Simplify Twitter](simplify%20twitter)
 This will remove all of the unnecessary content in here such as:
 - All the tweets in "Timeline: explore"
