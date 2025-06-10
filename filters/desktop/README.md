@@ -32,7 +32,7 @@ This will remove all of the unnecessary content in here such as:
 #### [No "Following" in the toolbar](simplify%20twitter%20addon%3A%20no%20"Following"%20in%20the%20toolbar)
 - Removes the "Following" in the toolbar
 #### [No Views](simplify%20twitter%20addon%3A%20no%20views)
-- Removes the views analytics
+- Removes the views analytics in tweets
 ## [Modify Twitter](modify%20twitter)
 Improves the sites look. Changes include:
 - Reduced extra space in the messages
