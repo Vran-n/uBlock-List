@@ -1,4 +1,4 @@
-! Title: Simplify Twitter
+! Title: Simplify Twitter [Mobile]
 ! Last modified: %timestamp%
 ! Description: |
 !   This gets rid of the clutter on Twitter for mobile
@@ -83,3 +83,9 @@ x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div
 
 ! "You aren’t verified yet" in profile 
 x.com##[aria-label="Home timeline"]:not(:has([href$="/header_photo"])) :is([href$="/premium_sign_up"]):upward(4)
+
+! centers the profile icon in your home timeline
+x.com##:has([aria-label="Timeline: Your Home Timeline"]) [aria-label^="Profile menu"]:upward(2):remove-class(r-16y2uox)
+x.com##:has([aria-label="Timeline: Your Home Timeline"]) [aria-label^="Profile menu"]:upward(2):remove-class(r-1t2qqvi)
+x.com##:has([aria-label="Timeline: Your Home Timeline"]) [aria-label^="Profile menu"]:upward(2):remove-class(r-2j7rtt)
+x.com##:has([aria-label="Timeline: Your Home Timeline"]) [aria-label^="Profile menu"] > * > *:style(width: 40px !important; height: 40px !important;)
