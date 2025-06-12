@@ -65,7 +65,7 @@ x.com##[data-testid="dmComposerAttachments"]>:nth-of-type(1) img:upward(3):style
 x.com##[data-testid="messageEntry"] [role="presentation"]:upward(1)>:nth-of-type(1)>:nth-of-type(2):has([data-testid="tweetText"])>*:style(border-radius: 12px !important)
 x.com##[data-testid="messageEntry"] [role="presentation"]:upward(1)>:nth-of-type(1)>:nth-of-type(2):not(:has([data-testid="tweetText"]))>*:style(border-radius: 6px !important)
 
-! removed ugly border lines
+! removed ugly border lines for videos, images, etc
 x.com##[data-testid="tweet"] .r-1kqtdi0:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"], [data-testid="card.wrapper"]) :style(border-color: rgb(0,0,0) !important)
 x.com##[data-testid="tweet"] .r-18bvks7:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"], [data-testid="card.wrapper"]) :style(border-color: rgb(21,32,43) !important)
 x.com##[data-testid="tweet"] .r-1ets6dv:not(:has([data-testid="tweetText"]), :is([data-testid="birdwatch-pivot"])):not([role="link"], [data-testid="card.wrapper"]) :style(border-color: rgb(255,255,255) !important)
