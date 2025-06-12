@@ -37,7 +37,7 @@ x.com##[aria-label="Timeline: Conversation"] h2:upward(4) ~ *
 x.com##[aria-label="Timeline: Conversation"] [href$="/quotes"]:upward(1)
 ! timeline:home content
 ! keeps only the tweets
-x.com##[aria-label="Timeline: Your Home Timeline"]>*>:not(:has([data-testid="tweet"]))
+x.com##[aria-label="Timeline: Your Home Timeline"]>*>:first-child~:not(:has([data-testid="tweet"]))
 
 ! reduntant quote post in analytics (timeline:coversation)
 x.com##:has([aria-label="Timeline: Conversation"]) [aria-labelledby="modal-header"] [style^="gap"]:upward(4) [data-testid="Tweet-User-Avatar"]:upward(8)
