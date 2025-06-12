@@ -30,8 +30,8 @@ x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-1ila09b r-rul
 x.com##[data-testid="tweet"] :is(.r-1867qdf):style(border-radius: 6px !important)
 ! inside messages
 x.com##[data-testid="DmScrollerContainer"] [role="presentation"]:style(border-radius: 12px !important)
-x.com##[data-testid="messageEntry"]:has(.r-2dysd3) [role="presentation"]:style(border-bottom-right-radius: 3px !important)
-x.com##[data-testid="messageEntry"]:has(.r-faml9v) [role="presentation"]:style(border-bottom-left-radius: 3px !important)
+x.com##[data-testid="messageEntry"]:has(.r-trst2h) [role="presentation"]:style(border-bottom-right-radius: 3px !important)
+x.com##[data-testid="messageEntry"]:has(.r-1noe1sz) [role="presentation"]:style(border-bottom-left-radius: 3px !important)
 x.com##[data-testid="messageEntry"] [data-testid="DMCompositeMessage"] :not([role="presentation"]):is(.r-1fuqb1j):style(border-radius: 6px !important)
 ! replying/posting
 x.com##[aria-label="Media"]:style(border-radius: 6px !important)
