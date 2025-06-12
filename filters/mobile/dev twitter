@@ -25,7 +25,22 @@ x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-1ila09b r-rul
 
 ! dont do for mobile: post button height is shorter
 
-
+! border radius are smaller
+! text and videos 
+x.com##[data-testid="tweet"] :is(.r-1867qdf):style(border-radius: 6px !important)
+! inside messages
+x.com##[data-testid="DmScrollerContainer"] [role="presentation"]:style(border-radius: 12px !important)
+x.com##[data-testid="messageEntry"]:has(.r-2dysd3) [role="presentation"]:style(border-bottom-right-radius: 3px !important)
+x.com##[data-testid="messageEntry"]:has(.r-faml9v) [role="presentation"]:style(border-bottom-left-radius: 3px !important)
+x.com##[data-testid="messageEntry"] [data-testid="DMCompositeMessage"] :not([role="presentation"]):is(.r-1fuqb1j):style(border-radius: 6px !important)
+! replying/posting
+x.com##[aria-label="Media"]:style(border-radius: 6px !important)
+! replying/posting gifs including messages
+x.com##[data-testid="attachments"] [role="group"]:style(border-radius: 6px !important)
+x.com##[data-testid="dmComposerAttachments"]>:nth-of-type(1) img:upward(3):style(border-radius: 6px !important)
+! reply in messages
+x.com##[data-testid="messageEntry"] [role="presentation"]:upward(1)>:nth-of-type(1)>:nth-of-type(2):has([data-testid="tweetText"])>*:style(border-radius: 12px !important)
+x.com##[data-testid="messageEntry"] [role="presentation"]:upward(1)>:nth-of-type(1)>:nth-of-type(2):not(:has([data-testid="tweetText"]))>*:style(border-radius: 6px !important)
 
 
 
