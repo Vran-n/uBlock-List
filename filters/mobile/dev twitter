@@ -16,15 +16,12 @@ x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remo
 x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-qklmqi)
 x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-h3s6tt)
 x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-1igl3o0 r-rull8r r-qklmqi"]
-x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(3):has([class="css-175oi2r r-12kyg2d"]) [role="group"]:upward(1) > div:style(top: -8px !important)
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(3):has([class="css-175oi2r r-12kyg2d"]) [role="group"]:upward(1) > div:style(top: -16px !important)
 ! fix for the other themes
 x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-5kkj8d)
 x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-j5o65s r-rull8r r-qklmqi"]
 x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-1ila09b r-rull8r r-qklmqi"]
-! move the comment
-x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] > * > * > *:remove-class(r-1mmae3n)
-x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"] > * > * > * > * > *:style(top: -7px !important)
-x.com##[aria-label="Timeline: Conversation"] [data-testid="progressBar-bar"]:upward(1):style(top: -7px !important)
+! dont do for mobile: move the comment
 
 ! dont do for mobile: post button height is shorter
 
