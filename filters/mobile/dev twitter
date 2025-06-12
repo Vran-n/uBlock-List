@@ -16,7 +16,7 @@ x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remo
 x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-qklmqi)
 x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-h3s6tt)
 x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-1igl3o0 r-rull8r r-qklmqi"]
-x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(3):has([class="css-175oi2r r-1009s2o"]) [role="group"]:upward(1) > div:style(top: -8px !important)
+x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(3):has([class="css-175oi2r r-1009s2o"]) [role="group"]:style(height: 0px !important; top: -8px !important)
 ! fix for the other themes
 x.com##[aria-label="Timeline: Conversation"] [role="group"]:upward(1) > div:remove-class(r-5kkj8d)
 x.com##[aria-label="Timeline: Conversation"] [class="css-175oi2r r-j5o65s r-rull8r r-qklmqi"]
