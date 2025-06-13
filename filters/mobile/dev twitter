@@ -50,3 +50,5 @@ x.com##[role="dialog"] > * > * > :first-child ~ * > * > * > :last-child
 x.com##[role="dialog"] > * > * > :first-child ~ * > * > * > svg:style(margin-right: 0px !important)
 ! directiom
 x.com##[role="dialog"] > * > * > :first-child ~ *:style(flex-direction: column !important)
+! no min width
+x.com##[role="dialog"]:style(min-width: 0px !important)
