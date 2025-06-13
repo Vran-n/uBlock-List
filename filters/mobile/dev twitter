@@ -56,6 +56,32 @@ x.com##[data-testid^="UserAvatar-Container-"]:not([href$="/photo"]:upward(1)):up
 ! shorter "Your likes are private."
 x.com##[aria-label="Home timeline"] [role="status"] [data-testid="icon"]:upward(2):style(padding-top: 4px !important; padding-bottom: 4px !important; margin: 8px !important; border-radius: 999px !important)
 
+! smaller text
+! hashtags
+x.com##[data-testid="tweet"] [data-testid="tweetText"] > *:has-text(#):style(font-size: 12px !important)
+! date
+x.com##[data-testid="tweet"] time:upward(2):style(font-size: 12px !important)
+! handle
+x.com##[aria-label="Timeline: Conversation"] [data-testid="inline_reply_offscreen"]:upward(1)[data-testid="User-Name"] [href^="/"]:has-text(@)>*:style(font-size: 12px !important)
+x.com##[aria-label="Relevant people"] [role="list"] [href^="/"] [dir="ltr"]:has-text(@):style(font-size: 12px !important)
+x.com##[aria-label="Home timeline"] [data-testid="UserCell"] [href^="/"] [dir="ltr"]:has-text(@):style(font-size: 12px !important)
+x.com##[aria-label="Section details"] [data-testid="DmScrollerContainer"] [data-testid="UserAvatar-Container-unknown"]:upward(1)>div:nth-of-type(2)>*>*:nth-of-type(2) [dir="ltr"]:style(font-size: 12px !important)
+x.com##[data-testid="tweet"] [data-testid="User-Name"]>*:nth-of-type(2) .r-a023e6:style(font-size: 12px !important)
+
+! bigger username in profile
+x.com##[href$="/header_photo"]:upward(1)[data-testid="UserName"] [dir="ltr"]>*>*:nth-of-type(1):upward(2):style(font-size: 30px !important)
+! bigger check and removed extras
+x.com##[href$="/header_photo"]:upward(1)[data-testid="UserName"] [dir="ltr"]>*>*:nth-of-type(1):upward(2) svg:style(max-width: 999px !important; max-height: 999px !important)
+x.com##[href$="/header_photo"]:upward(1)[data-testid="UserName"] [dir="ltr"]>*>*:nth-of-type(2)>*>*>*:nth-of-type(1)~*
+
+! reduced margin in profile
+x.com##[href$="/header_photo"]~*:nth-of-type(1):style(margin-bottom: 4px !important)
+! reduced height in profile toolbar + adjusted shit
+x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]:style(height: 36px !important)
+x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]:watch-attr(class):remove-class(r-1awozwy)
+x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]>*>*:style(padding-bottom: 10px !important; padding-top: 10px !important)
+x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]>*>*>div:style(height: 5px !important)
+
 
 
 
