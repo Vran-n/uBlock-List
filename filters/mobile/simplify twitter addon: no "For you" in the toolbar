@@ -1,0 +1,12 @@
+! Title: Simplify Twitter Addon [Mobile]: No "For you" in the toolbar
+! Last modified: %timestamp%
+! Description: |
+!   Removes the "For you" in the toolbar
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+
+
+! removes the "For you" button
+x.com##[data-testid="ScrollSnap-SwipeableList"] [href="/home"]:upward(1):first-child>*
+x.com##[data-testid="ScrollSnap-SwipeableList"] [href="/home"]:upward(1):first-child.r-16y2uox:remove-class(r-16y2uox)
