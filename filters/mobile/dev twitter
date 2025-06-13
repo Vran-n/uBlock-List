@@ -37,4 +37,4 @@ x.com##[role="group"] [href$="/analytics"]:upward(1)
 x.com##[role="dialog"]:upward(1):style(background-color: rgba(15, 15, 15, 0.7) !important)
 
 ! "Following" and "Followers" now column
-x.com##[role="dialog"] [aria-label="Account"] [href$="/verified_followers"]:upward(3):style(flex-direction: column !important)
+x.com##[role="dialog"] [aria-label="Account"] [href$="/verified_followers"]:upward(2):style(flex-direction: column !important)
