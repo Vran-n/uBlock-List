@@ -78,6 +78,27 @@ x.com##[href$="/header_photo"]:upward(1)[data-testid="UserName"] [dir="ltr"]>*>*
 x.com##[href$="/header_photo"]~*:nth-of-type(1):style(margin-bottom: 4px !important)
 ! dont do for mobile: reduced height in profile toolbar + adjusted shit
 
+! reduce line "opacity" (do this for other themes too)
+x.com##[aria-label^="Timeline: "] .r-gu4em3:style(background-color: rgb(25, 25, 25) !important)
+x.com##[aria-label^="Timeline: "] .r-kuekak:style(background-color: rgb(30, 44, 59) !important)
+! comment chain line
+x.com##[aria-label^="Timeline: "] .r-1bnu78o:style(background-color: rgb(22, 22, 22) !important; width: 3px !important)
+x.com##[aria-label^="Timeline: "] .r-157er04:style(background-color: rgb(32, 47, 63) !important; width: 3px !important)
+x.com##[aria-label^="Timeline: "] .r-1bimlpy:style(background-color: rgb(239, 239, 239) !important; width: 3px !important)
+
+! 'This Post is unavailable' shorter
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(1)
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*:style(padding-top: 6px !important; padding-bottom: 6px !important)
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>*:style(padding-top: 6px !important; padding-bottom: 6px !important)
+! border
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-16cnnyw:style(border-color: rgb(0, 0, 0) !important)
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-cliqr8:style(border-color: rgb(21, 32, 43) !important)
+x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-jxzhtn:style(border-color: rgb(255, 255,255) !important)
+
+! smaller follow button in relevant people and "Who to follow"
+x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :has([aria-label="Relevant people"], [aria-label="Who to follow"]) [type="button"]:style(min-height: 24px !important)
+
+
 
 
 
