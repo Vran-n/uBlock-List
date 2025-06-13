@@ -51,11 +51,14 @@ x.com##[role="dialog"] [aria-label="Account"] > * > :last-child > * > *:style(ma
 
 ! background mask is darker
 x.com##[role="dialog"]:upward(1):style(background-color: rgba(15, 15, 15, 0.7) !important)
+! no min width
+x.com##[role="dialog"]:style(min-width: 120px !important)
+
+! buttons
 ! remove names
 x.com##[role="dialog"] > * > * > :first-child ~ * > * > * > :last-child
 ! remove margin
-x.com##[role="dialog"] > * > * > :first-child ~ * > * > * > svg:style(margin-right: 0px !important)
+x.com##[role="dialog"] > * > * > :first-child ~ * > * > * > svg:style(width: 30px !important; height: 30px !important; margin-right: 0px !important)
+x.com##[role="dialog"] > * > * > :first-child ~ * > * > *:style(padding-bottom: 15px !important; padding-top: 15px !important)
 ! directiom
 x.com##[role="dialog"] > * > * > :first-child ~ *:style(flex-direction: column !important)
-! no min width
-x.com##[role="dialog"]:style(min-width: 120px !important)
