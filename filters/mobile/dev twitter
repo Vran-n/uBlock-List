@@ -42,4 +42,4 @@ x.com##[role="dialog"]:upward(1):style(background-color: rgba(15, 15, 15, 0.7) !
 x.com##[role="dialog"] [aria-label="Account"] [href$="/verified_followers"]:upward(2):style(flex-direction: column !important)
 
 ! something
-x.com##[role="dialog"] > * > * > *:first-class ~*
+x.com##[role="dialog"] > * > * > :first-child ~ *
