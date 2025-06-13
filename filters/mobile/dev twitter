@@ -14,16 +14,21 @@ x.com##[data-testid="ScrollSnap-SwipeableList"] [href="/home"]:upward(1):nth-of-
 
 ! bookmark count
 x.com##[data-testid="tweet"] [data-testid="bookmark"]>*>*:nth-of-type(2)
+x.com##[role="group"] [data-testid="bookmark"]>*>*:nth-of-type(2)
 
 ! like count
 x.com##[data-testid="tweet"] [data-testid="like"]>*>*:nth-of-type(2)
+x.com##[role="group"] [data-testid="like"]>*>*:nth-of-type(2)
 
 ! reply count
 x.com##[data-testid="tweet"] [data-testid="reply"]>*>*:nth-of-type(2)
+x.com##[role="group"] [data-testid="like"]>*>*:nth-of-type(2)
 
 ! retweet count
 x.com##[data-testid="tweet"] [data-testid="retweet"]>*>*:nth-of-type(2)
+x.com##[role="group"] [data-testid="like"]>*>*:nth-of-type(2)
 
 ! views
 x.com##[data-testid="tweet"] [href$="/analytics"]:upward(1)
 x.com##[data-testid="tweet"] > * > * > * > * > * > * > * > [dir="ltr"]:nth-of-type(n+2)
+x.com##[role="group"] [href$="/analytics"]:upward(1)
