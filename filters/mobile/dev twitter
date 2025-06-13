@@ -35,12 +35,18 @@ x.com##[role="group"] [href$="/analytics"]:upward(1)
 
 
 
-! background mask is darker
-x.com##[role="dialog"]:upward(1):style(background-color: rgba(15, 15, 15, 0.7) !important)
+
 
 ! "Following" and "Followers" now column
 x.com##[role="dialog"] [aria-label="Account"] [href$="/verified_followers"]:upward(2):style(flex-direction: column !important)
 
-! something
+! background mask is darker
+x.com##[role="dialog"]:upward(1):style(background-color: rgba(15, 15, 15, 0.7) !important)
+! remove names
 x.com##[role="dialog"] > * > * > :first-child ~ * > * > * > :last-child
-x.com##[role="dialog"] > * > * > :first-child ~ * > * > *:style(flex-grow: 0 !important)
+! size
+!x.com##[role="dialog"] > * > * > :first-child ~ * > * > *:style(flex-grow: 0 !important)
+! remove margin
+x.com##[role="dialog"] > * > * > :first-child ~ * > * > * > svg:style(margin-right: 0px !important)
+! directiom
+x.com##[role="dialog"] > * > * > :first-child ~ *:style(flex-direction: column !important)
