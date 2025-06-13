@@ -76,11 +76,7 @@ x.com##[href$="/header_photo"]:upward(1)[data-testid="UserName"] [dir="ltr"]>*>*
 
 ! reduced margin in profile
 x.com##[href$="/header_photo"]~*:nth-of-type(1):style(margin-bottom: 4px !important)
-! reduced height in profile toolbar + adjusted shit
-x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]:style(height: 36px !important)
-x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]:watch-attr(class):remove-class(r-1awozwy)
-x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]>*>*:style(padding-bottom: 10px !important; padding-top: 10px !important)
-x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]>*>*>div:style(height: 5px !important)
+! dont do for mobile: reduced height in profile toolbar + adjusted shit
 
 
 
