@@ -9,11 +9,7 @@
 
 ! Format: MM/DD/YYYY
 ! Changelog:
-! 4/3/2025: Smaller follow button in the relevant people and "Who to follow" section
-! (cont.): The lines in-between tweets have their opacity reduced including comment chains
-! (cont.): User icons have now been updated to rounded squares in search and quotes
-! (cont.): "This Post is unavailable" is shorter and no longer has borders
-! (cont.): Your reply's in messages have smaller border radii
+! 6/13/2025: line "opacity" has been fixed
 
 
 
