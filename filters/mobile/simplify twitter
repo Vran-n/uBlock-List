@@ -59,8 +59,10 @@ x.com##[aria-label="Grok actions"]
 x.com##[aria-label="Enhance your post with Grok"]
 x.com##[aria-label="Profile Summary"]
 
+! home blue notification
+[aria-label="undefined unread items"]
+
 ! dont do for mobile: hover card
-! dont do for mobile: blue notification (actually dont know abt this one)
 ! dont do for mobile: side buttons (it doesnt even have them)
 ! dont do for mobile: inside more/dropdown
 
