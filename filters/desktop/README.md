@@ -2,10 +2,11 @@
 > You can use all of these filters at once. I've made them complement each other. <br/>Desktop filters also work for tablets
 
 # TWITTER CATEGORY
-Note: As of April 3, 2025. I've decided to remove the declutter section of "Modify Twitter" to make it easier for myself to update these versions.
+> [!NOTE]
+> As of April 3, 2025. I've decided to remove the declutter section of "Modify Twitter" to make it easier for myself to update these versions.
 
-<details open>
-<summary>Simplify your twitter experience</summary>
+<details>
+<summary>Simplify your twitter experience:</summary>
 
 ## [Simplify Twitter](simplify%20twitter)
 This will remove all of the unnecessary content in here such as:
@@ -25,6 +26,10 @@ This will remove all of the unnecessary content in here such as:
 - 3 dots in the account switch button
 - Community notes reminder at the very bottom of the post and "Do you find this helpful?"
 - "You aren’t verified yet" in profile (this appears occasionally)
+
+<details open>
+<summary>Extra content:</summary>
+  
 ### Addons for this filter:
 #### [Decluttered Sidebar](simplify%20twitter%20addon%3A%20decluttered%20sidebar)
 - Removes everything in the sidebar except search, search filters, footer and relevant people
@@ -44,10 +49,11 @@ This will remove all of the unnecessary content in here such as:
 - Removes the retweet count in tweets and reveals itself upon clicking 
 #### [No reply count](simplify%20twitter%20addon%3A%20no%20reply%20count)
 - Removes the reply count in tweets
+</details>
 
 </details>
 
-<details open>
+<details>
 <summary>Modify your twitter experience</summary>
   
 ## [Modify Twitter](modify%20twitter)
@@ -66,7 +72,13 @@ Improves the sites look. Changes include:
 - The follow button in the relevant people section is shorter
 - The lines in-between tweets have their opacity reduced including comment chains
 - "This Post is unavailable" is shorter and no longer has borders
+
+<details open>
+<summary>Extra content:</summary>
+
 ### Addons for this filter:
 #### [No names on the side](modify%20twitter%20addon%3A%20no%20names%20on%20the%20side)
 - Removes the names of the navigation buttons and reduces its width
+</details>
+
 </details>
