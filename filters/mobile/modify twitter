@@ -100,3 +100,6 @@ x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-jxzhtn
 
 ! smaller follow button in relevant people and "Who to follow"
 x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :has([aria-label="Relevant people"], [aria-label="Who to follow"]) [type="button"]:style(min-height: 24px !important)
+
+! background mask is darker
+x.com##[role="dialog"]:upward(1):style(background-color: rgba(15, 15, 15, 0.7) !important)
