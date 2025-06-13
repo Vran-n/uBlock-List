@@ -10,6 +10,7 @@
 ! Format: MM/DD/YYYY
 ! Changelog:
 ! 6/13/2025: line "opacity" has been fixed
+! (cont.) background mask is darker
 
 
 
@@ -120,3 +121,6 @@ x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-jxzhtn
 
 ! smaller follow button in relevant people and "Who to follow"
 x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :has([aria-label="Relevant people"], [aria-label="Who to follow"]) [type="button"]:style(min-height: 24px !important)
+
+! background mask is darker
+x.com##[data-testid="mask"]:style(background-color: rgba(15, 15, 15, 0.7) !important)
