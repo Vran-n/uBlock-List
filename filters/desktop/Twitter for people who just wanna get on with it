@@ -1,9 +1,12 @@
-! Title: COMBO TWITTER
+! Title: Twitter: Combined Filters Edition
 ! Last modified: %timestamp%
 ! Description: |
-!   This gets rid of the clutter on Twitter
+!   Combines the filters below so you dont have to
+!   Includes: Simplify and Modify Twitter
+!   Addons: No Views and Decluttered Sidebar with trending hashtags
 ! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
 ! Homepage: https://github.com/Vran-n/uBlock-List
+
 
 
 !#include simplify%20twitter
