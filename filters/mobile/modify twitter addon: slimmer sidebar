@@ -1,0 +1,40 @@
+! Title: Modify Twitter Addon [Mobile]: Slimmer sidebar
+! Last modified: %timestamp%
+! Description: |
+!   Removes the icon names in the sidebar and enlarges your profile picture, among other things
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+
+
+! profile picture
+x.com##[role="dialog"] [aria-label="Account"] > * > :first-child:style(flex-direction: column !important; align-items: center !important)
+x.com##[role="dialog"] [aria-label="Account"] > * > :first-child > :first-child:style(width: 80px !important; height: 80px !important)
+
+! account switcher icon
+x.com##[role="dialog"] [aria-label="Account"] > * > :first-child > :last-child:style(margin-top: 8px !important; margin-bottom: 8px !important)
+x.com##[role="dialog"] [aria-label="Account"] [href="/account/switch"]:style(min-width: 90px !important; min-height: 25px !important)
+
+! centers the handle and username
+x.com##[role="dialog"] [aria-label="Account"] > * > :nth-of-type(2) > * > *:style(align-items: center !important)
+
+! "Following" and "Followers" now arranged in a column
+x.com##[role="dialog"] [aria-label="Account"] [href$="/verified_followers"]:upward(2):style(flex-direction: column !important)
+! center that and remove its margin
+x.com##[role="dialog"] [aria-label="Account"] > * > :last-child > *:style(align-items: center !important)
+x.com##[role="dialog"] [aria-label="Account"] > * > :last-child > * > *:style(margin-right: 0px !important)
+
+! removes minimun width for the sidebar
+x.com##[role="dialog"]:style(min-width: 120px !important)
+
+! Buttons
+! remove names
+x.com##[role="dialog"] > * > * > :first-child ~ * > * > * > :last-child
+! remove margin
+x.com##[role="dialog"] > * > * > :first-child ~ * > * > * > svg:style(width: 30px !important; height: 30px !important; margin-right: 0px !important)
+x.com##[role="dialog"] > * > * > :first-child ~ * > * > *:style(padding-bottom: 15px !important; padding-top: 15px !important)
+! arrange in a column
+x.com##[role="dialog"] > * > * > :first-child ~ *:style(flex-direction: column !important)
+
+! remove the separator below all the buttons
+x.com##[role="dialog"] [role="separator"]:upward(1)
