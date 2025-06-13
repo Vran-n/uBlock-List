@@ -58,7 +58,7 @@ x.com##[aria-label="Profile Summary"]
 ! hover card
 x.com##[data-testid="HoverCard"]:not(:has([aria-label="Smileys & people"]), :has([data-testid^="DM_Reaction_UserCell"])) > * > * > :last-child
 
-! blue notification
+! home blue notification
 x.com##[aria-label="undefined unread items"]
 
 ! side buttons
