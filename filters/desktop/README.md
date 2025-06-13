@@ -2,9 +2,6 @@
 > You can use all of these filters at once. I've made them complement each other. <br/>Desktop filters also work for tablets
 
 # TWITTER CATEGORY
-> [!NOTE]
-> As of April 3, 2025. I've decided to remove the declutter section of "Modify Twitter" to make it easier for myself to update these versions.
-
 <details>
 <summary>Simplify your twitter experience:</summary>
 
