@@ -106,8 +106,8 @@ x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"]
 x.com##[aria-label="Profile timelines"] [data-testid="ScrollSnap-SwipeableList"] [href^="/"]>*>*>div:style(height: 5px !important)
 
 ! reduce line "opacity" (do this for other themes too)
-x.com##[aria-label^="Timeline: "] .r-gu4em3:style(background-color: rgb(25, 25, 25) !important)
-x.com##[aria-label^="Timeline: "] .r-kuekak:style(background-color: rgb(30, 44, 59) !important)
+x.com##[aria-label^="Timeline: "] .r-1igl3o0:style(border-bottom-color: rgb(25, 25, 25) !important)
+x.com##[aria-label^="Timeline: "] .r-1ila09b:style(border-bottom-color: rgb(33, 47, 62) !important)
 ! comment chain line
 x.com##[aria-label^="Timeline: "] .r-1bnu78o:style(background-color: rgb(22, 22, 22) !important; width: 3px !important)
 x.com##[aria-label^="Timeline: "] .r-157er04:style(background-color: rgb(32, 47, 63) !important; width: 3px !important)
