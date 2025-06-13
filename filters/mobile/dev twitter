@@ -32,3 +32,9 @@ x.com##[role="group"] [data-testid="retweet"]>*>*:nth-of-type(2)
 x.com##[data-testid="tweet"] [href$="/analytics"]:upward(1)
 x.com##[data-testid="tweet"] > * > * > * > * > * > * > * > [dir="ltr"]:nth-of-type(n+2)
 x.com##[role="group"] [href$="/analytics"]:upward(1)
+
+! background mask is darker
+x.com##[role="dialog"]:upward(1):style(background-color: rgba(15, 15, 15, 0.7) !important)
+
+! "Following" and "Followers" now column
+x.com##[role="dialog"] [aria-label="Account"] [href$="/verified_followers"]:upward(3):style(flex-direction: column !important)
