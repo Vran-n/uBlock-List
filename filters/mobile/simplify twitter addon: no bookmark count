@@ -1,0 +1,12 @@
+! Title: Simplify Twitter Addon [Mobile]: No bookmark count
+! Last modified: %timestamp%
+! Description: |
+!   Removes the bookmark count and reveals itself upon clicking
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+
+
+! bookmark count
+x.com##[data-testid="tweet"] [data-testid="bookmark"]>*>*:nth-of-type(2)
+x.com##[role="group"] [data-testid="bookmark"]>*>*:nth-of-type(2)
