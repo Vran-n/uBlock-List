@@ -61,7 +61,7 @@ x.com##[aria-label="Home timeline"] [role="status"] [data-testid="icon"]:upward(
 
 ! smaller text
 ! hashtags
-x.com##[data-testid="tweet"] [data-testid="tweetText"] > *:has-text(#):style(font-size: 12px !important)
+x.com##[data-testid="tweet"] [data-testid="tweetText"] [href$="src=hashtag_click"]:style(font-size: 12px !important)
 ! date
 x.com##[data-testid="tweet"] time:upward(2):style(font-size: 12px !important)
 ! handle
