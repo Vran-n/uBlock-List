@@ -11,7 +11,7 @@
 ! Changelog:
 ! 6/13/2025: line "opacity" has been fixed
 ! (cont.) background mask is darker
-
+! 6/16/2025: smaller hashtags no longer affect the entire tweet in certain scenarios
 
 
 ! compact messages
@@ -78,7 +78,7 @@ x.com##[aria-label="Home timeline"] [role="status"] [data-testid="icon"]:upward(
 
 ! smaller text
 ! hashtags
-x.com##[data-testid="tweet"] [data-testid="tweetText"] > *:has-text(#):style(font-size: 12px !important)
+x.com##[data-testid="tweet"] [data-testid="tweetText"] [href$="src=hashtag_click"]:style(font-size: 12px !important)
 ! date
 x.com##[data-testid="tweet"] time:upward(2):style(font-size: 12px !important)
 ! handle
