@@ -2,30 +2,69 @@
 > You can use all of these filters at once. I've made them complement each other. <br/>Desktop filters also work for tablets
 
 # TWITTER CATEGORY
-<details>
-<summary>Simplify your twitter experience:</summary>
+<details> <summary>
+
+### Simplify your twitter experience:
+</summary>
 
 ## [Simplify Twitter](simplify%20twitter)
 This will remove all of the unnecessary content in here such as:
-- All the tweets in "Timeline: explore"
-- All the follow suggestions and communities in "Timeline: search"
-- "Subscribe", "Who to follow", "Promote" and "Get verified" in "Timeline: posts"
-- Post engagements, "Discover more" and all tweets succedding them in "Timeline: conversation"
-- Keeps only the tweets in "Timeline: home"
-- Post analytics will no longer show the post when you're already inside of it
-- "Not followed by anyone you’re following"
-- ALL of grok (including the profile summary you'd see inside the hover card)
-- Blue notification on new posts
-- Jobs, Premium, Verified Orgs, Grok, Monetization, and Ads button (including the ones inside your settings)
-- X icon
-- Messages drawer
-- "Professional Profile" in edit your profile
-- 3 dots in the account switch button
-- Community notes reminder at the very bottom of the post and "Do you find this helpful?"
-- "You aren’t verified yet" in profile (this appears occasionally)
+- ### Timeline
+  - All the tweets in "Timeline: explore"
+  - All the follow suggestions and communities in "Timeline: search"
+  - "Subscribe", "Who to follow", "Promote" and "Get verified" in "Timeline: posts"
+  - Post engagements, "Discover more" and all tweets succedding them in "Timeline: conversation"
+  - Keeps only the tweets in "Timeline: home"
 
-<details open>
-<summary>Extra content:</summary>
+<details> <summary>
+
+#### Images:
+</summary>
+  
+### Timeline: Explore
+![explore](https://github.com/user-attachments/assets/1303725d-40a0-4191-9c4e-eb436e875af0)
+### Timeline: Search
+![search](https://github.com/user-attachments/assets/477c7762-8535-4989-8b58-9fd8ca43d577)
+### Timeline: Posts
+![posts](https://github.com/user-attachments/assets/490789f3-7925-4d93-a5b1-48a192dd9d62)
+### Timeline: Conversions (discover more)
+![discover more](https://github.com/user-attachments/assets/82987c38-fcf4-4c9c-87e0-33fa453836fb)
+### Timeline: Home
+![home](https://github.com/user-attachments/assets/7410dcfc-92fd-4bab-bef7-3db9d32d7896)
+</details>
+
+- ### Others
+  - ALL of grok (including the profile summary you'd see inside the hover card)
+  - X icon
+  - Jobs, Premium, Verified Orgs, Grok, Monetization, and Ads button (including the ones inside your settings)
+  - Messages drawer
+  - Community notes reminder at the very bottom of the post and "Do you find this helpful?"
+  - Post analytics will no longer show the post when you're already inside of it
+  - "Not followed by anyone you’re following"
+  - Blue notification on new posts
+  - "Professional Profile" in edit your profile
+  - 3 dots in the account switch button
+  - "You aren’t verified yet" in profile (this appears occasionally)
+
+<details> <summary>
+  
+#### Images:
+</summary>
+  
+### Community notes
+![Community notes](https://github.com/user-attachments/assets/2ef0e1e3-a5e3-4525-bc5f-87532d86ca06)
+### Post Analytics
+![Post Analytics](https://github.com/user-attachments/assets/529ca794-ca1c-469a-9c6b-72ea752eab70)
+### Side bar
+![Side bar](https://github.com/user-attachments/assets/00bfcdfd-fa52-4a9a-a31b-fafa77b295db)
+### Messages drawer
+![Messages drawer](https://github.com/user-attachments/assets/cc0ee35e-f14f-4eb9-8854-c87cbcbdb723)
+</details>
+
+<details open> <summary>
+
+## Extra content:
+</summary>
   
 ### Addons for this filter:
 #### [Decluttered Sidebar](simplify%20twitter%20addon%3A%20decluttered%20sidebar)
@@ -48,10 +87,17 @@ This will remove all of the unnecessary content in here such as:
 - Removes the reply count in tweets
 </details>
 
+
 </details>
 
-<details>
-<summary>Modify your twitter experience</summary>
+
+
+
+
+<details> <summary>
+  
+### Modify your twitter experience:
+</summary>
   
 ## [Modify Twitter](modify%20twitter)
 Improves the sites look. Changes include:
