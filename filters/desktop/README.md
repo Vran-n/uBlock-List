@@ -55,8 +55,8 @@ This will remove all of the unnecessary content in here such as:
 ![Community notes](https://github.com/user-attachments/assets/2ef0e1e3-a5e3-4525-bc5f-87532d86ca06)
 ### Post Analytics
 ![Post Analytics](https://github.com/user-attachments/assets/529ca794-ca1c-469a-9c6b-72ea752eab70)
-### Side bar
-![Side bar](https://github.com/user-attachments/assets/00bfcdfd-fa52-4a9a-a31b-fafa77b295db)
+### Navigations
+![Navigations](https://github.com/user-attachments/assets/00bfcdfd-fa52-4a9a-a31b-fafa77b295db)
 ### Messages drawer
 ![Messages drawer](https://github.com/user-attachments/assets/cc0ee35e-f14f-4eb9-8854-c87cbcbdb723)
 </details>
@@ -69,14 +69,34 @@ This will remove all of the unnecessary content in here such as:
 ### Addons for this filter:
 #### [Decluttered Sidebar](simplify%20twitter%20addon%3A%20decluttered%20sidebar)
 - Removes everything in the sidebar except search, search filters, footer and relevant people
+<details> <summary> Image: </summary> 
+  
+![sidebar no hashtags](https://github.com/user-attachments/assets/7172f1f5-22be-4fae-9fc0-248f55b97f8f)
+</details>
+
 #### [Decluttered Sidebar with Trending Hashtags](simplify%20twitter%20addon%3A%20decluttered%20sidebar%20with%20trending%20hashtags)
 - Same as the one before it except it keeps the trending hashtags
+<details> <summary> Image: </summary> 
+  
+![sidebar hashtags](https://github.com/user-attachments/assets/769906d4-91d3-464b-8ff7-d849dadae788)
+</details>
+
 #### [No "For you" in the toolbar](simplify%20twitter%20addon%3A%20no%20"For%20you"%20in%20the%20toolbar)
 - Removes the "For you" in the toolbar
+<details> <summary> Image: </summary> 
+  
+![sdfgsafgsf](https://github.com/user-attachments/assets/3b94c5f5-67b6-4ac3-9098-404416a19d7d)
+</details>
+
 #### [No "Following" in the toolbar](simplify%20twitter%20addon%3A%20no%20"Following"%20in%20the%20toolbar)
 - Removes the "Following" in the toolbar
+<details> <summary> Image: </summary> 
+
+![dghdghdg](https://github.com/user-attachments/assets/07c11c82-3aca-4795-9abc-33cba3d18e59)
+</details>
+
 #### [No Views](simplify%20twitter%20addon%3A%20no%20views)
-- Removes the views analytics in tweets
+- Removes the view count in tweets
 #### [No bookmark count](simplify%20twitter%20addon%3A%20no%20bookmark%20count)
 - Removes the bookmark count in tweets and reveals itself upon clicking 
 #### [No like count](simplify%20twitter%20addon%3A%20no%20like%20count)
