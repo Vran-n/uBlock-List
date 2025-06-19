@@ -56,7 +56,7 @@ x.com##[aria-label="Grok actions"]
 x.com##[aria-label="Enhance your post with Grok"]
 x.com##[aria-label="Profile Summary"]
 ! hover card
-[data-testid="HoverCard"]:not(:has([aria-label="Smileys & people"]), :has([data-testid^="DM_Reaction_UserCell"]), :has([role="dialog"])) > * > * > :last-child
+x.com##[data-testid="HoverCard"]:not(:has([aria-label="Smileys & people"]), :has([data-testid^="DM_Reaction_UserCell"]), :has([role="dialog"])) > * > * > :last-child
 
 ! home blue notification
 x.com##[aria-label="undefined unread items"]
