@@ -2,10 +2,7 @@
 > You can use all of these filters at once. I've made them complement each other. <br/>Desktop filters also work for tablets
 
 # TWITTER CATEGORY
-<details> <summary>
-
-### Simplify your twitter experience:
-</summary>
+<details> <summary> Simplify your twitter experience: </summary>
 
 ## [Simplify Twitter](simplify%20twitter)
 This will remove all of the unnecessary content in here such as:
@@ -114,27 +111,27 @@ This will remove all of the unnecessary content in here such as:
 
 
 
-<details> <summary>
-  
-### Modify your twitter experience:
-</summary>
+<details> <summary> Modify your twitter experience: </summary>
   
 ## [Modify Twitter](modify%20twitter)
 Improves the sites look. Changes include:
-- Reduced extra space in the messages
-- Post and "New message" buttons are shorter
-- Post and reply buttons will only start to appear when you start typing
-- Gets rid of the lines inside the post and moves up the reply section
-- Border radii is smaller in text, videos, gifs, reply's, and messages
-- Border lines have been removed in text, videos, and gifs
-- User icons are now square-ish
-- Made the "Your likes are private" more compact
-- Smaller handles, hashtags and dates in almost everywhere
-- Reduced the margin in your Timeline: profile and profile toolbar
-- Usernames including the checkmark are now bigger in profile
-- The follow button in the relevant people section is shorter
-- The lines in-between tweets have their opacity reduced including comment chains
-- "This Post is unavailable" is shorter and no longer has borders
+- ### Quality Of Life
+  - Post and reply buttons will only start to appear when you start typing
+  - Smaller handles, hashtags and dates in almost everywhere
+  - Usernames including the checkmark are now bigger in profile
+  - Gets rid of the lines inside the post and moves up the reply section
+- ### Cutting fewer corners
+  - User icons are now square-ish
+  - Border radii is smaller in text, videos, gifs, reply's, and messages
+- ### All the small details
+  - Border lines have been removed in text, videos, and gifs
+  - "This Post is unavailable" is shorter and no longer has borders
+  - The lines in-between tweets (i.e., comment chains) have their opacity reduced
+  - Reduced the margin in your Timeline: profile and profile toolbar
+  - Reduced extra space in the messages
+  - Post and "New message" buttons are shorter
+  - Made the "Your likes are private" more compact
+  - The follow button in the relevant people section is shorter
 
 <details open>
 <summary>Extra content:</summary>
