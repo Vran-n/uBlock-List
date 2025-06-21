@@ -1,7 +1,7 @@
 ---
 name: BUG REPOPT
 about: Create a bug report to help me solve the issue
-title: "[BUG] "
+title: "[BUG] <pick a device. REMOVE THIS> [MOBILE] [DESKTOP] [BOTH] "
 labels: bug
 assignees: ''
 

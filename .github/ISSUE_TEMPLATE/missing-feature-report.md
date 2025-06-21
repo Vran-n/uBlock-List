@@ -1,7 +1,7 @@
 ---
 name: MISSING FEATURE REPORT
 about: Bring up a feature that is no longer working due to circumstances
-title: "[MISSING]"
+title: "[MISSING] <pick a device. REMOVE THIS> [MOBILE] [DESKTOP] [BOTH] "
 labels: missing feature
 assignees: ''
 

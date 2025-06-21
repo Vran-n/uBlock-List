@@ -1,7 +1,7 @@
 ---
 name: FEATURE REQUEST
 about: Suggest an idea for the filters
-title: "[NEW FEATURE] "
+title: "[NEW FEATURE] <pick a device. REMOVE THIS> [MOBILE] [DESKTOP] [BOTH] "
 labels: enhancement
 assignees: ''
 
