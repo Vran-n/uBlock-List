@@ -2,6 +2,17 @@
 > You can use all of these filters at once. I've made them complement each other. <br/>Desktop filters also work for tablets
 
 # TWITTER CATEGORY
+### [Twitter: Combined Filters Edition](twitter%20filters%20for%20people%20who%20just%20wanna%20get%20on%20with%20it)
+If you don't wanna bother with what sort of enhancements and cleanups you're going to get then the filter above is perfect for you!
+Simply click on the text and it drags you straight into the file.
+
+#### What it does is it combines the filters from:
+- Simplify Twitter
+- Modify Twitter
+- Simplify Twitter Addon: No Views
+- Simplify Twitter Addon: Decluttered Sidebar with Trending Hashtags
+
+#### For those who want extra details, please expand the sections below
 <details> <summary> Simplify your twitter experience: </summary>
 
 ## [Simplify Twitter](simplify%20twitter)
@@ -15,7 +26,7 @@ This will remove all of the unnecessary content in here such as:
 
 <details> <summary>
 
-#### Images:
+#### Screenshots:
 </summary>
   
 ### Timeline: Explore
@@ -45,7 +56,7 @@ This will remove all of the unnecessary content in here such as:
 
 <details> <summary>
   
-#### Images:
+#### Screenshots:
 </summary>
   
 ### Community notes
@@ -66,28 +77,28 @@ This will remove all of the unnecessary content in here such as:
 ### Addons for this filter:
 #### [Decluttered Sidebar](simplify%20twitter%20addon%3A%20decluttered%20sidebar)
 - Removes everything in the sidebar except search, search filters, footer and relevant people
-<details> <summary> Image: </summary> 
+<details> <summary> Screenshots: </summary> 
   
 ![sidebar no hashtags](https://github.com/user-attachments/assets/7172f1f5-22be-4fae-9fc0-248f55b97f8f)
 </details>
 
 #### [Decluttered Sidebar with Trending Hashtags](simplify%20twitter%20addon%3A%20decluttered%20sidebar%20with%20trending%20hashtags)
 - Same as the one before it except it keeps the trending hashtags
-<details> <summary> Image: </summary> 
+<details> <summary> Screenshots: </summary> 
   
 ![sidebar hashtags](https://github.com/user-attachments/assets/769906d4-91d3-464b-8ff7-d849dadae788)
 </details>
 
 #### [No "For you" in the toolbar](simplify%20twitter%20addon%3A%20no%20"For%20you"%20in%20the%20toolbar)
 - Removes the "For you" in the toolbar
-<details> <summary> Image: </summary> 
+<details> <summary> Screenshots: </summary> 
   
 ![sdfgsafgsf](https://github.com/user-attachments/assets/3b94c5f5-67b6-4ac3-9098-404416a19d7d)
 </details>
 
 #### [No "Following" in the toolbar](simplify%20twitter%20addon%3A%20no%20"Following"%20in%20the%20toolbar)
 - Removes the "Following" in the toolbar
-<details> <summary> Image: </summary> 
+<details> <summary> Screenshots: </summary> 
 
 ![dghdghdg](https://github.com/user-attachments/assets/07c11c82-3aca-4795-9abc-33cba3d18e59)
 </details>
@@ -128,7 +139,7 @@ Improves the sites look. Changes include:
     - The lines in-between tweets (i.e., comment chains) have their opacity reduced
 <details> <summary>
 
-#### Images:
+#### Screenshots:
 </summary>
 
 ### What all tweets will look like (including timeline content)
@@ -153,7 +164,7 @@ Improves the sites look. Changes include:
 ### Addons for this filter:
 #### [No names on the side](modify%20twitter%20addon%3A%20no%20names%20on%20the%20side)
 - Removes the names of the navigation buttons and reduces its width
-<details> <summary> Image: </summary> 
+<details> <summary> Screenshots: </summary> 
   
 ![slimmed side bar](https://github.com/user-attachments/assets/bb361032-2d41-46bb-96a3-8a7dfe954b3c)
 </details>
