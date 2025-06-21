@@ -117,28 +117,47 @@ This will remove all of the unnecessary content in here such as:
 Improves the sites look. Changes include:
 - ### Quality Of Life
   - Post and reply buttons will only start to appear when you start typing
-  - Smaller handles, hashtags and dates in almost everywhere
   - Usernames including the checkmark are now bigger in profile
-  - Gets rid of the lines inside the post and moves up the reply section
-- ### Cutting fewer corners
-  - User icons are now square-ish
-  - Border radii is smaller in text, videos, gifs, reply's, and messages
+  - Smaller handles, hashtags and dates in almost everywhere
+  - #### Cutting fewer corners
+    - User icons are now square-ish
+    - Border radii is smaller in text, videos, gifs, reply's, and messages
+  - #### Visual Tweaks
+    - Border lines have been removed in text, videos, and gifs
+    - Gets rid of the lines inside the post and moves up the reply section
+    - The lines in-between tweets (i.e., comment chains) have their opacity reduced
+<details> <summary>
+
+#### Images:
+</summary>
+
+### What all tweets will look like (including timeline content)
+![VTweaks](https://github.com/user-attachments/assets/3941bbdd-526f-4bb2-8d87-a586777b7d01)
+### Post and Reply behavior
+![PR behavior](https://github.com/user-attachments/assets/5ce1c90d-4717-4542-9c0e-e5195164985c)
+</details>
+
 - ### All the small details
-  - Border lines have been removed in text, videos, and gifs
   - "This Post is unavailable" is shorter and no longer has borders
-  - The lines in-between tweets (i.e., comment chains) have their opacity reduced
   - Reduced the margin in your Timeline: profile and profile toolbar
   - Reduced extra space in the messages
   - Post and "New message" buttons are shorter
   - Made the "Your likes are private" more compact
   - The follow button in the relevant people section is shorter
 
-<details open>
-<summary>Extra content:</summary>
+<details open> <summary>
+
+## Extra content:
+</summary>
 
 ### Addons for this filter:
 #### [No names on the side](modify%20twitter%20addon%3A%20no%20names%20on%20the%20side)
 - Removes the names of the navigation buttons and reduces its width
+<details> <summary> Image: </summary> 
+  
+![slimmed side bar](https://github.com/user-attachments/assets/bb361032-2d41-46bb-96a3-8a7dfe954b3c)
+</details>
+
 </details>
 
 </details>
