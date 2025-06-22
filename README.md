@@ -1,4 +1,4 @@
-> [!IMPORTANT]
+>[!IMPORTANT]
 > Please report any bugs or issues immediately as I'm not going to be able to check all of them
 
 # uBlockOrigin-List
@@ -6,9 +6,11 @@
 > Desktop filters also work for tablets
 
 This is where I store my own custom lists for uBlockOrigin
-### How to use:
+### HOW TO INSTALL/USE:
+<details> <summary>For Desktop:</summary>
+   
 1. Go to the filters folder
-2. Pick any of the two folders according to what device you're using (DON'T USE THE MOBILE FILTERS YET)
+2. Pick the destop folder
 3. Choose the filter you want to use
 4. Click the "Raw" button to your right
    - ![Screenshot 2025-04-11 110617](https://github.com/user-attachments/assets/ffb78816-ab81-4530-bfa3-cdc26a9d9818)
@@ -20,6 +22,26 @@ This is where I store my own custom lists for uBlockOrigin
    - ![Screenshot 2025-04-11 111531](https://github.com/user-attachments/assets/3f37ac34-3bda-488a-8252-f52593f5c8f1)
 9. Paste your address
 10. Hit apply
+</details>
+
+<details> <summary>For Mobile:</summary>
+   
+1. Go to the filters folder
+2. Pick the mobile folder
+3. Choose the filter you want to use
+4. Tap the hamburger menu and then tap "View"
+   - ![Screenshot_2025-06-13-15-29-56-402_org mozilla firefox](https://github.com/user-attachments/assets/e7203c6c-a2c0-4575-afea-b201688d900f)
+5. Copy the entire address in the address bar
+   - ![Screenshot_2025-06-13-15-29-56-402_org mozilla firefox](https://github.com/user-attachments/assets/e32eda22-a34e-4ff3-891a-7c84acce9b40)
+6. Find and open uBlockOrigin by going to your browser extensions
+   - ![sfgsdgsr](https://github.com/user-attachments/assets/9f0dd198-1974-4639-bb6e-c812e07a38cc)
+7. Tap "Open the dashboard"
+8. Go to your filter lists
+9. Scroll down until you see the import section and paste your address
+   - ![safgsafg](https://github.com/user-attachments/assets/90c5f89e-8d44-49f6-bcc6-433b22776574)
+10. Hit apply
+</details>
+
 # QnA
 ### Will you be updating this periodically?
 Yes.
