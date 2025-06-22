@@ -1,4 +1,3 @@
-> [!IMPORTANT]
 > Everything in here will only work on the **WEBSITE** not the app
 > 
 # TWITTER CATEGORY [MOBILE]
@@ -23,6 +22,21 @@ This will remove all of the unnecessary content in here such as:
   - Post engagements, "Discover more" and all tweets succedding them in "Timeline: conversation"
   - Keeps only the tweets in "Timeline: home"
 
+<details> <summary>
+
+#### Screenshots:
+</summary>
+
+### Timeline: Explore
+![explore](https://github.com/user-attachments/assets/d362cc2c-3249-4e62-84d0-7e8d5aa6bf68)
+### Timeline: Search
+![search](https://github.com/user-attachments/assets/fcd103f9-f854-4994-8c90-a7203829e1e1)
+### Timeline: Posts
+![posts](https://github.com/user-attachments/assets/dcf37746-3117-4ce5-b0f0-21649d2adc91)
+### Timeline: Conversions (discover more)
+![discover](https://github.com/user-attachments/assets/3036c21e-fffd-48db-b274-a172132fef27)
+</details>
+
 - ### Others
   - ALL of grok
   - X icon
@@ -32,6 +46,17 @@ This will remove all of the unnecessary content in here such as:
   - Blue notification on new posts
   - "Professional Profile" in edit your profile
   - "You aren’t verified yet" in profile (this appears occasionally)
+ 
+<details> <summary>
+  
+#### Screenshots:
+</summary>
+  
+### Community notes
+![notes](https://github.com/user-attachments/assets/c02a339d-6b81-4273-a316-198d84e8ff32)
+### Navigations
+![navigation](https://github.com/user-attachments/assets/3e3b8519-005e-4dca-9c18-81af5d6d19f3)
+</details>
 
 <details open> <summary>
 
@@ -41,9 +66,17 @@ This will remove all of the unnecessary content in here such as:
 ### Addons for this filter:
 #### [[Mobile] No "For you" in the toolbar](simplify%20twitter%20addon%3A%20no%20"For%20you"%20in%20the%20toolbar)
 - Removes the "For you" in the toolbar
+<details> <summary> Screenshots: </summary> 
+  
+![no for you](https://github.com/user-attachments/assets/aff3fbc8-e1b3-4d8f-8980-f1a8f389ca45)
+</details>
 
 #### [[Mobile] No "Following" in the toolbar](simplify%20twitter%20addon%3A%20no%20"Following"%20in%20the%20toolbar)
 - Removes the "Following" in the toolbar
+<details> <summary> Screenshots: </summary> 
+  
+![no following](https://github.com/user-attachments/assets/b235096c-c794-4554-a04e-30271e67e922)
+</details>
 
 #### [[Mobile] No Views](simplify%20twitter%20addon%3A%20no%20views)
 - Removes the view count in tweets
@@ -79,6 +112,19 @@ Improves the sites look. Changes include:
     - Gets rid of the lines inside the post
     - The lines in-between tweets (i.e., comment chains) have their opacity reduced
 
+<details> <summary>
+
+#### Screenshots:
+</summary>
+
+### What all tweets will look like (including timeline content)
+![tweets](https://github.com/user-attachments/assets/dac13d1a-37c2-4d5b-9906-a904265f7105)
+### What all quoted tweets will look like (including timeline content)
+![quoted tweets](https://github.com/user-attachments/assets/73a0502c-6ec2-4b7d-89ca-f750191318f3)
+### What messages will look like
+![messages](https://github.com/user-attachments/assets/040e3b57-9fca-4a56-98a6-fa61352c11f6)
+</details>
+
 - ### All the small details
   - "This Post is unavailable" is shorter and no longer has borders
   - Reduced the margin in your Timeline: profile and profile toolbar
@@ -92,6 +138,12 @@ Improves the sites look. Changes include:
 </summary>
 
 ### Addons for this filter:
+#### [[Mobile] Slimmer sidebar](modify%20twitter%20addon%3A%20slimmer%20sidebar)
+- Slims down the sidebar by reducing its width and removing the icon text. Also increases the profile picture image
+<details> <summary> Screenshots: </summary> 
+  
+![sidebar addons](https://github.com/user-attachments/assets/c2ab6582-de13-4f26-8188-7e60272abcbe)
+</details>
 
 </details>
 
