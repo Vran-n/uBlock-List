@@ -149,7 +149,7 @@ Improves the sites look. Changes include:
 ### What all quoted tweets will look like (including timeline content)
 ![quotes pog](https://github.com/user-attachments/assets/630ebd59-622c-4d33-9075-ba3ebb773c9f)
 ### What messages will look like
-![messages](https://github.com/user-attachments/assets/27e0c6f8-4447-4db1-8032-a7aad451b1e2)
+![messages new](https://github.com/user-attachments/assets/58e17fc0-467f-4ef1-97f6-3d26a231bc0a)
 </details>
 
 - ### All the small details
