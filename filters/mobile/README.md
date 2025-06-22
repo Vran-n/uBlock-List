@@ -59,3 +59,42 @@ This will remove all of the unnecessary content in here such as:
 
 
 </details>
+
+
+
+
+
+<details> <summary> Modify your twitter experience: </summary>
+  
+## [Modify Twitter](modify%20twitter)
+Improves the sites look. Changes include:
+- ### Quality Of Life
+  - Post and reply buttons will only start to appear when you start typing
+  - Usernames including the checkmark are now bigger in profile
+  - Smaller handles, hashtags and dates in almost everywhere
+  - #### Cutting fewer corners
+    - User icons are now square-ish
+    - Border radii is smaller in text, videos, gifs, reply's, and messages
+  - #### Visual Tweaks
+    - Border lines have been removed in text, videos, and gifs
+    - Gets rid of the lines inside the post and moves up the reply section
+    - The lines in-between tweets (i.e., comment chains) have their opacity reduced
+
+- ### All the small details
+  - "This Post is unavailable" is shorter and no longer has borders
+  - Reduced the margin in your Timeline: profile and profile toolbar
+  - Reduced extra space in the messages
+  - Post and "New message" buttons are shorter
+  - Made the "Your likes are private" more compact
+  - The follow button in the relevant people section is shorter
+
+<details open> <summary>
+
+## Extra content:
+</summary>
+
+### Addons for this filter:
+
+</details>
+
+</details>
