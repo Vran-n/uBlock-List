@@ -10,6 +10,23 @@ Simply tap on the text and it drags you straight into the file.
 - Simplify Twitter [Mobile]
 - Modify Twitter [Mobile]
 - Simplify Twitter Addon [Mobile]: No Views
+<details> <summary>Screenshots:</summary>
+  
+### Timeline: Home
+![home](https://github.com/user-attachments/assets/6deb5f34-b784-432e-85ee-b0342946bbfc)
+### Timeline: Post (Part 1)
+![post 1](https://github.com/user-attachments/assets/ff1c9aad-4699-4951-8dc0-04c012695795)
+### Timeline: Post (Part 2)
+![post 2](https://github.com/user-attachments/assets/79673fe2-9b64-4661-83bd-86a60f124065)
+### Timeline: Search
+![search](https://github.com/user-attachments/assets/cce90493-7608-4134-8fde-93796aa922ac)
+### Timeline: Conversation (Part 1)
+![tweet](https://github.com/user-attachments/assets/fdf201a1-9277-4e15-ad73-175bace75a2f)
+### Timeline: Conversation (Part 2)
+![comments](https://github.com/user-attachments/assets/62394007-c50b-4015-8699-3be739b9e102)
+### Messages
+![messages](https://github.com/user-attachments/assets/27970a18-fe10-4db3-92f9-f43d186ff2d6)
+</details>
 
 #### For those who want extra details, please expand the sections below
 <details> <summary> Simplify your twitter experience: </summary>
