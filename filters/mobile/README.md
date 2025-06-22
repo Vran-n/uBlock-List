@@ -4,7 +4,7 @@
 # TWITTER CATEGORY [MOBILE]
 ### [Twitter [Mobile]: Combined Filters Edition](twitter%20filters%20for%20people%20who%20just%20wanna%20get%20on%20with%20it)
 If you don't wanna bother with what sort of enhancements and cleanups you're going to get then the filter above is perfect for you!
-Simply click on the text and it drags you straight into the file.
+Simply tap on the text and it drags you straight into the file.
 
 #### What it does is it combines the filters from:
 - Simplify Twitter [Mobile]
