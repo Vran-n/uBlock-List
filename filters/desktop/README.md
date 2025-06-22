@@ -142,10 +142,14 @@ Improves the sites look. Changes include:
 #### Screenshots:
 </summary>
 
-### What all tweets will look like (including timeline content)
-![VTweaks](https://github.com/user-attachments/assets/3941bbdd-526f-4bb2-8d87-a586777b7d01)
 ### Post and Reply behavior
 ![PR behavior](https://github.com/user-attachments/assets/5ce1c90d-4717-4542-9c0e-e5195164985c)
+### What all tweets will look like (including timeline content)
+![VTweaks](https://github.com/user-attachments/assets/3941bbdd-526f-4bb2-8d87-a586777b7d01)
+### What all quoted tweets will look like (including timeline content)
+![quotes pog](https://github.com/user-attachments/assets/630ebd59-622c-4d33-9075-ba3ebb773c9f)
+### What messages will look like
+![messages](https://github.com/user-attachments/assets/27e0c6f8-4447-4db1-8032-a7aad451b1e2)
 </details>
 
 - ### All the small details
