@@ -10,4 +10,4 @@
 ! views
 x.com##[data-testid="tweet"] [href$="/analytics"]:upward(1)
 x.com##[data-testid="tweet"] > * > * > * > * > * > * > * > [dir="ltr"]:nth-of-type(n+2)
-x.com##[role="group"]:not([data-testid="sheetDialog"]) [href$="/analytics"]:upward(1)
+[role="group"]:not(:has([data-testid="sheetDialog"])) [href$="/analytics"]:upward(1)
