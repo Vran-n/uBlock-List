@@ -7,6 +7,12 @@
 
 
 
+! Format: MM/DD/YYYY
+! Changelog:
+! 6/23/2025: (Fixed) Extra options being removed (i.e., The modal that appears when the 3 dots are pressed)
+
+
+
 ! views
 x.com##[data-testid="tweet"] [href$="/analytics"]:upward(1)
 x.com##[data-testid="tweet"] > * > * > * > * > * > * > * > [dir="ltr"]:nth-of-type(n+2)
