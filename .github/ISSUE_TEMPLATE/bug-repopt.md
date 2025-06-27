@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+**Filters (List all the filters you're currently using)**
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 

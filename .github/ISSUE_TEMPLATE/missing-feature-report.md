@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+**Filters (List all the filters you're currently using)**
+
 **Describe the feature**
 A clear and concise description of what the feature is.
 
