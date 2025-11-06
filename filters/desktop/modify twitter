@@ -111,9 +111,9 @@ x.com##[aria-label^="Timeline: "] .r-157er04:style(background-color: rgb(32, 47,
 x.com##[aria-label^="Timeline: "] .r-1bimlpy:style(background-color: rgb(239, 239, 239) !important; width: 3px !important)
 
 ! 'This Post is unavailable' shorter
-x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(1)
-x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*:style(padding-top: 6px !important; padding-bottom: 6px !important)
-x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>*:style(padding-top: 6px !important; padding-bottom: 6px !important)
+x.com##[role="article"]:has([href^="https://help"])>*>*>*:nth-of-type(1)
+x.com##[role="article"]:has([href^="https://help"])>*>*>*:nth-of-type(2)>*:style(padding-top: 6px !important; padding-bottom: 6px !important)
+x.com##[role="article"]:has([href^="https://help"])>*>*>*:nth-of-type(2)>*>*:style(padding-top: 6px !important; padding-bottom: 6px !important)
 ! border
 x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-16cnnyw:style(border-color: rgb(0, 0, 0) !important)
 x.com##[role="article"]:has([href^="https://"])>*>*>*:nth-of-type(2)>*>.r-cliqr8:style(border-color: rgb(21, 32, 43) !important)
