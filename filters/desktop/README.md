@@ -173,6 +173,38 @@ Improves the sites look. Changes include:
 ![slimmed side bar](https://github.com/user-attachments/assets/bb361032-2d41-46bb-96a3-8a7dfe954b3c)
 </details>
 
+#### [Wide Timeline](modify%20twitter%20addon%3A%20wide%20timeline)
+- Widens your timeline by a little bit (700px)
+<details> <summary> Screenshots: </summary>
+  
+![ddsagf](https://github.com/user-attachments/assets/61e6f322-4af6-4df0-9f85-a8375f3d86a4)
+
+### All versions:
+![sfdgsdg](https://github.com/user-attachments/assets/dbebbe14-1480-4539-b799-66defa5b4158)
+</details>
+
+#### [Widerrr Timeline](modify%20twitter%20addon%3A%20widerrr%20timeline)
+- Widens your timeline (800px)
+<details> <summary> Screenshots: </summary>
+  
+![hhsthsdth](https://github.com/user-attachments/assets/90f34b5a-e04f-46d7-9de7-5d9345a43d3d)
+
+### All versions:
+![sfdgasgrsdghds](https://github.com/user-attachments/assets/dbebbe14-1480-4539-b799-66defa5b4158)
+</details>
+
+#### [Ultra Wide Timeline](modify%20twitter%20addon%3A%20ultra%20wide%20timeline)
+- Widens your timeline by a lot (900px)
+<details> <summary> Screenshots: </summary>
+  
+![ddsagfasrsaw](https://github.com/user-attachments/assets/0570da13-0660-4cc4-99d4-a3494b5651fa)
+
+### All versions:
+![sfdghryjfhdsdg](https://github.com/user-attachments/assets/dbebbe14-1480-4539-b799-66defa5b4158)
+</details>
+
+
+
 </details>
 
 </details>
