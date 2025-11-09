@@ -90,6 +90,26 @@ x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div
 
 ! "You aren’t verified yet" in profile 
 x.com##[aria-label="Home timeline"]:not(:has([href$="/header_photo"])) :is([href$="/premium_sign_up"]):upward(4)
+! update
+x.com##[aria-label="Home timeline"] [href$="/premium_sign_up"]:upward(4)
+
+! Account Analytics upsell
+x.com##[aria-label="Home timeline"] [data-testid="tweet"] [href$="/account_analytics"]:upward(3)
+! more (footer text)
+x.com##[data-testid="Dropdown"] [href$="/download-the-x-app"], [href^="https://business"], [href^="https://developer"]
+
+
+
+! This section is for users who are logged out
+! that annoying "Dont miss whats happening!" at the very bottom
+x.com##[data-testid="BottomBar"]:has([href="/login"], [href$="/signup"])
+
+! Grok (sign in page)
+x.com##[href$="/signup"]:upward(2) [href="https://grok.com/"]
+! Removes unnessesary footer text
+x.com##[aria-label="Footer"] :has([href$="/download-the-x-app"], [href="https://grok.com/"], [href^="https://blog"], [href^="https://careers"], [href$="/brand-assets"], [href^="https://ads"], [href^="https://marketing"], [href^="https://business"], [href^="https://developer"], [href$="/news"], [href$="/settings"])
+
+
 
 
 
