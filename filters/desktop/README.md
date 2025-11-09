@@ -53,6 +53,13 @@ This will remove all of the unnecessary content in here such as:
   - "Professional Profile" in edit your profile
   - 3 dots in the account switch button
   - "You aren’t verified yet" in profile (this appears occasionally)
+  - Account Analytics upsell
+  - Remove unnecessary links text in more (under trending hastags)
+
+- ### For users who are logged out
+  - Grok (sign in page)
+  - Remove unnecessary footer text
+  - "Don't miss what's happening!" at the very bottom
 
 <details> <summary>
   
