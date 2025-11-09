@@ -60,4 +60,4 @@ No plans for now.
 ### Will these filters work in other ad blockers?
 There are some exceptions such as AdGuard (though some features wont work), but I **strongly** recommend using this for only uBlockOrigin
 ### Are you porting this to AdGuard?
-Yes, but I'm unsure when.
+No
