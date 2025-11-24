@@ -9,9 +9,8 @@
 
 ! Format: MM/DD/YYYY
 ! Changelog:
-! 6/13/2025: line "opacity" has been fixed
-! (cont.) background mask is darker
-! 6/16/2025: smaller hashtags no longer affect the entire tweet in certain scenarios
+! 11/7/2025: Fixed issue with the missing headers in notifications
+
 
 
 ! compact messages
