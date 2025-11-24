@@ -9,7 +9,7 @@
 
 ! Format: MM/DD/YYYY
 ! Changelog:
-! 6/10/2025: (Fixed) 'Not followed by anyone you’re following'
+! 11/24/2025: (Fixed) "You aren’t verified yet" in profile 
 
 
 
@@ -90,8 +90,8 @@ x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div
 
 ! "You aren’t verified yet" in profile 
 x.com##[aria-label="Home timeline"]:not(:has([href$="/header_photo"])) :is([href$="/premium_sign_up"]):upward(4)
-! update
-x.com##[aria-label="Home timeline"] [href$="/premium_sign_up"]:upward(4)
+! update update
+x.com##[aria-label="Home timeline"] [href$="/premium_sign_up"]:upward(2)
 
 ! Account Analytics upsell
 x.com##[aria-label="Home timeline"] [data-testid="tweet"] [href$="/account_analytics"]:upward(3)
