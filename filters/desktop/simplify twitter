@@ -89,9 +89,7 @@ x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] span:nth-of-type(2)
 x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div:upward(2):style(padding-bottom: 6px !important; padding-top: 6px !important; border-top-width: 0px !important)
 
 ! "You aren’t verified yet" in profile 
-x.com##[aria-label="Home timeline"]:not(:has([href$="/header_photo"])) :is([href$="/premium_sign_up"]):upward(4)
-! update update
-x.com##[aria-label="Home timeline"] [href$="/premium_sign_up"]:upward(2)
+x.com##[aria-label="Home timeline"]:not(:has([href$="/header_photo"])) [href$="/premium_sign_up"]:upward(2)
 
 ! Account Analytics upsell
 x.com##[aria-label="Home timeline"] [data-testid="tweet"] [href$="/account_analytics"]:upward(3)
@@ -117,6 +115,5 @@ x.com##[aria-label="Footer"] :has([href$="/download-the-x-app"], [href="https://
 ! i'll uncomment this when i finally remember
 !x.com##div[class="css-175oi2r r-12kyg2d r-6dt33c r-1kw4oii r-1i36cah r-eafdt9 r-1b8bd59 r-6czh2s"]
 
-! i forgot this one too
 ! same with this one
 !x.com##.r-1ny4l3l.r-1adg3ll.css-175oi2
