@@ -44,7 +44,7 @@ x.com##:has([aria-label="Timeline: Conversation"]) [aria-labelledby="modal-heade
 x.com##[aria-labelledby="modal-header"] [style^="gap"]:upward(8):remove-class(r-kwpbio)
 
 ! 'Not followed by anyone you’re following'
-x.com##[href$="/header_photo"]:upward(1)>div>:last-child:not([aria-label="Followers you know"]:upward(4)):not([role="link"]:upward(2))
+x.com##[data-testid^="UserAvatar-Container"]:upward(2):has([data-testid="UserName"])>:last-child
 ! exhibits strange behavior rarely   <---- Fuck you past me for not describing this
 x.com##[data-testid="DmActivityContainer"]:not([aria-label="Followers you know"]:upward(1)) [data-testid="DmScrollerContainer"] [data-testid="UserAvatar-Container-unknown"]:upward(1)>div:nth-of-type(5)
 ! messages
