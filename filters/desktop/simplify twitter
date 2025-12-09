@@ -89,7 +89,7 @@ x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] span:nth-of-type(2)
 x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div:upward(2):style(padding-bottom: 6px !important; padding-top: 6px !important; border-top-width: 0px !important)
 
 ! "You aren’t verified yet" in profile 
-x.com##[aria-label="Home timeline"]:not(:has([href$="/header_photo"])) [href$="/premium_sign_up"]:upward(2)
+x.com##[aria-label="Home timeline"]:has([href$="/header_photo"]) [href$="/premium_sign_up"]:upward(2)
 
 ! Account Analytics upsell
 x.com##[aria-label="Home timeline"] [data-testid="tweet"] [href$="/account_analytics"]:upward(3)
