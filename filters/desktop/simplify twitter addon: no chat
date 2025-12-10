@@ -1,0 +1,9 @@
+! Title: Simplify Twitter Addon: No Chat
+! Last modified: %timestamp%
+! Description: |
+!   Removes the chat in the bottom right
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+! chat drawer
+x.com##[data-testid="chat-drawer-main"]:upward(4)
