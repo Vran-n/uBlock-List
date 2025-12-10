@@ -82,6 +82,9 @@ This will remove all of the unnecessary content in here such as:
 </summary>
   
 ### Addons for this filter:
+#### [No Chat](simplify%20twitter%20addon%3A%20no%20chat)
+- Removes the chat in the bottom right
+
 #### [Decluttered Sidebar](simplify%20twitter%20addon%3A%20decluttered%20sidebar)
 - Removes everything in the sidebar except search, search filters, footer and relevant people
 <details> <summary> Screenshots: </summary> 
