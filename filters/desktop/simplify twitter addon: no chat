@@ -6,4 +6,4 @@
 ! Homepage: https://github.com/Vran-n/uBlock-List
 
 ! chat drawer
-x.com##[data-testid="chat-drawer-main"]:upward(1)
+x.com##[data-testid="chat-drawer-main"]:upward(3)
