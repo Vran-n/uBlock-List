@@ -218,3 +218,32 @@ Improves the sites look. Changes include:
 </details>
 
 </details>
+
+
+# BLUESKY CATEGORY
+> [!NOTE]
+> As of right now, there are only addons for this category
+
+<details> <summary> Modify your twitter experience: </summary>
+
+<details open> <summary>
+
+## Extra content:
+</summary>
+
+### Addons for this filter:
+#### [Wide Timeline](anything-else-but-twitter/bluesky/modify%20bluesky%20addon%3A%20wide%20timeline)
+- Widens your timeline by a little bit (700px)
+
+#### [Widerrr Timeline](anything-else-but-twitter/bluesky/modify%20bluesky%20addon%3A%20widerrr%20timeline)
+- Widens your timeline (800px)
+
+#### [Ultra Wide Timeline](anything-else-but-twitter/bluesky/modify%20bluesky%20addon%3A%20ultra%20wide%20timeline)
+- Widens your timeline by a lot (900px)
+
+
+
+
+</details>
+
+</details>
