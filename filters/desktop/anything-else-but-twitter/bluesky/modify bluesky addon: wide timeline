@@ -1,0 +1,182 @@
+! Title: Modify Bluesky Addon: Wide Timeline
+! Last modified: %timestamp%
+! Description: |
+!   Size: 700px
+! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
+! Homepage: https://github.com/Vran-n/uBlock-List
+
+
+
+! sidebar
+bsky.app##[role="navigation"] { transform: translateX(-350px) translateX(-100%) translateX(calc(-1 * var(--removed-body-scroll-bar-size, 0px) / 2)) !important }
+bsky.app##[role="navigation"]:upward(1) >:nth-child(3) { transform: translateX(350px) translateX(calc(-1 * var(--removed-body-scroll-bar-size, 0px) / 2)) !important }
+
+
+
+! discover thread (home)
+bsky.app##[data-testid="HomeScreen"]:upward(1) >:first-child { width: 702px !important }
+! tab
+bsky.app##[data-testid="HomeScreen"] [data-testid="homeScreenFeedTabs"]:upward(1) { max-width: 700px !important }
+bsky.app##[data-testid="HomeScreen"] [data-testid="homeScreenFeedTabs"] { width: 700px !important }
+! hashtag
+bsky.app##[aria-label="View your feeds and explore more"]:upward(2) { max-width: 700px !important }
+! content
+bsky.app##[data-testid="HomeScreen"] [data-testid="customFeedPage-feed-flatlist"] >:last-child { max-width: 700px !important }
+
+
+
+! post thread
+bsky.app##[data-testid="postThreadScreen"]:upward(1) >:first-child { width: 702px !important }
+! tab
+bsky.app##[data-testid="postThreadScreen"] >:first-child { max-width: 700px !important }
+! content
+bsky.app##[data-testid="postThreadScreen"] >:last-child >:last-child { max-width: 700px !important }
+
+
+
+! feed thread
+bsky.app##[data-testid="profileFeedScreen"]:upward(1) >:first-child { width: 702px !important }
+bsky.app##[data-testid="profileFeedScreen"] >:first-child { max-width: 700px !important }
+! tab
+bsky.app##[data-testid="profileFeedScreen"] >:first-child >* { max-width: 700px !important }
+! content
+bsky.app##[data-testid="profileFeedScreen"] >:nth-of-type(2) >* >:last-child { max-width: 700px !important }
+
+
+
+! feed picker thread
+bsky.app##[data-testid="FeedsScreen"]:upward(1) >:first-child { width: 702px !important }
+bsky.app##[data-testid="FeedsScreen"] >* { max-width: 700px !important }
+! tab
+bsky.app##[data-testid="FeedsScreen"] >* >:first-child { max-width: 700px !important }
+! content
+bsky.app##[data-testid="FeedsScreen"] >* >:nth-of-type(2) >:last-child { max-width: 700px !important }
+
+
+
+! profile thread
+bsky.app##[data-testid="profileScreen"]:upward(1) >:first-child { width: 702px !important}
+! profile
+bsky.app##[data-testid="profileScreen"] [data-testid="profileView"] >* >:first-child { max-width: 700px !important }
+! profile tabs
+bsky.app##[data-testid="profileScreen"] [data-testid="profilePager"]:upward(1) { max-width: 700px !important}
+bsky.app##[data-testid="profileScreen"] [data-testid="profilePager"] { width: 700px !important}
+! content
+bsky.app##[data-testid="profileScreen"] [data-testid="postsFeed-flatlist"] >:last-child { max-width: 700px !important}
+
+
+
+! followers thread
+bsky.app##[data-testid="profileFollowersScreen"]:upward(1) >:first-child { width: 702px !important}
+! top
+bsky.app##[data-testid="profileFollowersScreen"] >:first-child { max-width: 700px !important}
+! content
+bsky.app##[data-testid="profileFollowersScreen"] >:last-child >:last-child { max-width: 700px !important }
+
+
+
+! follows thread
+bsky.app##[data-testid="profileFollowsScreen"]:upward(1) >:first-child { width: 702px !important}
+! top
+bsky.app##[data-testid="profileFollowsScreen"] >:first-child { max-width: 700px !important}
+! content
+bsky.app##[data-testid="profileFollowsScreen"] >:last-child >:last-child { max-width: 700px !important }
+
+
+
+! search thread
+bsky.app##[data-testid="searchScreen"]:upward(1) >:first-child { width: 702px !important}
+! search
+bsky.app##[data-testid="searchScreen"] >:first-child >* { max-width: 700px !important}
+! content
+bsky.app##[data-testid="searchScreen"] >:last-child >* >:last-child { max-width: 700px !important }
+
+
+
+! messages thread
+bsky.app##[data-testid="messagesScreen"]:upward(1) >:first-child { width: 702px !important }
+! top
+bsky.app##[data-testid="messagesScreen"] >:first-child { max-width: 700px !important }
+! content
+bsky.app##[data-testid="messagesScreen"] >:last-child >:last-child { max-width: 700px !important }
+
+
+
+! conversation thread
+bsky.app##[data-testid="convoScreen"]:upward(1) >:first-child { width: 702px !important }
+bsky.app##[data-testid="convoScreen"] >* { max-width: 700px !important }
+! top
+bsky.app##[data-testid="convoScreen"] >* >* >:first-child { max-width: 700px !important }
+! content
+bsky.app##[data-testid="convoScreen"] >* >* >:nth-child(2) >:last-child { max-width: 700px !important }
+
+
+
+! list thread
+bsky.app##[data-testid="listsScreen"]:upward(1) >:first-child { width: 702px !important }
+! top
+bsky.app##[data-testid="listsScreen"] >:first-child { max-width: 700px !important }
+! content
+bsky.app##[data-testid="listsScreen"] >:last-child >* >:last-child { max-width: 700px !important }
+
+
+
+! bookmarks thread
+bsky.app##[data-testid="bookmarksScreen"]:upward(1) >:first-child { width: 702px !important }
+! top
+bsky.app##[data-testid="bookmarksScreen"] >:first-child { max-width: 700px !important }
+! content
+bsky.app##[data-testid="bookmarksScreen"] >:last-child >:last-child { max-width: 700px !important }
+
+
+
+! notification thread
+bsky.app##[data-testid="notificationsScreen"]:upward(1) >:first-child { width: 702px !important }
+! top
+bsky.app##[data-testid="notificationsScreen"] >:first-child { max-width: 700px !important }
+bsky.app##[data-testid="notificationsScreen"] >:nth-child(2) >:first-child { max-width: 700px !important }
+bsky.app##[data-testid="notificationsScreen"] >:nth-child(2) >:first-child >* { width: 700px !important }
+! content
+bsky.app##[data-testid="notificationsScreen"] [data-testid="notifsFeed"] >:last-child { max-width: 700px !important }
+
+
+
+! starterpack thread
+bsky.app##[aria-label="Follow all"]:upward(5):upward(1) >:first-child { width: 702px !important }
+! top
+bsky.app##[aria-label="Follow all"]:upward(5) >* >:first-child { max-width: 700px !important }
+bsky.app##[aria-label="Follow all"]:upward(5) >* >:first-child >:first-child { max-width: 700px !important }
+! tab
+bsky.app##[aria-label="Follow all"]:upward(5) >* >:nth-child(3) { max-width: 700px !important }
+bsky.app##[aria-label="Follow all"]:upward(5) >* >:nth-child(3) >* { width: 700px !important }
+! content
+bsky.app##[aria-label="Follow all"]:upward(5) >* >:nth-child(4) >* >* >:last-child { max-width: 700px !important }
+bsky.app##[aria-label="Follow all"]:upward(5) >* >:last-child >* >* >* >* >:last-child { max-width: 700px !important }
+
+
+
+! settings thread
+bsky.app##[aria-label="Switch account"]:upward(6) >:upward(1)>:first-child { width: 702px !important }
+! top
+bsky.app##[aria-label="Switch account"]:upward(6) >:upward(1)>:last-child>:first-child { max-width: 700px !important }
+! content
+bsky.app##[aria-label="Switch account"]:upward(6) >:upward(1) >:last-child >:last-child >* >* { max-width: 700px !important }
+
+
+
+! quotes thread
+bsky.app##[aria-label^="Post by"]:upward(6):has(>:first-child:has([href^="/profile/"])):upward(3):has(>:last-child>[dir="auto"]):upward(4) >:first-child { width: 702px !important }
+! top
+bsky.app##[aria-label^="Post by"]:upward(6):has(>:first-child:has([href^="/profile/"])):upward(3):has(>:last-child>[dir="auto"]):upward(4) >:last-child >:first-child { max-width: 700px !important }
+! content
+bsky.app##[aria-label^="Post by"]:upward(6):has(>:first-child:has([href^="/profile/"])):upward(3):has(>:last-child>[dir="auto"]):upward(4) >:last-child >:last-child >:last-child { max-width: 700px !important }
+
+
+
+! liked by & reposted by thread
+bsky.app##[href^="/profile/did:plc:"]:upward(4):not(:has([role="navigation"])):upward(3):not(:upward(2):has([aria-label="Follow all"], [data-testid="notifsFeed"], [data-testid="searchScreen"]), :upward(1):has([data-testid="profileFeedScreen"])) >:first-child { width: 702px !important }
+! top
+bsky.app##[href^="/profile/did:plc:"]:upward(4):not(:has([role="navigation"])):upward(3):not(:upward(2):has([aria-label="Follow all"], [data-testid="notifsFeed"], [data-testid="searchScreen"]), :upward(1):has([data-testid="profileFeedScreen"])) >:last-child >:first-child { max-width: 700px !important }
+! content
+bsky.app##[href^="/profile/did:plc:"]:upward(4):not(:has([role="navigation"])):upward(3):not(:upward(2):has([aria-label="Follow all"], [data-testid="notifsFeed"], [data-testid="searchScreen"]), :upward(1):has([data-testid="profileFeedScreen"])) >:last-child >:last-child >:last-child { max-width: 700px !important }
+
