@@ -7,11 +7,24 @@
 
 
 
+! If you want to customize the amount it widens, simply copy this and paste it into your custom filters and then,
+! use this formula for this one:
+! 300 + x/2 = total
+! x is the amount you want to add
+! Note: do not remove or change the signs
+! I reckon you should use a code editor to easily replace all the numbers
+
 ! sidebar
 bsky.app##[role="navigation"] { transform: translateX(-450px) translateX(-100%) translateX(calc(-1 * var(--removed-body-scroll-bar-size, 0px) / 2)) !important }
 bsky.app##[role="navigation"]:upward(1) >:nth-child(3) { transform: translateX(450px) translateX(calc(-1 * var(--removed-body-scroll-bar-size, 0px) / 2)) !important }
 
 
+
+! and use this formula for everything below: 
+! 600 + x = total 
+! or 
+! 602 + x = 600 + x
+! x is the amount you want to add
 
 ! discover thread (home)
 bsky.app##[data-testid="HomeScreen"]:upward(1) >:first-child { width: 902px !important }
