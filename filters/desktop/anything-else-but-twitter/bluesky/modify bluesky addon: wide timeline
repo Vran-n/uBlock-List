@@ -6,6 +6,7 @@
 ! Homepage: https://github.com/Vran-n/uBlock-List
 
 
+
 ! If you want to customize the amount it widens, simply copy this and paste it into your custom filters and then,
 ! use this formula for this one:
 ! 300 + x/2 = total
