@@ -5,5 +5,5 @@
 ! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
 ! Homepage: https://github.com/Vran-n/uBlock-List
 
-! everything in the sidebar except search, footer and relevant people
-x.com##[data-testid="sidebarColumn"] :is([aria-label="Footer"]):upward(2) > :not(.r-1h3ijdo, :has([aria-label="Search"]), :has([aria-label="Footer"]), :has([data-testid="searchFiltersAdvancedSearch"]), :has([aria-label="Relevant people"]), :has([aria-label="Timeline: Trending now"]) ):not(:has-text(Search filters))
+! Everything in the sidebar except Search, Footer and Relevant people
+x.com##[data-testid="sidebarColumn"] [data-testid="news_sidebar"]:upward(2) >:has([data-testid="super-upsell-UpsellCardRenderProperties"], [data-testid="news_sidebar"], [href^="/i/connect_people"])
