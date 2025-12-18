@@ -8,104 +8,100 @@
 
 
 ! Format: MM/DD/YYYY
-! Changelog:
-! 11/24/2025: (Fixed) "You aren’t verified yet" in profile 
+! 12/18/2025: Things I have fixed 
+! - Timeline:Explore (categories have been properly removed)
+! Things I have decided to keep (or should i say, remove in this case)
+! - Subscribing
+! - Messages/Chat drawer (moved it to an addon)
+! - Edit professional profile
+! - The three dots in the account button
+! - Settings with monetized an other shit
 
 
 
-! timeline:explore content
-! removes all tweets (cant find a good solution that works universally for removing 'Posts For You'. sorry ;-;)
-x.com##[aria-label="Timeline: Explore"] > * > *:has-text(Posts For You)
-x.com##[aria-label="Timeline: Explore"] [data-testid="tweet"]:upward(3)
-x.com##[aria-label="Timeline: Explore"] [href^="/i/connect_people?"]
-! timeline:search content
-! removes all follow suggestions and communities
-x.com##[aria-label="Timeline: Search timeline"] > * > *:has([data-testid="tweet"]):upward(1) > :not([data-testid="tweet"]:upward(3))
-! timeline: posts content
-! removes "Who to follow", "Promote" and "Get verified"
-x.com##[aria-label$=" posts"] > * > :not([data-testid="tweet"]:upward(1)):is([data-testid="cellInnerDiv"])
-x.com##[data-testid="UserName"] [href="/i/premium_sign_up"]:upward(4)
-! "Promote"
-x.com##[aria-labelledby="modal-header"] [href$="/quick_promote_web/intro"]:upward(2)
-! with subscribe
-x.com##[data-testid="cellInnerDiv"] :is([href$="/quick_promote_web/targeting"], [aria-label^="Subscribe"])
-! timeline:coversation content
-! removes "Discover more" and all tweets succedding them
-x.com##[aria-label="Timeline: Conversation"] h2:upward(4)
-x.com##[aria-label="Timeline: Conversation"] h2:upward(4) ~ *
-! post engagements
-x.com##[aria-label="Timeline: Conversation"] [href$="/quotes"]:upward(1)
-! timeline:home content
-! keeps only the tweets
-x.com##[aria-label="Timeline: Your Home Timeline"]>*>:first-child~:not(:has([data-testid="tweet"]))
+! Timeline:Explore
+! Removes all tweets
+x.com##:not(:matches-path(/communities)):matches-path(/explore) [data-testid="cellInnerDiv"]:has([data-testid="tweet"])
+! Removes "Posts for you"
+x.com##:not(:matches-path(/communities)):matches-path(/explore) [data-testid="cellInnerDiv"]:has([role="heading"]) ~ [data-testid="cellInnerDiv"]:has([role="heading"]) ~ [data-testid="cellInnerDiv"]:has([role="heading"])
 
-! reduntant quote post in analytics (timeline:coversation)
-x.com##:has([aria-label="Timeline: Conversation"]) [aria-labelledby="modal-header"] [style^="gap"]:upward(4) [data-testid="Tweet-User-Avatar"]:upward(8)
-x.com##[aria-labelledby="modal-header"] [style^="gap"]:upward(8):remove-class(r-kwpbio)
+! Timeline:Search
+! Removes all follow suggestions and communities
+x.com##:matches-path(/^/search(?!.*&f=(live|user|media|list))/) [data-testid="cellInnerDiv"]:not(:has([data-testid="tweet"]))
 
-! 'Not followed by anyone you’re following'
-x.com##[data-testid^="UserAvatar-Container"]:upward(2):has([data-testid="UserName"]) >:not(:has([href$="/following"])):last-child
-! exhibits strange behavior rarely   <---- Fuck you past me for not describing this
-x.com##[data-testid="DmActivityContainer"]:not([aria-label="Followers you know"]:upward(1)) [data-testid="DmScrollerContainer"] [data-testid="UserAvatar-Container-unknown"]:upward(1)>div:nth-of-type(5)
-! messages
-x.com##[data-testid="DmActivityContainer"] [data-testid="DmScrollerContainer"] > * > * > * > [role="separator"]
+! Timeline:Profile (Profile posts)
+! Removes anything that is not your tweet
+x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [data-testid="cellInnerDiv"]:not(:has([data-testid="tweet"]))
+! Removes "You aren't verified yet"
+x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [href="/i/premium_sign_up"]:upward(2)
+! Removes "Promote"
+x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [data-testid="cellInnerDiv"] [href*="/quick_promote_web"]
+! Removes 'Not followed by anyone you’re following'
+x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]):not(:has([href$="/followers_you_follow"])) [data-testid="UserName"]:upward(1) >:not(:has([href$="/following"])):last-child
+! exhibits strange behavior rarely   <---- Fuck you past me for not describing this    <<< I wholeheartedly agree
+!x.com##[data-testid="DmActivityContainer"]:not([aria-label="Followers you know"]:upward(1)) [data-testid="DmScrollerContainer"] [data-testid="UserAvatar-Container-unknown"]:upward(1)>div:nth-of-type(5)
 
-! grok
+! Timeline:Coversation
+! Removes "Discover more" and all tweets succeeding it
+x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:has(h2)
+x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:has(h2) ~*
+! Removes Post Engagements
+x.com##:matches-path(/status) [data-testid="tweet"] [href$="/quotes"]:upward(1)
+! Post analytics. Will only remove reduntant tweets in Timeline:Coversation
+x.com##:matches-path(/analytics) body:has([data-testid="inline_reply_offscreen"]) button:has([data-testid="testCondensedMedia"])
+!x.com##[aria-labelledby="modal-header"] [style^="gap"]:upward(8):remove-class(r-kwpbio)  <-- No idea what this is
+
+! Timeline:Home
+! Keeps only the tweets
+x.com##:matches-path(/home) [data-testid="cellInnerDiv"] ~*:not(:has([data-testid="tweet"]))
+
+
+
+! Removes everything that has to do with Grok
+! Mini icon in the bottom right
 x.com##[data-testid="GrokDrawerHeader"]:upward(3)
-x.com##[aria-label="Grok actions"]
-x.com##[aria-label="Enhance your post with Grok"]
-x.com##[aria-label="Profile Summary"]
-! hover card
-x.com##[data-testid="HoverCard"]:not(:has([aria-label="Smileys & people"]), :has([data-testid^="DM_Reaction_UserCell"]), :has([role="dialog"]), :has([href="/logout"])) > * > * > :last-child
+! Mini icon inside tweets
+x.com##[data-testid="cellInnerDiv"] button:has(svg path[d^="M12.745"])
+! Sidebar navigation
+x.com##[role="navigation"] [href="/i/grok"]
+! "Profile Summary"
+x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) button:has(svg path[d^="M12.745"])
+! Hover card
+x.com##[data-testid="HoverCard"] button:has(svg path[d^="M12.745"])
 
-! home blue notification
-x.com##[aria-label="undefined unread items"]
+! Removes the home blue dot notification
+x.com##[role="navigation"] [href="/home"] svg ~*
 
-! side buttons
-x.com##[aria-label="Primary"] :is([href="/i/grok"], [href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"])
-! twitter/x icon
-x.com##[role="banner"] [aria-label="X"]:upward(2)
+! Navigation
+! Keeps the only the essentials
+x.com##[role="navigation"] :is([href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"])
+! Removes X Icon
+x.com##header h1:has([href="/home"])
+! Removes extra non essentials in the dropdown menu
+x.com##[role="menu"] [data-testid="Dropdown"] >* >:has([href*="//ads.x.com"], [href$="/creators/studio"])
 
-! inside more/dropdown
-x.com##[data-testid="Dropdown"]:upward(3) :is([href="/i/monetization"], [href="/jobs"], [href^="https://ads.x.com/"], [data-testid="highlightUpsell"])
+! Community notes
+! Removes the reminder at the very bottom of post
+x.com##:matches-path(/status) [href$="/join-birdwatch"]:upward(1)
+! Removes "Do you find this helpful?" in community notes (redundant)
+x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div:upward(2)
 
-! settings
-x.com##[aria-label="Section navigation"] :is([href^="/i/account_analytics?"], [href="/settings/monetization"], [href^="/i/premium_sign_up?"])
-
-! messages drawer
-x.com##[data-testid="DMDrawer"]:upward(3)
-
-! edit profile
-x.com##[aria-labelledby="modal-header"] :is([data-testid="ProfessionalButton_Edit_Professional_Profile"])
-
-! three dots in the account button
-x.com##[data-testid="SideNav_AccountSwitcher_Button"] > * > svg:upward(1)
-
-! community notes reminder at the very bottom of post
-x.com##[aria-label="Timeline: Conversation"] [href$="/join-birdwatch"]:upward(1)
-! "Do you find this helpful?" in community notes (redundant)
-x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div:upward(2)>*
-x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] span:nth-of-type(2)
-x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div:upward(2):style(padding-bottom: 6px !important; padding-top: 6px !important; border-top-width: 0px !important)
-
-! "You aren’t verified yet" in profile 
-x.com##[aria-label="Home timeline"] >:last-child > * > * >:first-child > * > *:not([data-testid="UserName"]):has([href$="/premium_sign_up"])
-
-! Account Analytics upsell
-x.com##[aria-label="Home timeline"] [data-testid="tweet"] [href$="/account_analytics"]:upward(3)
-! more (footer text)
+! Sidebar Column (Trending side)
+! Cleans up the footer
+x.com##[data-testid="sidebarColumn"] [role="navigation" ] >*:has([href$="/download-the-x-app"], [href^="https://business"], [href^="https://developer"])
 x.com##[data-testid="Dropdown"] [href$="/download-the-x-app"], [href^="https://business"], [href^="https://developer"]
 
 
 
-! This section is for users who are logged out
-! that annoying "Dont miss whats happening!" at the very bottom
-x.com##[data-testid="BottomBar"]:has([href="/login"], [href$="/signup"])
 
-! Grok (sign in page)
+
+! This section is for users who are logged out
+! Removes "Dont miss whats happening!"
+x.com##[data-testid="BottomBar"]:has([href="/login"], [href$="/signup"])
+! Removes Grok (sign in page)
 x.com##[href$="/signup"]:upward(2) [href="https://grok.com/"]
-! Removes unnessesary footer text
-x.com##[aria-label="Footer"] :has([href$="/download-the-x-app"], [href="https://grok.com/"], [href^="https://blog"], [href^="https://careers"], [href$="/brand-assets"], [href^="https://ads"], [href^="https://marketing"], [href^="https://business"], [href^="https://developer"], [href$="/news"], [href$="/settings"])
+! Cleans up the Footer
+x.com##[role="main"]:has([href="/login"]) [role="navigation"] :has([href$="/download-the-x-app"], [href="https://grok.com/"], [href^="https://blog"], [href^="https://careers"], [href$="/brand-assets"], [href^="https://ads"], [href^="https://marketing"], [href^="https://business"], [href^="https://developer"], [href$="/news"], [href$="/settings"])
 
 
 
