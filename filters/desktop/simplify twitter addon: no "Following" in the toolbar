@@ -5,7 +5,7 @@
 ! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
 ! Homepage: https://github.com/Vran-n/uBlock-List
 
-! the buttons above the home timeline
-! removes the "Following" button
-x.com##[aria-label="Home timeline"] [href="/home"]:upward(1):nth-of-type(2)>*
-x.com##[aria-label="Home timeline"] [href="/home"]:upward(1):nth-of-type(2).r-16y2uox:remove-class(r-16y2uox)
+! The tabs above the home timeline
+! Removes the "Following" button
+x.com##:matches-path(/home) [data-testid="ScrollSnap-List"]:has([role="tab"]) >*:nth-child(2) >*
+x.com##:matches-path(/home) [data-testid="ScrollSnap-List"]:has([role="tab"]) >*:nth-child(2) { flex-grow: 0 !important }
