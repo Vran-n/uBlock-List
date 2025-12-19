@@ -8,7 +8,11 @@
 
 
 ! Format: MM/DD/YYYY
-! 12/18/2025: Things I have fixed 
+! ----- 12/18/2025 -----
+! Things I have added:
+! - "Subcribe to premium"
+! - Business button in navigation
+! Things I have fixed:
 ! - Timeline:Explore (categories have been properly removed)
 ! Things I have decided to keep (or should i say, remove in this case)
 ! - Subscribing
@@ -31,9 +35,11 @@ x.com##:matches-path(/^/search(?!.*&f=(live|user|media|list))/) [data-testid="ce
 
 ! Timeline:Profile (Profile posts)
 ! Removes anything that is not your tweet
-x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [data-testid="cellInnerDiv"]:not(:has([data-testid="tweet"]))
+x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [data-testid="cellInnerDiv"]:not(:has([data-testid="tweet"], img))
 ! Removes "You aren't verified yet"
-x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [href="/i/premium_sign_up"]:upward(2)
+x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [href="/i/premium_sign_up"]:upward(2):not(:has([data-testid="empty_state_body_text"]))
+! Removes "Subcribe to premium"
+x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [data-testid="emptyState"] [href="/i/premium_sign_up"]
 ! Removes "Promote"
 x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [data-testid="cellInnerDiv"] [href*="/quick_promote_web"]
 ! Removes 'Not followed by anyone you’re following'
