@@ -35,7 +35,7 @@ x.com##:matches-path(/^/search(?!.*&f=(live|user|media|list))/) [data-testid="ce
 
 ! Timeline:Profile (Profile posts)
 ! Removes anything that is not your tweet
-x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [data-testid="cellInnerDiv"]:not(:has([data-testid="tweet"], img))
+x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [data-testid="cellInnerDiv"]:not(:has([data-testid="tweet"], a[href*="/photo"]))
 ! Removes "You aren't verified yet"
 x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [href="/i/premium_sign_up"]:upward(2):not(:has([data-testid="empty_state_body_text"]))
 ! Removes "Subcribe to premium"
