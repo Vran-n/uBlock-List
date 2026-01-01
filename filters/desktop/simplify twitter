@@ -74,6 +74,8 @@ x.com##[role="navigation"] [href="/i/grok"]
 x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) button:has(svg path[d^="M12.745"])
 ! Hover card
 x.com##[data-testid="HoverCard"] button:has(svg path[d^="M12.745"])
+! Post Tweet and Reply
+x.com##[data-testid="grokImgGen"]
 
 ! Removes the home blue dot notification
 x.com##[role="navigation"] [href="/home"] svg ~*
