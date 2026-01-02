@@ -8,12 +8,14 @@
 
 
 ! Format: MM/DD/YYYY
-! ----- 12/18/2025 -----
+! ----- 1/2/2026 -----
 ! Things I have added:
 ! - "Subcribe to premium"
 ! - Business button in navigation
+! - Imagine images with grok (including pfp and banner)
 ! Things I have fixed:
 ! - Timeline:Explore (categories have been properly removed)
+! - Access your post analytics (Premium upsell)
 ! Things I have decided to keep (or should i say, remove in this case)
 ! - Subscribing
 ! - Messages/Chat drawer (moved it to an addon)
@@ -55,6 +57,8 @@ x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:has(h2) ~*
 x.com##:matches-path(/status) [data-testid="tweet"] [href$="/quotes"]:upward(1)
 ! Post analytics. Will only remove reduntant tweets in Timeline:Coversation
 x.com##:matches-path(/analytics) body:has([data-testid="inline_reply_offscreen"]) button:has([data-testid="testCondensedMedia"])
+! Access your post analytics (Premium upsell)
+x.com##[data-testid="tweet"] [href="/i/account_analytics"]:upward(3)
 !x.com##[aria-labelledby="modal-header"] [style^="gap"]:upward(8):remove-class(r-kwpbio)  <-- No idea what this is
 
 ! Timeline:Home
@@ -76,6 +80,12 @@ x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) button:has(sv
 x.com##[data-testid="HoverCard"] button:has(svg path[d^="M12.745"])
 ! Post Tweet and Reply
 x.com##[data-testid="grokImgGen"]
+! Edit image
+x.com##[href^="/i/imagine"]
+! Imagine profile picture
+x.com##:matches-path(/settings/profile) [href="/settings/bio"]:upward(1) >:nth-of-type(2) >:has(path[d^="M17.084"])
+! Imagine banner photo
+x.com##:matches-path(/settings/profile) [href="/settings/bio"]:upward(1) >:nth-of-type(1) button:has(path[d^="M17.084"])
 
 ! Removes the home blue dot notification
 x.com##[role="navigation"] [href="/home"] svg ~*
