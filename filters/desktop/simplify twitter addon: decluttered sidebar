@@ -6,5 +6,6 @@
 ! Homepage: https://github.com/Vran-n/uBlock-List
 
 ! Everything in the sidebar except Search, Footer and Relevant people
-x.com##[data-testid="sidebarColumn"] [data-testid="news_sidebar"]:upward(2) >:has([data-testid="super-upsell-UpsellCardRenderProperties"], [data-testid="news_sidebar"], [role="region"], [href^="/i/connect_people"])
+x.com##[data-testid="sidebarColumn"] [data-testid="news_sidebar"]:upward(2) >:has([data-testid="super-upsell-UpsellCardRenderProperties"], [data-testid="news_sidebar"], [role="region"], [href^="/i/connect_people"], [href="/i/premium_sign_up"])
+! Inside posts/tweets
 x.com##:matches-path(status) [data-testid="sidebarColumn"] aside:upward(2) >:has(h1[role="heading"])
