@@ -21,6 +21,10 @@
 ! Things I have decided to remove completely
 ! - Messages (replaced by chat)
 
+
+
+
+
 ! Removed the ugly border lines in videos and images except for quotes
 ! Photos
 x.com##[data-testid="tweet"] [href*="/photo"]:upward(6) { border-color: color-mix(in srgb, currentColor, transparent 100%) !important }
@@ -96,7 +100,7 @@ x.com##[data-testid="tweet"] time:upward(7) >* ~* >* >* >* >* >*:matches-css(bor
 ! Quote tweets
 x.com##[data-testid="tweet"] time:upward(10) >* >* >*:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
 ! The actual quote tweet
-x.com##[data-testid="tweet"] time:upward(10) >* >* >* >* >* >* >*:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
+x.com##[data-testid="tweet"]:not(:has(article)) time:upward(10) >* >* >* >* >* >* >* time:upward(10) >* >* >* >* >* >* >*:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
 ! When writing posts
 x.com##[data-testid="attachments"] [role="group"] { border-radius: 6px !important }
 ! Chat
