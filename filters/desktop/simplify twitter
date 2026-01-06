@@ -92,7 +92,7 @@ x.com##[role="navigation"] [href="/home"] svg ~*
 
 ! Navigation
 ! Keeps the only the essentials
-x.com##[role="navigation"] :is([href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"], [href="/i/premium-business"])
+x.com##[role="navigation"] >:is([href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"], [href="/i/premium-business"], [href="/i/connect_people"])
 ! Removes X Icon
 x.com##header h1:has([href="/home"])
 ! Removes extra non essentials in the dropdown menu
@@ -108,6 +108,8 @@ x.com##[data-testid="tweet"] [data-testid="birdwatch-pivot"] [role="link"] > div
 ! Cleans up the footer
 x.com##[data-testid="sidebarColumn"] [role="navigation" ] >*:has([href$="/download-the-x-app"], [href^="https://business"], [href^="https://developer"])
 x.com##[data-testid="Dropdown"] [href$="/download-the-x-app"], [href^="https://business"], [href^="https://developer"]
+! Removes "Subscibe to Premium"
+x.com##[data-testid="sidebarColumn"] [data-testid="news_sidebar"]:upward(2) >:has([href="/i/premium_sign_up"])
 
 
 
