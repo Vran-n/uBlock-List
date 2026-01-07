@@ -8,6 +8,7 @@
 
 
 x.com##main >*:style(width: 1350px !important)
-x.com##[data-testid="primaryColumn"] {max-width: 900px !important; margin-right: 30px !important}
+x.com##[data-testid="primaryColumn"]:not(:has([data-testid="dm-container"])) {max-width: 900px !important; margin-right: 30px !important}
 x.com##[data-testid="primaryColumn"] section:upward(1):style(max-width: 999px !important)
 x.com##[data-testid="primaryColumn"] [href$="/header_photo"]:upward(2) { max-width: 999px !important }
+x.com##:matches-path(/settings/account) main section { margin: unset !important }
