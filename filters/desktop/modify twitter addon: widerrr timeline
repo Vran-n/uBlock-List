@@ -7,8 +7,7 @@
 
 
 
-x.com##[role="main"] [aria-label="Home timeline"]:upward(1):style(max-width: 800px !important; margin-right: 30px !important)
-x.com##[role="main"] [aria-label="Home timeline"]:upward(5) .r-113js5t:style(width: 1250px !important)
-x.com##[role="main"] [aria-label="Home timeline"] section:upward(1):style(max-width: 999px !important)
-! fix for some profiles
-x.com##[role="main"] [aria-label="Home timeline"] [href$="/header_photo"]:upward(2):style(max-width: 999px !important)
+x.com##main >*:style(width: 1250px !important)
+x.com##[data-testid="primaryColumn"] {max-width: 800px !important; margin-right: 30px !important}
+x.com##[data-testid="primaryColumn"] section:upward(1):style(max-width: 999px !important)
+x.com##[data-testid="primaryColumn"] [href$="/header_photo"]:upward(2) { max-width: 999px !important }
