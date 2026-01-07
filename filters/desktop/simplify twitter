@@ -46,20 +46,26 @@ x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [data-testid=
 x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]) [data-testid="cellInnerDiv"] [href*="/quick_promote_web"]
 ! Removes 'Not followed by anyone you’re following'
 x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]):not(:has([href$="/followers_you_follow"])) [data-testid="UserName"]:upward(1) >:not(:has([href$="/following"])):last-child
-! exhibits strange behavior rarely   <---- Fuck you past me for not describing this    <<< I wholeheartedly agree
-!x.com##[data-testid="DmActivityContainer"]:not([aria-label="Followers you know"]:upward(1)) [data-testid="DmScrollerContainer"] [data-testid="UserAvatar-Container-unknown"]:upward(1)>div:nth-of-type(5)
 
 ! Timeline:Coversation
 ! Removes "Discover more" and all tweets succeeding it
 x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:has(h2)
 x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:has(h2) ~*
-! Removes Post Engagements
-x.com##:matches-path(/status) [data-testid="tweet"] [href$="/quotes"]:upward(1)
 ! Post analytics. Will only remove reduntant tweets in Timeline:Coversation
 x.com##:matches-path(/analytics) body:has([data-testid="inline_reply_offscreen"]) button:has([data-testid="testCondensedMedia"])
 ! Access your post analytics (Premium upsell)
 x.com##[data-testid="tweet"] [href="/i/account_analytics"]:upward(3)
-!x.com##[aria-labelledby="modal-header"] [style^="gap"]:upward(8):remove-class(r-kwpbio)  <-- No idea what this is
+! Removes Post Engagements
+x.com##:matches-path(/status) [data-testid="tweet"] [href$="/quotes"]:upward(1)
+! A bit of modifying
+! Removes the ugly separation lines seen in-between the tweet likes, etc
+x.com##:matches-path(/status) [role="group"] {border-top-color: transparent !important}
+! Reduce height and add a margin and set its opacity
+x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:nth-child(1) [role="group"]:upward(1) > *:style(height: 0px !important; padding-bottom: 32px !important; border-color: color-mix(in srgb, currentColor, transparent 90%) !important)
+! Remove the margin in the date
+x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:nth-child(1) time:upward(6) { margin-bottom: 6px !important }
+! Remove bottom padding in the comment
+x.com##:matches-path(/status) [data-testid="inline_reply_offscreen"] [role="progressbar"]:upward(1) >:last-child {padding-bottom: 0px !important}
 
 ! Timeline:Home
 ! Keeps only the tweets
