@@ -57,15 +57,6 @@ x.com##:matches-path(/analytics) body:has([data-testid="inline_reply_offscreen"]
 x.com##[data-testid="tweet"] [href="/i/account_analytics"]:upward(3)
 ! Removes Post Engagements
 x.com##:matches-path(/status) [data-testid="tweet"] [href$="/quotes"]:upward(1)
-! A bit of modifying
-! Removes the ugly separation lines seen in-between the tweet likes, etc
-x.com##:matches-path(/status) [role="group"] {border-top-color: transparent !important}
-! Reduce height and add a margin and set its opacity
-x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:nth-child(1) [role="group"]:upward(1) > *:style(height: 0px !important; padding-bottom: 32px !important; border-color: color-mix(in srgb, currentColor, transparent 90%) !important)
-! Remove the margin in the date
-x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:nth-child(1) time:upward(6) { margin-bottom: 6px !important }
-! Remove bottom padding in the comment
-x.com##:matches-path(/status) [data-testid="inline_reply_offscreen"] [role="progressbar"]:upward(1) >:last-child {padding-bottom: 0px !important}
 
 ! Timeline:Home
 ! Keeps only the tweets
@@ -116,6 +107,20 @@ x.com##[data-testid="sidebarColumn"] [role="navigation" ] >*:has([href$="/downlo
 x.com##[data-testid="Dropdown"] [href$="/download-the-x-app"], [href^="https://business"], [href^="https://developer"]
 ! Removes "Subscibe to Premium"
 x.com##[data-testid="sidebarColumn"] [data-testid="news_sidebar"]:upward(2) >:has([href="/i/premium_sign_up"])
+
+
+
+
+
+! A bit of modifying
+! Removes the ugly separation lines seen in-between the tweet likes, etc
+x.com##:matches-path(/status) [role="group"] {border-top-color: transparent !important}
+! Reduce height and add a margin and set its opacity
+x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:nth-child(1) [role="group"]:upward(1) > *:style(height: 0px !important; padding-bottom: 32px !important; border-color: color-mix(in srgb, currentColor, transparent 90%) !important)
+! Remove the margin in the date
+x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:nth-child(1) time:upward(6) { margin-bottom: 6px !important }
+! Remove bottom padding in the comment
+x.com##:matches-path(/status) [data-testid="inline_reply_offscreen"] [role="progressbar"]:upward(1) >:last-child {padding-bottom: 0px !important}
 
 
 
