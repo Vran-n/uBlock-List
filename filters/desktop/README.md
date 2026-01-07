@@ -224,7 +224,7 @@ Improves the sites look. Changes include:
 > [!NOTE]
 > As of right now, there are only addons for this category
 
-<details> <summary> Modify your twitter experience: </summary>
+<details> <summary> Modify your bluesky experience: </summary>
 
 <details open> <summary>
 
