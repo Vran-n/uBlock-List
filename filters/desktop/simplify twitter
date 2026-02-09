@@ -8,20 +8,13 @@
 
 
 ! Format: MM/DD/YYYY
-! ----- 1/2/2026 -----
-! Things I have added:
-! - "Subcribe to premium"
-! - Business button in navigation
-! - Imagine images with grok (including pfp and banner)
-! Things I have fixed:
-! - Timeline:Explore (categories have been properly removed)
-! - Access your post analytics (Premium upsell)
-! Things I have decided to keep (or should i say, remove in this case)
-! - Subscribing
-! - Messages/Chat drawer (moved it to an addon)
-! - Edit professional profile
-! - The three dots in the account button
-! - Settings with monetized an other shit
+! ----- 2/9/2026 -----
+! ADDED:
+! - Premium upsell when you run out of characters including when drafting tweets
+! - Premium upsell on articles
+! - Creator Studio and Business in the navigation sidebar
+! FIXED:
+! - Articles are no longer being removed
 
 
 
@@ -49,20 +42,27 @@ x.com##[data-testid="primaryColumn"]:has([data-testid="UserName"]):not(:has([hre
 
 ! Timeline:Coversation
 ! Removes "Discover more" and all tweets succeeding it
-x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:has(h2)
-x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:has(h2) ~*
+x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:not(:has([data-testid="twitterArticleReadView"])):has(h2)
+x.com##:matches-path(/status) [data-testid="cellInnerDiv"]:not(:has([data-testid="twitterArticleReadView"])):has(h2) ~*
 ! Post analytics. Will only remove reduntant tweets in Timeline:Coversation
 x.com##:matches-path(/analytics) body:has([data-testid="inline_reply_offscreen"]) button:has([data-testid="testCondensedMedia"])
 ! Access your post analytics (Premium upsell)
 x.com##[data-testid="tweet"] [href="/i/account_analytics"]:upward(3)
 ! Removes Post Engagements
 x.com##:matches-path(/status) [data-testid="tweet"] [href$="/quotes"]:upward(1)
+! Premium upsell when you run out of characters
+x.com##:matches-path(/status) [data-testid="inline_reply_offscreen"] [href^="/i/premium_sign_up"]:upward(4)
+! Premium upsell on articles
+x.com##[data-testid="tweet"] [data-testid="twitterArticleReadView"] >* >:last-child:has([href="/i/premium_sign_up"])
 
 ! Timeline:Home
 ! Keeps only the tweets
 x.com##:matches-path(/home) [data-testid="cellInnerDiv"] ~*:not(:has([data-testid="tweet"]))
 
 
+! Writing tweets
+! Premium upsell when you run out of characters
+x.com##[data-testid="twc-cc-mask"]:upward(1) [href^="/i/premium_sign_up"]:upward(4)
 
 ! Removes everything that has to do with Grok
 ! Mini icon in the bottom right
@@ -89,11 +89,11 @@ x.com##[role="navigation"] [href="/home"] svg ~*
 
 ! Navigation
 ! Keeps the only the essentials
-x.com##[role="navigation"] >:is([href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"], [href="/i/premium-business"], [href="/i/connect_people"])
+x.com##[role="navigation"] >:is([href="/i/premium_sign_up"], [href="/i/verified-orgs-signup"], [href="/i/account_analytics"], [href="/jobs"], [href="/i/premium-business"], [href="/i/connect_people"], [href="/i/jf/creators/studio"])
 ! Removes X Icon
 x.com##header h1:has([href="/home"])
 ! Removes extra non essentials in the dropdown menu
-x.com##[role="menu"] [data-testid="Dropdown"] >* >:has([href*="//ads.x.com"], [href$="/creators/studio"])
+x.com##[role="menu"] [data-testid="Dropdown"] >* >:has([href*="//ads.x.com"], [href$="/creators/studio"], [href="/i/verified-orgs-signup"])
 
 ! Community notes
 ! Removes the reminder at the very bottom of post
