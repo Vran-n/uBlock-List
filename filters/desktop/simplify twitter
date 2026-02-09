@@ -15,6 +15,7 @@
 ! - Creator Studio and Business in the navigation sidebar
 ! FIXED:
 ! - Articles are no longer being removed
+! - Grok edit image
 
 
 
@@ -79,6 +80,7 @@ x.com##[data-testid="HoverCard"] button:has(svg path[d^="M12.745"])
 x.com##[data-testid="grokImgGen"]
 ! Edit image
 x.com##[href^="/i/imagine"]
+x.com##[data-testid="cellInnerDiv"] [href^="https://grok.com/imagine"]:upward(2)
 ! Imagine profile picture
 x.com##:matches-path(/settings/profile) [href="/settings/bio"]:upward(1) >:nth-of-type(2) >:has(path[d^="M17.084"])
 ! Imagine banner photo
