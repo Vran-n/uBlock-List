@@ -12,3 +12,5 @@ x.com##[data-testid="primaryColumn"]:not(:has([data-testid="dm-container"])) {ma
 x.com##[data-testid="primaryColumn"] section:upward(1):style(max-width: 999px !important)
 x.com##[data-testid="primaryColumn"] [href$="/header_photo"]:upward(2) { max-width: 999px !important }
 x.com##:matches-path(/settings) main section { margin: unset !important }
+! Articles
+x.com##:matches-path(/status) [data-testid="cellInnerDiv"] [data-testid="twitterArticleReadView"] >:last-child [role="group"] { max-width: 999px !important }
