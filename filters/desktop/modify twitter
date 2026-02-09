@@ -8,18 +8,13 @@
 
 
 ! Format: MM/DD/YYYY
-! ----- 1/6/2026 -----
-! Things I have added:
-! - Reply button is thinner
-! - Bigger Business check (because the verified one is bigger)
-! - The following and unfollow button is thinner
-! - Squircle PFP icons in profile
-! - Profile action buttons and edit profile
-! - Made the border radii conversation text in all of chat smaller
-! Things I have decided to keep (or should i say, remove in this case)
-! - Removes the ugly separation lines seen in-between the tweet likes, etc
-! Things I have decided to remove completely
-! - Messages (replaced by chat)
+! ----- 2/9/2026 -----
+! ADDED:
+! - Border radii
+! - - Posts (show more)
+! - - Articles
+! - - Links
+! - - The actual quote tweet (that small preview)
 
 
 
@@ -94,15 +89,31 @@ x.com##[data-testid="UserName"] path[d*="M13.324"]:upward(3) { max-width: 30px !
 
 ! Border radii are smaller
 ! Images and videos
+! Posts
 x.com##[data-testid="tweet"] time:upward(10) >* >* >* >* >*:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
+! Posts (show more)
+x.com##[data-testid="tweet"] [data-testid="tweetPhoto"]:upward(2):matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
 ! Inside posts
-x.com##[data-testid="tweet"] time:upward(7) >* ~* >* >* >* >* >*:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
+x.com##[data-testid="tweet"] time:upward(7) >* ~* >* >* >* >* >*:matches-css(border-radi /[1us:-9]/) { border-radius: 6px !important }
 ! Quote tweets
 x.com##[data-testid="tweet"] time:upward(10) >* >* >*:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
 ! The actual quote tweet
 x.com##[data-testid="tweet"]:not(:has(article)) time:upward(10) >* >* >* >* >* >* >* time:upward(10) >* >* >* >* >* >* >*:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
+! The actual quote tweet (that small preview)
+x.com##[data-testid="tweet"] time:upward(10) [data-testid="testCondensedMedia"]:upward(1) div:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
 ! When writing posts
 x.com##[data-testid="attachments"] [role="group"] { border-radius: 6px !important }
+! Articles
+x.com##[data-testid="tweet"] [data-testid="article-cover-image"]:upward(1) { border-radius: 6px !important }
+! Inside articles
+x.com##[data-testid="tweet"] [data-testid="twitterArticleRichTextView"] div:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
+! Links
+! Posts
+x.com##[data-testid="tweet"] time:upward(10) [data-testid="card.wrapper"] { border-radius: 6px !important }
+! When writing posts
+x.com##[data-testid="twc-cc-mask"]:upward(1) [data-testid="card.wrapper"] { border-radius: 6px !important }
+! When replying
+x.com##:matches-path(/status) [data-testid="inline_reply_offscreen"] [data-testid="card.wrapper"] { border-radius: 6px !important }
 ! Chat
 ! Right side
 x.com##[data-testid="dm-message-list"] li >* >* >* >*[class*="justify-end"] [data-testid^="message-text-"] { border-radius: 0.5rem !important; border-bottom-right-radius: 0rem !important}
