@@ -43,18 +43,20 @@ This will remove all of the unnecessary content in here such as:
 
 - ### Others
   - ALL of grok (including the profile summary you'd see inside the hover card)
+  - Edit image (AI image generation)
   - X icon
-  - Jobs, Premium, Verified Orgs, Grok, Monetization, and Ads button (including the ones inside your settings)
+  - Jobs, Premium, Verified Orgs, Grok, Monetization, and Ads button
   - Messages drawer
   - Community notes reminder at the very bottom of the post and "Do you find this helpful?"
   - Post analytics will no longer show the post when you're already inside of it
   - "Not followed by anyone you’re following"
   - Blue notification on new posts
   - "Professional Profile" in edit your profile
-  - 3 dots in the account switch button
   - "You aren’t verified yet" in profile (this appears occasionally)
   - Account Analytics upsell
   - Remove unnecessary links text in more (under trending hastags)
+  - Premium upsell on articles and when you run out of characters including when drafting tweets
+  - Occasional "Upgrade to premium" popup
 
 - ### For users who are logged out
   - Grok (sign in page)
