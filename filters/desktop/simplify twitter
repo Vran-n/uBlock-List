@@ -13,6 +13,7 @@
 ! - Premium upsell when you run out of characters including when drafting tweets
 ! - Premium upsell on articles
 ! - Creator Studio and Business in the navigation sidebar
+! - Occasional "Upgrade to premium" popup
 ! FIXED:
 ! - Articles are no longer being removed
 ! - Grok edit image
@@ -88,6 +89,9 @@ x.com##:matches-path(/settings/profile) [href="/settings/bio"]:upward(1) >:nth-o
 
 ! Removes the home blue dot notification
 x.com##[role="navigation"] [href="/home"] svg ~*
+
+! Removes the occasional "Upgrade to premium" popup
+x.com##[data-testid="mask"]:upward(1):has([href="/i/premium_sign_up"])
 
 ! Navigation
 ! Keeps the only the essentials
