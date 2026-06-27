@@ -94,11 +94,12 @@ x.com##[data-testid="tweet"] time:upward(10) >* >* >* >* >*:matches-css(border-r
 ! Posts (show more)
 x.com##[data-testid="tweet"] [data-testid="tweetPhoto"]:upward(2):matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
 ! Inside posts
-x.com##[data-testid="tweet"] time:upward(7) >* ~* >* >* >* >* >*:matches-css(border-radi /[1us:-9]/) { border-radius: 6px !important }
+x.com##[data-testid="tweet"] time:upward(7) >* ~* >* >* >* >*:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
 ! Quote tweets
 x.com##[data-testid="tweet"] time:upward(10) >* >* >*:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
 ! The actual quote tweet
 x.com##[data-testid="tweet"]:not(:has(article)) time:upward(10) >* >* >* >* >* >* >* time:upward(10) >* >* >* >* >* >* >*:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
+x.com##[data-testid="tweet"]:not(:has(article)) time:upward(10) >* >* >* >* >* >*:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
 ! The actual quote tweet (that small preview)
 x.com##[data-testid="tweet"] time:upward(10) [data-testid="testCondensedMedia"]:upward(1) div:matches-css(border-radius: /[1-9]/) { border-radius: 6px !important }
 ! When writing posts
