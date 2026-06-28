@@ -3,13 +3,14 @@
 ! Description: |
 !   Combines the filters below so you dont have to
 !   Includes: Simplify and Modify Twitter
-!   Addons: No Views and Decluttered Sidebar with trending hashtags
+!   Addons: No Views, Decluttered Sidebar with trending hashtags, Widerrr Timeline
 ! License: https://github.com/Vran-n/uBlock-List/blob/main/LICENSE
 ! Homepage: https://github.com/Vran-n/uBlock-List
 
 
 
 !#include simplify%20twitter
-!#include modify%20twitter
 !#include simplify%20twitter%20addon%3A%20no%20views
 !#include simplify%20twitter%20addon%3A%20decluttered%20sidebar%20with%20trending%20hashtags
+!#include modify%20twitter
+!#include modify%20twitter%20addon%3A%20widerrr%20timeline
