@@ -24,4 +24,4 @@ x.com##[data-testid="sidebarColumn"] { margin-left: 25px !important }
 
 ! Fixes Likes, Views, Comments, and Bookmarks
 x.com##:not(:matches-path(photo)) [data-testid="tweet"] [data-testid="reply"]:upward(2) {max-width: 999px !important;}
-x.com##:not(:matches-path(photo)) [data-testid="tweet"] [data-testid="reply"]:upward(2) >:nth-child(3) { flex: 5 !important }
+x.com##:not(:matches-path(photo)) [data-testid="tweet"] [data-testid="reply"]:upward(2) >:nth-child(3) { flex: 4.5 !important }
