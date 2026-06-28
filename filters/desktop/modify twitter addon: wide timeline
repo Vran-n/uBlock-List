@@ -7,10 +7,21 @@
 
 
 
-x.com##main >*:style(width: 1150px !important)
-x.com##[data-testid="primaryColumn"]:not(:has([data-testid="dm-container"])) {max-width: 700px !important; margin-right: 30px !important}
+x.com##main >*:style(width: 1250px !important)
+x.com##[data-testid="primaryColumn"]:not(:has([data-testid="dm-container"])) {max-width: 700px !important}
 x.com##[data-testid="primaryColumn"] section:upward(1):style(max-width: 999px !important)
 x.com##[data-testid="primaryColumn"] [href$="/header_photo"]:upward(2) { max-width: 999px !important }
 x.com##:matches-path(/settings) main section { margin: unset !important }
-! Article
+! Articles
 x.com##:matches-path(/status) [data-testid="cellInnerDiv"] [data-testid="twitterArticleReadView"] >:last-child [role="group"] { max-width: 999px !important }
+
+! Great way to detect if the sidebar is mostly obstructed
+x.com##[data-testid="sidebarColumn"]:matches-css(width: 290px) { display: none !important }
+
+! Primary column shit (forgot what this was about)
+x.com##[data-testid="sidebarColumn"]:upward(1) { justify-content: start !important }
+x.com##[data-testid="sidebarColumn"] { margin-left: 25px !important }
+
+! Fixes Likes, Views, Comments, and Bookmarks
+x.com##:not(:matches-path(photo)) [data-testid="tweet"] [data-testid="reply"]:upward(2) {max-width: 999px !important;}
+x.com##:not(:matches-path(photo)) [data-testid="tweet"] [data-testid="reply"]:upward(2) >:nth-child(3) { flex: 5 !important }
