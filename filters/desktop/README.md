@@ -11,6 +11,7 @@ Simply click on the text and it drags you straight into the file.
 - Modify Twitter
 - Simplify Twitter Addon: No Views
 - Simplify Twitter Addon: Decluttered Sidebar with Trending Hashtags
+- Modify Twitter Addon: Widerrr Timeline
 
 #### For those who want extra details, please expand the sections below
 <details> <summary> Simplify your twitter experience: </summary>
